@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-10-12T05:00:06.802808+00:00",
+  "config": {
+    "project": {
+      "name": "prompt-sensitivity-hybrid",
+      "seed": 42,
+      "output_dir": "outputs",
+      "log_dir": "outputs/logs"
+    },
+    "hardware": {
+      "target_gpu": "NVIDIA GeForce RTX 4090",
+      "min_vram_gb": 24.0,
+      "enforce_cuda": true
+    },
+    "model": {
+      "name": "Qwen/Qwen2.5-7B-Instruct",
+      "supported_models": [
+        "Qwen/Qwen2.5-7B-Instruct",
+        "meta-llama/Llama-3.1-8B-Instruct"
+      ],
+      "trust_remote_code": true,
+      "torch_dtype": "bfloat16",
+      "fallback_allowed": false
+    },
+    "quantization": {
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "bfloat16"
+    },
+    "training": {
+      "batch_size": 1,
+      "gradient_accumulation_steps": 8,
+      "gradient_checkpointing": true,
+      "learning_rate": 0.0002,
+      "max_seq_length": 2048,
+      "fp16": false,
+      "bf16": true
+    },
+    "peft": {
+      "enabled": true,
+      "task_type": "CAUSAL_LM",
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "bias": "none",
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ]
+    },
+    "dataset": {
+      "data_path": "data/sample_dataset.jsonl",
+      "cluster_key": "cluster_id",
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "test_ratio": 0.15
+    }
+  },
+  "metadata": {
+    "stage": "check_env",
+    "env_info": {
+      "timestamp": "2026-10-12T05:00:03.947373+00:00",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_executable": "C:\\Users\\Student5\\Desktop\\Mitigation\\.venv\\Scripts\\python.exe",
+      "cuda_available": true,
+      "device_count": 1,
+      "devices": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_vram_gb": 23.99,
+          "major_capability": 8,
+          "minor_capability": 9,
+          "multi_processor_count": 128,
+          "bf16_supported": true
+        }
+      ],
+      "target_check_passed": true,
+      "quantization_support": true,
+      "packages": {
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "accelerate": "1.15.0",
+        "bitsandbytes": "0.50.2",
+        "peft": "0.21.2",
+        "yaml": "6.0.3"
+      },
+      "issues": [],
+      "torch_version": "2.5.1+cu121",
+      "torch_cuda_version": "12.1",
+      "bitsandbytes_version": "0.50.2"
+    }
+  }
+}

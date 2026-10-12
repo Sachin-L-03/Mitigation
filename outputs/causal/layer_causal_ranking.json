@@ -1,0 +1,117 @@
+{
+  "candidate_layers": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24
+  ],
+  "causal_evaluation": {
+    "4": {
+      "mean_causal_restoration": 0.45011,
+      "std_causal_restoration": 1.58536,
+      "sham_mean_restoration": -3.64168,
+      "causal_specificity": 4.09179,
+      "evaluated_pairs": 125
+    },
+    "8": {
+      "mean_causal_restoration": 0.6462,
+      "std_causal_restoration": 1.64361,
+      "sham_mean_restoration": -4.93857,
+      "causal_specificity": 5.58477,
+      "evaluated_pairs": 125
+    },
+    "12": {
+      "mean_causal_restoration": 0.82746,
+      "std_causal_restoration": 1.75674,
+      "sham_mean_restoration": -5.93749,
+      "causal_specificity": 6.76495,
+      "evaluated_pairs": 125
+    },
+    "16": {
+      "mean_causal_restoration": 0.9172,
+      "std_causal_restoration": 1.88871,
+      "sham_mean_restoration": -7.12552,
+      "causal_specificity": 8.04273,
+      "evaluated_pairs": 125
+    },
+    "20": {
+      "mean_causal_restoration": 1.03971,
+      "std_causal_restoration": 1.91579,
+      "sham_mean_restoration": -7.23957,
+      "causal_specificity": 8.27928,
+      "evaluated_pairs": 125
+    },
+    "24": {
+      "mean_causal_restoration": 1.17509,
+      "std_causal_restoration": 1.93738,
+      "sham_mean_restoration": -8.03791,
+      "causal_specificity": 9.213,
+      "evaluated_pairs": 125
+    }
+  },
+  "representation_divergences": {
+    "4": {
+      "within_cluster_divergence": 0.0877,
+      "between_cluster_separation": 0.16463,
+      "separation_ratio": 1.8772
+    },
+    "8": {
+      "within_cluster_divergence": 0.12539,
+      "between_cluster_separation": 0.2598,
+      "separation_ratio": 2.072
+    },
+    "12": {
+      "within_cluster_divergence": 0.1089,
+      "between_cluster_separation": 0.27023,
+      "separation_ratio": 2.4815
+    },
+    "16": {
+      "within_cluster_divergence": 0.10172,
+      "between_cluster_separation": 0.24818,
+      "separation_ratio": 2.4399
+    },
+    "20": {
+      "within_cluster_divergence": 0.10141,
+      "between_cluster_separation": 0.24939,
+      "separation_ratio": 2.4591
+    },
+    "24": {
+      "within_cluster_divergence": 0.08532,
+      "between_cluster_separation": 0.24105,
+      "separation_ratio": 2.8254
+    }
+  },
+  "ranked_layers": [
+    [
+      24,
+      9.213
+    ],
+    [
+      20,
+      8.27928
+    ],
+    [
+      16,
+      8.04273
+    ],
+    [
+      12,
+      6.76495
+    ],
+    [
+      8,
+      5.58477
+    ],
+    [
+      4,
+      4.09179
+    ]
+  ],
+  "top_recommended_layers": [
+    24,
+    20,
+    16
+  ]
+}

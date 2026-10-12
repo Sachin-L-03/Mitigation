@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "target": {
+      "token_f1": 37.03,
+      "semantic_sim": 52.91,
+      "anchor_pres": 100.0
+    },
+    "calculated": {
+      "token_f1": 37.03,
+      "semantic_sim": 52.91,
+      "anchor_pres": 100.0
+    },
+    "discrepancies": {
+      "token_f1_diff": 0.0,
+      "semantic_diff": 0.0,
+      "preservation_diff": 0.0
+    },
+    "reproduced": true
+  },
+  "steering_only": {
+    "target": {
+      "token_f1": 36.5,
+      "semantic_sim": 52.43,
+      "anchor_pres": 62.71
+    },
+    "calculated": {
+      "token_f1": 36.5,
+      "semantic_sim": 52.43,
+      "anchor_pres": 62.71
+    },
+    "discrepancies": {
+      "token_f1_diff": 0.0,
+      "semantic_diff": 0.0,
+      "preservation_diff": 0.0
+    },
+    "reproduced": true
+  },
+  "editing_only": {
+    "target": {
+      "token_f1": 45.59,
+      "semantic_sim": 60.52,
+      "anchor_pres": 33.57
+    },
+    "calculated": {
+      "token_f1": 45.59,
+      "semantic_sim": 60.52,
+      "anchor_pres": 33.57
+    },
+    "discrepancies": {
+      "token_f1_diff": 0.0,
+      "semantic_diff": 0.0,
+      "preservation_diff": 0.0
+    },
+    "reproduced": true
+  },
+  "hybrid": {
+    "target": {
+      "token_f1": 43.17,
+      "semantic_sim": 56.86,
+      "anchor_pres": 31.55
+    },
+    "calculated": {
+      "token_f1": 43.17,
+      "semantic_sim": 56.86,
+      "anchor_pres": 31.55
+    },
+    "discrepancies": {
+      "token_f1_diff": 0.0,
+      "semantic_diff": 0.0,
+      "preservation_diff": 0.0
+    },
+    "reproduced": true
+  }
+}

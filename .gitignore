@@ -1,0 +1,20 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Large Model Checkpoints & Activation Caches (keep code & reports tracked)
+outputs/activations/
+*.safetensors
+*.bin
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,110 @@
+project:
+  name: "prompt-sensitivity-hybrid"
+  seed: 42
+  output_dir: "outputs"
+  log_dir: "outputs/logs"
+
+hardware:
+  target_gpu: "NVIDIA GeForce RTX 4090"
+  min_vram_gb: 24.0
+  enforce_cuda: true
+
+model:
+  name: "Qwen/Qwen2.5-7B-Instruct"
+  supported_models:
+    - "Qwen/Qwen2.5-7B-Instruct"
+    - "meta-llama/Llama-3.1-8B-Instruct"
+  trust_remote_code: true
+  torch_dtype: "bfloat16"
+  fallback_allowed: false
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: "bfloat16"
+
+generation:
+  max_new_tokens: 64
+  do_sample: false
+  temperature: 0.0
+
+training:
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  gradient_checkpointing: true
+  learning_rate: 0.0002
+  max_seq_length: 2048
+  fp16: false
+  bf16: true
+
+peft:
+  enabled: true
+  task_type: "CAUSAL_LM"
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  bias: "none"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+dataset:
+  data_path: "data/paraphrased_prompts_axis_tagged_qa.csv"
+  splits_dir: "data/splits"
+  cluster_key: "cluster_id"
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  expected_clusters: 196
+  expected_records: 1176
+
+activations:
+  target_layers: [4, 8, 12, 16, 20, 24]
+  token_position: "last"
+  cache_dir: "outputs/activations"
+
+causal_analysis:
+  candidate_layers: [4, 8, 12, 16, 20, 24]
+  metric: "kl_div"
+  sham_control: true
+  output_dir: "outputs/causal"
+
+parameter_editing:
+  adaptation_method: "creme_inspired_lora"
+  target_layers: [12, 16, 20]
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  learning_rate: 0.0001
+  epochs: 3
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  loss_weights:
+    consistency: 1.0
+    preservation: 1.0
+    l2_reg: 0.001
+    semantic_contrast: 0.1
+  output_dir: "outputs/parameter_editing"
+
+representation_steering:
+  method: "subspace_suppression"
+  subspace_rank: 2
+  steering_strength: 0.5
+  target_layer: 16
+  output_dir: "outputs/steering"
+
+hybrid:
+  adapter_dir: "outputs/parameter_editing/best_adapter"
+  steering_layer: 16
+  steering_strength: 0.5
+  output_dir: "outputs/hybrid"
+
+evaluation:
+  bootstrap_samples: 1000
+  output_dir: "outputs/evaluation"

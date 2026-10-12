@@ -1,0 +1,9 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "devices": [
+    "cuda"
+  ],
+  "vram_allocated_gb": 7.368,
+  "prompt": "Explain prompt sensitivity in two sentences.",
+  "generation": "Explain prompt sensitivity in two sentences. Prompt sensitivity refers to how a model's output changes in response to small variations in the input prompt. It measures the model's ability to generate different outputs based on"
+}

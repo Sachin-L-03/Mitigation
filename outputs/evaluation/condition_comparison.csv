@@ -1,0 +1,5 @@
+Condition,Exact Match (%),EMA 95% CI,Delta EMA (pp),Token F1 (%),F1 95% CI,Delta F1 (pp),Semantic Sim (%),Anchor Pres (%),Diversity (%),Avg Words,p-value (F1)
+Condition A: Baseline,1.33,"[0.0, 3.3]",+0.00,37.03,"[32.0, 42.2]",+0.00,52.91,100.00,98.33,52.1,1.0000
+Condition B: Steering Only,1.33,"[0.0, 3.3]",+0.00,36.50,"[31.2, 42.0]",-0.53,52.43,62.71,98.89,52.6,0.3285
+Condition C: Editing Only,2.00,"[0.0, 4.7]",+0.67,45.59,"[41.1, 50.8]",+8.56,60.52,33.57,97.78,52.7,0.0076
+Condition D: Hybrid (Edit + Steer),4.00,"[1.3, 8.0]",+2.67,43.17,"[38.3, 48.7]",+6.14,56.86,31.55,95.56,52.6,0.0879

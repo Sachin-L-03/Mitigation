@@ -1,0 +1,132 @@
+[2026-10-12 10:29:02] [INFO] [prompt_sensitivity.check_env]: Initialized reproducibility seed: 42
+[2026-10-12 10:29:02] [INFO] [prompt_sensitivity.check_env]: Executing environment diagnostics...
+[2026-10-12 10:29:04] [INFO] [prompt_sensitivity.check_env]: Environment check report written to: outputs\env_check_report.json
+[2026-10-12 10:30:03] [INFO] [prompt_sensitivity.check_env]: Initialized reproducibility seed: 42
+[2026-10-12 10:30:03] [INFO] [prompt_sensitivity.check_env]: Executing environment diagnostics...
+[2026-10-12 10:30:06] [INFO] [prompt_sensitivity.check_env]: Environment check report written to: outputs\env_check_report.json
+[2026-10-12 10:30:12] [INFO] [prompt_sensitivity.dataset_check]: Loading dataset from: data/sample_dataset.jsonl
+[2026-10-12 10:30:12] [INFO] [prompt_sensitivity.dataset_check]: Dataset loaded: 19 records across 6 clusters.
+[2026-10-12 10:30:12] [INFO] [prompt_sensitivity.dataset_check]: Dataset splits exported to: outputs\splits
+[2026-10-12 10:31:01] [INFO] [prompt_sensitivity.smoke_test]: Starting smoke test for model: Qwen/Qwen2.5-7B-Instruct
+[2026-10-12 10:34:07] [INFO] [prompt_sensitivity.smoke_test]: Model successfully loaded. Devices: ['cuda'], VRAM Allocated: 7.361 GB
+[2026-10-12 10:34:07] [INFO] [prompt_sensitivity.smoke_test]: Running inference smoke test with prompt: 'Explain prompt sensitivity in two sentences.'
+[2026-10-12 10:34:26] [INFO] [prompt_sensitivity.smoke_test]: Starting smoke test for model: meta-llama/Llama-3.1-8B-Instruct
+[2026-10-12 10:34:27] [ERROR] [prompt_sensitivity.smoke_test]: Smoke test failed for model 'meta-llama/Llama-3.1-8B-Instruct': Authentication error loading tokenizer for gated model 'meta-llama/Llama-3.1-8B-Instruct'. Ensure Hugging Face token is set via HF_TOKEN environment variable.
+Traceback (most recent call last):
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\utils\hub.py", line 479, in cached_files
+    hf_hub_download(
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1014, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1121, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1662, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1550, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1467, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 283, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 307, in _request_wrapper
+    hf_raise_for_status(response)
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 420, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-6acc6a5b-73425cc44504221f42329d5b;115e2215-7fe4-4cc4-92b3-2b0f1d7d19d5)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.1-8B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Student5\Desktop\Mitigation\model.py", line 138, in load_model_and_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 1109, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 1332, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\configuration_utils.py", line 662, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\configuration_utils.py", line 721, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\utils\hub.py", line 322, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\.venv\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct.
+401 Client Error. (Request ID: Root=1-6acc6a5b-73425cc44504221f42329d5b;115e2215-7fe4-4cc4-92b3-2b0f1d7d19d5)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.1-8B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Student5\Desktop\Mitigation\main.py", line 185, in cmd_smoke_test
+    model_bundle = load_model_and_tokenizer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Student5\Desktop\Mitigation\model.py", line 147, in load_model_and_tokenizer
+    raise PermissionError(
+PermissionError: Authentication error loading tokenizer for gated model 'meta-llama/Llama-3.1-8B-Instruct'. Ensure Hugging Face token is set via HF_TOKEN environment variable.
+[2026-10-12 10:35:55] [INFO] [prompt_sensitivity.dataset_check]: Loading dataset from: data/paraphrased_prompts_axis_tagged_qa.csv
+[2026-10-12 10:35:55] [INFO] [prompt_sensitivity.dataset_check]: Dataset loaded: 1176 records across 196 clusters.
+[2026-10-12 10:35:55] [INFO] [prompt_sensitivity.dataset_check]: Dataset splits exported to: outputs\splits
+[2026-10-12 10:36:02] [INFO] [prompt_sensitivity.dataset_check]: Loading dataset from: data/sample_dataset.jsonl
+[2026-10-12 10:36:02] [INFO] [prompt_sensitivity.dataset_check]: Dataset loaded: 19 records across 6 clusters.
+[2026-10-12 10:36:02] [INFO] [prompt_sensitivity.dataset_check]: Dataset splits exported to: outputs\splits
+[2026-10-12 10:42:12] [INFO] [prompt_sensitivity.dataset_check]: Loading dataset from: data/paraphrased_prompts_axis_tagged_qa.csv
+[2026-10-12 10:42:12] [INFO] [prompt_sensitivity.dataset_check]: Dataset loaded: 1176 records across 196 clusters.
+[2026-10-12 10:42:12] [INFO] [prompt_sensitivity.dataset_check]: Dataset canonical representation and splits successfully saved to: data/splits
+[2026-10-12 10:44:03] [INFO] [prompt_sensitivity.dataset_check]: Loading dataset from: data/paraphrased_prompts_axis_tagged_qa.csv
+[2026-10-12 10:44:03] [INFO] [prompt_sensitivity.dataset_check]: Dataset loaded: 1176 records across 196 clusters.
+[2026-10-12 10:44:03] [INFO] [prompt_sensitivity.dataset_check]: Dataset canonical representation and splits successfully saved to: data/splits
+[2026-10-12 10:57:40] [INFO] [prompt_sensitivity.baseline]: Running Condition A (Baseline) on 'test' split (180 prompts) with 'Qwen/Qwen2.5-7B-Instruct'...
+[2026-10-12 11:09:24] [INFO] [prompt_sensitivity.activations]: Extracting activations for 822 prompts on layers [4, 8, 12, 16, 20, 24]...
+[2026-10-12 11:10:40] [INFO] [prompt_sensitivity.activations]: Extracting activations for 822 prompts on layers [4, 8, 12, 16, 20, 24]...
+[2026-10-12 11:10:58] [INFO] [prompt_sensitivity.activations]: Cached activations: 100/822 prompts...
+[2026-10-12 11:11:06] [INFO] [prompt_sensitivity.activations]: Cached activations: 200/822 prompts...
+[2026-10-12 11:11:13] [INFO] [prompt_sensitivity.activations]: Cached activations: 300/822 prompts...
+[2026-10-12 11:11:20] [INFO] [prompt_sensitivity.activations]: Cached activations: 400/822 prompts...
+[2026-10-12 11:11:27] [INFO] [prompt_sensitivity.activations]: Cached activations: 500/822 prompts...
+[2026-10-12 11:11:35] [INFO] [prompt_sensitivity.activations]: Cached activations: 600/822 prompts...
+[2026-10-12 11:11:42] [INFO] [prompt_sensitivity.activations]: Cached activations: 700/822 prompts...
+[2026-10-12 11:11:50] [INFO] [prompt_sensitivity.activations]: Cached activations: 800/822 prompts...
+[2026-10-12 11:11:52] [INFO] [prompt_sensitivity.activations]: Cached activations: 822/822 prompts...
+[2026-10-12 11:12:18] [INFO] [prompt_sensitivity.causal]: Running causal activation patching on 125 pairs across candidate layers [4, 8, 12, 16, 20, 24]...
+[2026-10-12 11:15:46] [INFO] [prompt_sensitivity.train_editor]: Using top causally ranked layers from causal analysis: [24, 20, 16]
+[2026-10-12 11:37:58] [INFO] [prompt_sensitivity.steering]: Estimated subspace for layer 16: rank=2, top singular values=[4300.568359375, 267.3558654785156]
+[2026-10-12 11:37:58] [INFO] [prompt_sensitivity.steering]: Saved subspace projection operator to outputs\steering\subspace_layer_16.pt
+[2026-10-12 11:38:11] [INFO] [prompt_sensitivity.steering]: Running Condition B (Steering Only) on 'test' split with layer 16, strength 0.5...
+[2026-10-12 11:50:40] [INFO] [prompt_sensitivity.hybrid_eval]: Loading base model 'Qwen/Qwen2.5-7B-Instruct' and attaching adapter from outputs\parameter_editing\best_adapter...
+[2026-10-12 11:50:51] [INFO] [prompt_sensitivity.hybrid_eval]: Running Condition C (Editing Only) on 'test' split...
+[2026-10-12 12:01:05] [INFO] [prompt_sensitivity.hybrid_eval]: Running Condition D (Hybrid: Edit + Steer) on 'test' split...
+[2026-10-12 12:38:07] [INFO] [prompt_sensitivity.optimization]: Executing Experiment A (Reproduction check) on split: test
+[2026-10-12 12:38:08] [INFO] [prompt_sensitivity.optimization]: Reproduction check completed. Report written to outputs\optimization\reproduction\reproduction_verification_report.json
+[2026-10-12 12:38:31] [INFO] [prompt_sensitivity.optimization]: Loading base model 'Qwen/Qwen2.5-7B-Instruct' and adapter for steering strength sweep...
+[2026-10-12 12:38:42] [INFO] [prompt_sensitivity.optimization]: Generating baseline reference predictions on val split...
