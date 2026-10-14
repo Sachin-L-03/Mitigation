@@ -1,0 +1,4 @@
+Title: Neutron Electric Charge
+Provenance: Particle Data Group Review of Particle Physics
+
+The neutron is a subatomic hadron denoted n or n0 with no net electric charge (charge = 0 e) and a mass slightly greater than that of a proton.

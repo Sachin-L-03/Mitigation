@@ -1,0 +1,6 @@
+condition,total_rows,unique_prediction_ids,unique_cluster_ids,unique_prompt_ids,unique_paraphrase_types,generations_per_query,duplicate_records,missing_outputs,failed_generations,records_used_in_headline_report,records_excluded_from_headline_report,fast_path_clusters,verified_clusters
+E0,1200,1200,200,1200,6,1.0,0,0,0,1200,0,0,0
+E3,1200,1200,200,1200,6,1.0,0,0,0,1200,0,0,0
+E1,1200,1200,200,1200,6,6.0,0,0,0,1200,0,0,200
+E6_bounded,1200,1200,200,1200,6,2.47,0,0,0,1200,0,53,147
+E6_enhanced,1200,1200,200,1200,6,2.47,0,0,0,0,1200,53,147

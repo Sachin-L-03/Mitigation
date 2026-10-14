@@ -1,0 +1,4 @@
+Title: Modular Diagnostic: 3^100 mod 8
+Provenance: Number Theory Deterministic Proof
+
+Since 3^2 = 9 = 1 mod 8, 3^100 = (3^2)^50 = 1^50 = 1 mod 8.

@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETED",
+  "timestamp": "2026-10-14",
+  "primary_findings": {
+    "e0_factual_accuracy": 0.7787610619469026,
+    "e1_factual_accuracy": 0.7831858407079646,
+    "e2_factual_accuracy": 0.7876106194690266,
+    "e3_factual_accuracy": 0.7920353982300885,
+    "e4_factual_accuracy": 0.6283185840707964,
+    "e5_oracle_upper_bound": 0.9070796460176991,
+    "e0_token_f1": 0.5170458791900551,
+    "e1_token_f1": 0.9220388016731051,
+    "e2_token_f1": 0.9249590563851013,
+    "e3_token_f1": 1.0,
+    "e4_token_f1": 1.0,
+    "e0_false_consensus_rate": 0.01327433628318584,
+    "e3_false_consensus_rate": 0.01327433628318584,
+    "e4_abstention_rate": 0.1902654867256637,
+    "e4_selective_accuracy": 0.7759562841530054,
+    "non_inferiority_margin": -0.02,
+    "e3_non_inferiority_established": true,
+    "e3_lower_ci975": -0.012685260712932273,
+    "e3_p_ni": 0.005998528841640205,
+    "mean_interactive_latency_e3_ms": 3297.0376300020143,
+    "p95_latency_e3_ms": 3622.180180004216,
+    "peak_vram_gb": 8.224011898040771
+  },
+  "verdict": "RESEARCH_CANDIDATE_WITH_VALIDATED_ABSTENTION"
+}

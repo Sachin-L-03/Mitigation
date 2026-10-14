@@ -1,0 +1,4 @@
+Title: Modular Diagnostic: 2^50 mod 9
+Provenance: Number Theory Deterministic Proof
+
+Since 2^6 = 64 = 1 mod 9 (Euler's totient phi(9)=6), 50 = 6*8 + 2, so 2^50 = 2^2 = 4 mod 9.

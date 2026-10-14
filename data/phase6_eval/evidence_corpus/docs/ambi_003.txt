@@ -1,0 +1,4 @@
+Title: Ambiguous: Speed of Sound
+Provenance: Acoustics Physics Reference
+
+The speed of sound depends directly on the propagation medium (e.g. dry air at 20 °C is 343 m/s, water is 1480 m/s, steel is 5120 m/s).

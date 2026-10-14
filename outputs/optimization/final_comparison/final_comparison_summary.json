@@ -1,0 +1,266 @@
+{
+  "baseline": {
+    "label": "1. Original Baseline",
+    "exact_match": {
+      "mean": 1.33,
+      "ci_95": [
+        0.0,
+        3.33
+      ]
+    },
+    "token_f1": {
+      "mean": 37.03,
+      "ci_95": [
+        32.04,
+        42.25
+      ],
+      "abs_change_pp": 0.0,
+      "rel_change_pct": 0.0,
+      "p_value_raw": 1.0
+    },
+    "semantic_sim": {
+      "mean": 52.91,
+      "ci_95": [
+        48.06,
+        57.58
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 100.0,
+      "ci_95": [
+        100.0,
+        100.0
+      ]
+    },
+    "diversity_ratio": 98.33,
+    "avg_word_length": 52.14
+  },
+  "steering_only": {
+    "label": "2. Existing Steering Only (L16, a=0.5)",
+    "exact_match": {
+      "mean": 1.33,
+      "ci_95": [
+        0.0,
+        3.33
+      ]
+    },
+    "token_f1": {
+      "mean": 36.5,
+      "ci_95": [
+        31.22,
+        41.98
+      ],
+      "abs_change_pp": -0.53,
+      "rel_change_pct": -1.44,
+      "p_value_raw": 0.32847,
+      "p_value_holm": 0.32847,
+      "significant_holm": false
+    },
+    "semantic_sim": {
+      "mean": 52.43,
+      "ci_95": [
+        47.47,
+        57.63
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 62.71,
+      "ci_95": [
+        55.4,
+        69.93
+      ]
+    },
+    "diversity_ratio": 98.89,
+    "avg_word_length": 52.59
+  },
+  "editing_only": {
+    "label": "3. Existing Editing Only (Best Adapter)",
+    "exact_match": {
+      "mean": 2.0,
+      "ci_95": [
+        0.0,
+        4.67
+      ]
+    },
+    "token_f1": {
+      "mean": 45.59,
+      "ci_95": [
+        41.13,
+        50.8
+      ],
+      "abs_change_pp": 8.56,
+      "rel_change_pct": 23.12,
+      "p_value_raw": 0.00761,
+      "p_value_holm": 0.03805,
+      "significant_holm": true
+    },
+    "semantic_sim": {
+      "mean": 60.52,
+      "ci_95": [
+        56.26,
+        65.26
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 33.57,
+      "ci_95": [
+        28.42,
+        39.15
+      ]
+    },
+    "diversity_ratio": 97.78,
+    "avg_word_length": 52.69
+  },
+  "hybrid_val_orig_subspace": {
+    "label": "4. Best Hybrid (Original Subspace, a=0.05)",
+    "exact_match": {
+      "mean": 3.33,
+      "ci_95": [
+        0.67,
+        7.33
+      ]
+    },
+    "token_f1": {
+      "mean": 45.67,
+      "ci_95": [
+        40.9,
+        51.33
+      ],
+      "abs_change_pp": 8.64,
+      "rel_change_pct": 23.33,
+      "p_value_raw": 0.00814,
+      "p_value_holm": 0.03805,
+      "significant_holm": true
+    },
+    "semantic_sim": {
+      "mean": 59.82,
+      "ci_95": [
+        55.32,
+        64.82
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 32.65,
+      "ci_95": [
+        27.8,
+        37.86
+      ]
+    },
+    "diversity_ratio": 97.22,
+    "avg_word_length": 52.68
+  },
+  "hybrid_val_edited_subspace": {
+    "label": "5. Best Hybrid (Edited Subspace, a=0.10)",
+    "exact_match": {
+      "mean": 2.67,
+      "ci_95": [
+        0.67,
+        5.33
+      ]
+    },
+    "token_f1": {
+      "mean": 44.08,
+      "ci_95": [
+        39.32,
+        49.53
+      ],
+      "abs_change_pp": 7.05,
+      "rel_change_pct": 19.03,
+      "p_value_raw": 0.0221,
+      "p_value_holm": 0.05235,
+      "significant_holm": false
+    },
+    "semantic_sim": {
+      "mean": 58.99,
+      "ci_95": [
+        54.76,
+        63.74
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 32.37,
+      "ci_95": [
+        27.66,
+        37.41
+      ]
+    },
+    "diversity_ratio": 97.78,
+    "avg_word_length": 52.72
+  },
+  "hybrid_alt_layer": {
+    "label": "6. Best Alternative-Layer Hybrid (L24, r2, a=0.10)",
+    "exact_match": {
+      "mean": 2.0,
+      "ci_95": [
+        0.0,
+        4.67
+      ]
+    },
+    "token_f1": {
+      "mean": 44.6,
+      "ci_95": [
+        39.99,
+        49.58
+      ],
+      "abs_change_pp": 7.57,
+      "rel_change_pct": 20.45,
+      "p_value_raw": 0.01745,
+      "p_value_holm": 0.05235,
+      "significant_holm": false
+    },
+    "semantic_sim": {
+      "mean": 59.37,
+      "ci_95": [
+        55.05,
+        64.03
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 33.2,
+      "ci_95": [
+        27.67,
+        39.14
+      ]
+    },
+    "diversity_ratio": 97.78,
+    "avg_word_length": 52.77
+  },
+  "editing_preservation_tuned": {
+    "label": "7. Best Preservation-Tuned Editing (w_pres=5.0)",
+    "exact_match": {
+      "mean": 2.67,
+      "ci_95": [
+        0.67,
+        5.33
+      ]
+    },
+    "token_f1": {
+      "mean": 45.82,
+      "ci_95": [
+        41.37,
+        50.27
+      ],
+      "abs_change_pp": 8.79,
+      "rel_change_pct": 23.73,
+      "p_value_raw": 0.00087,
+      "p_value_holm": 0.00522,
+      "significant_holm": true
+    },
+    "semantic_sim": {
+      "mean": 59.86,
+      "ci_95": [
+        55.65,
+        64.19
+      ]
+    },
+    "anchor_preservation": {
+      "mean": 38.58,
+      "ci_95": [
+        32.93,
+        44.51
+      ]
+    },
+    "diversity_ratio": 97.22,
+    "avg_word_length": 52.79
+  }
+}

@@ -1,0 +1,9 @@
+case_id,cluster_id,domain,category,description,detectable,fix
+FAIL_01,sci_017,science,unanimous_hallucination,All candidates produced slightly misattributed astronomical data,False,Consensus cannot fix shared base model blindspot; requires external RAG.
+FAIL_02,math_029,math,arithmetic_drift,Medoid selected verbose explanation of GCD steps instead of concise integer 6,True,Add integer extraction priority in math domain.
+FAIL_03,cst_012,constraints,precision_rounding,Marathon distance 42.195 km vs 42.2 km rounding divergence,True,Approximate qualifier tolerance (10% ratio).
+FAIL_04,str_006,structured,delimiter_mismatch,Author (Year) formatted with brackets vs parentheses,True,Delimiter and punctuation normalization.
+FAIL_05,eve_006,everyday,unnecessary_verification,Baker's dozen 13 eggs vs a baker's dozen contains 13 eggs triggered verification,True,Containment check handles short vs long sentence phrasing.
+FAIL_06,geo_026,general,alias_expansion,Inca vs Incan Empire entity divergence,True,Add Incan to Inca alias map.
+FAIL_07,cst_005,constraints,unit_syntax,300 feet vs 300 ft unit abbreviation divergence,True,Standardize unit synonyms before comparison.
+FAIL_08,math_018,math,constant_omission,Integral output x^2 vs x^2 + C,True,Tolerance for integration constants in algebraic tasks.

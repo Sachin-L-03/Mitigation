@@ -1,0 +1,4 @@
+Title: Piano Keys Count
+Provenance: Steinway & Sons Technical Specifications
+
+A standard contemporary acoustic piano or concert grand has 88 keys: 52 white keys (naturals) and 36 black keys (accidentals).

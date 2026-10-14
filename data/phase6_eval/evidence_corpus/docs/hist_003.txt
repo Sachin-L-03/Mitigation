@@ -1,0 +1,4 @@
+Title: Apollo 11 Lunar Landing
+Provenance: NASA Mission Archives: Apollo 11
+
+Apollo 11 astronauts Neil Armstrong and Buzz Aldrin landed the Apollo Lunar Module Eagle on the Moon on July 20, 1969, at 20:17 UTC.

@@ -1,0 +1,64 @@
+{
+  "subset_description": "40 semantic clusters (240 prompts) with verified domain-expert ground truth",
+  "baseline": {
+    "factual_accuracy": {
+      "mean": 89.58,
+      "ci_95": [
+        82.5,
+        95.42
+      ]
+    },
+    "factual_token_f1": {
+      "mean": 9.02,
+      "ci_95": [
+        7.34,
+        11.04
+      ]
+    }
+  },
+  "editing_w1": {
+    "factual_accuracy": {
+      "mean": 90.0,
+      "ci_95": [
+        83.33,
+        95.83
+      ]
+    },
+    "factual_token_f1": {
+      "mean": 9.01,
+      "ci_95": [
+        7.37,
+        10.99
+      ]
+    }
+  },
+  "preservation_w5": {
+    "factual_accuracy": {
+      "mean": 90.0,
+      "ci_95": [
+        83.33,
+        95.83
+      ]
+    },
+    "factual_token_f1": {
+      "mean": 9.02,
+      "ci_95": [
+        7.37,
+        11.03
+      ]
+    }
+  },
+  "comparison_w5_vs_baseline": {
+    "abs_change": 0.0042,
+    "rel_change_pct": 0.47,
+    "p_value": 0.31731,
+    "significant": false
+  },
+  "comparison_w5_vs_w1": {
+    "abs_change": 0.0,
+    "rel_change_pct": 0.0,
+    "p_value": 1.0,
+    "significant": false
+  },
+  "methodological_note": "Linguistic paraphrase consistency measures response invariance, NOT factual accuracy. Correctness is evaluated strictly against independently verified gold reference answers."
+}

@@ -1,0 +1,21 @@
+{
+  "dataset_name": "PromptSensitivity_External_Generalization_Benchmark",
+  "total_semantic_clusters": 100,
+  "total_prompt_records": 600,
+  "variants_per_cluster": 6,
+  "variant_types": [
+    "original",
+    "lexical",
+    "syntactic",
+    "pragmatic",
+    "length",
+    "format"
+  ],
+  "factual_correctness_clusters": 40,
+  "factual_correctness_records": 240,
+  "dataset_files": {
+    "full_external_dataset": "external_dataset.jsonl",
+    "correctness_subset": "correctness_subset.jsonl"
+  },
+  "purpose": "Out-of-distribution independent evaluation with zero training overlap"
+}

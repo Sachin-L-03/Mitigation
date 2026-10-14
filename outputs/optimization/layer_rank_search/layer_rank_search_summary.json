@@ -1,0 +1,80 @@
+{
+  "stage1_layers": {
+    "layer_12_r2": {
+      "layer": 12,
+      "rank": 2,
+      "alpha": 0.1,
+      "token_f1": 43.94,
+      "semantic_sim": 57.77,
+      "anchor_preservation": 86.2,
+      "validation_score": 65.49
+    },
+    "layer_16_r2": {
+      "layer": 16,
+      "rank": 2,
+      "alpha": 0.1,
+      "token_f1": 41.26,
+      "semantic_sim": 55.26,
+      "anchor_preservation": 81.19,
+      "validation_score": 61.56
+    },
+    "layer_20_r2": {
+      "layer": 20,
+      "rank": 2,
+      "alpha": 0.1,
+      "token_f1": 43.43,
+      "semantic_sim": 57.21,
+      "anchor_preservation": 88.69,
+      "validation_score": 65.6
+    },
+    "layer_24_r2": {
+      "layer": 24,
+      "rank": 2,
+      "alpha": 0.1,
+      "token_f1": 44.79,
+      "semantic_sim": 58.34,
+      "anchor_preservation": 88.62,
+      "validation_score": 66.94
+    }
+  },
+  "selected_layer": 24,
+  "stage2_ranks": {
+    "rank_1": {
+      "layer": 24,
+      "rank": 1,
+      "alpha": 0.1,
+      "token_f1": 43.68,
+      "semantic_sim": 57.68,
+      "anchor_preservation": 90.8,
+      "validation_score": 66.38
+    },
+    "rank_2": {
+      "layer": 24,
+      "rank": 2,
+      "alpha": 0.1,
+      "token_f1": 44.79,
+      "semantic_sim": 58.34,
+      "anchor_preservation": 88.62,
+      "validation_score": 66.94
+    },
+    "rank_3": {
+      "layer": 24,
+      "rank": 3,
+      "alpha": 0.1,
+      "token_f1": 43.04,
+      "semantic_sim": 56.89,
+      "anchor_preservation": 83.91,
+      "validation_score": 64.02
+    }
+  },
+  "best_rank": 2,
+  "best_configuration": {
+    "layer": 24,
+    "rank": 2,
+    "alpha": 0.1,
+    "token_f1": 44.79,
+    "semantic_sim": 58.34,
+    "anchor_preservation": 88.62,
+    "validation_score": 66.94
+  }
+}

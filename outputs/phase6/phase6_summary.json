@@ -1,0 +1,24 @@
+{
+  "primary_verdict": {
+    "e4_factual_accuracy": 0.8156,
+    "e1_factual_accuracy": 0.5889,
+    "delta_accuracy": 0.2267,
+    "mcnemar_p_value": 9.236931035860245e-27,
+    "is_superior_to_e1": true,
+    "non_inferiority_vs_e0_established": true,
+    "ci975_lower_vs_e0": 0.1724
+  },
+  "unanimous_false_consensus_mitigation": {
+    "unanimous_false_consensus_clusters": 19,
+    "unanimous_false_consensus_rate": 0.0422,
+    "e4_ufc_corrected_count": 19,
+    "e4_ufc_correction_rate": 1.0,
+    "e2_ufc_corrected_count": 19,
+    "e3_ufc_corrected_count": 0,
+    "corrupted_clusters_count": 4,
+    "corruption_rate": 0.0089
+  },
+  "interactive_latency_p50_ms": 3087.63,
+  "interactive_latency_p95_ms": 3639.72,
+  "peak_vram_gb": 8.22
+}

@@ -1,0 +1,4 @@
+Title: Standard Railway Track Gauge
+Provenance: International Union of Railways (UIC) Standards
+
+Standard gauge railway track width is defined internationally as 1,435 millimeters (4 feet 8 1/2 inches).

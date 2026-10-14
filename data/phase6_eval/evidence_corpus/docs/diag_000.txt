@@ -1,0 +1,4 @@
+Title: Modular Diagnostic: 2^100 mod 7
+Provenance: Number Theory Deterministic Proof
+
+By Fermat's Little Theorem, 2^6 = 64 = 1 mod 7. Since 100 = 6*16 + 4, 2^100 = (2^6)^16 * 2^4 = 1^16 * 16 = 16 = 2 mod 7.

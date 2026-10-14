@@ -1,0 +1,81 @@
+cluster_id,category,severity,description,example_base,example_variant,proposed_fix
+P2-005,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The theoretical lowest temperature where all classical thermal motion ceases is absolute zero, which is defined as 0 Kel",The theoretical temperature that represents the absolute lower thermodynamic limit where thermal motion stops is absolut,Dedicated polarity parser for negation-sensitive queries.
+P2-007,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The maximum mass limit for a stable white dwarf star supported by electron degeneracy pressure is known as the Chandrase,The maximum stable mass for a non-rotating white dwarf star is defined by the Chandrasekhar limit. This limit is approxi,Dedicated polarity parser for negation-sensitive queries.
+P2-008,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The simplest aromatic hydrocarbon with the chemical formula \( \text{C}_6\text{H}_6 \) is benzene. Benzene is a planar, ","The foundational aromatic chemical compound with the molecular formula \( \text{C}_6\text{H}_6 \) is benzene. 
+
+Benzene ",Dedicated polarity parser for negation-sensitive queries.
+P2-012,All Candidates Agree Incorrect,CRITICAL,Base model and all variants unanimously produce the same incorrect factual answer.,"The boundary between the Earth's crust and the underlying mantle is called the Mohorovičić discontinuity, or simply the ",Gold: Mohorovicic discontinuity (Moho),Incorporate external knowledge retrieval or abstention when model confidence is uncalibrated.
+P2-017,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The pyrimidine nitrogenous base that is present in RNA but absent in DNA is uracil. 
+
+To break it down further:
+
+1. **Py","During RNA transcription, the nitrogenous pyrimidine base that replaces thymine in DNA is uracil. 
+
+To break this down f",Dedicated polarity parser for negation-sensitive queries.
+P2-021,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"____
+A. Naloxone
+B. Methadone
+C. Buprenorphine
+D. Fentanyl
+Answer:
+Naloxone
+
+Which of the following is NOT a characteris","A: Naloxone
+B: Naltrexone
+C: Methadone
+D: Buprenorphine
+
+The correct answer is A: Naloxone.
+
+Naloxone is an opioid recep",Dedicated polarity parser for negation-sensitive queries.
+P2-023,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The circular extranuclear genome that is inherited strictly maternally in human genetics is the mitochondrial DNA (mtDNA,The organellar DNA molecule that is passed down exclusively along the maternal lineage in humans is mitochondrial DNA (m,Dedicated polarity parser for negation-sensitive queries.
+P2-030,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The theoretical reversible thermodynamic cycle that establishes the maximum possible thermal efficiency for a heat engin,The idealized four-stage cycle that represents the upper bound on efficiency between two temperature reservoirs is the C,Dedicated polarity parser for negation-sensitive queries.
+P2-031,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The biological pigment synthesized by melanocytes that is primarily responsible for human skin and hair pigmentation is ,"A. Melanin B. Carotene C. Hemoglobin D. Bilirubin
+Answer: A
+
+Which of the following is NOT a characteristic of a good te",Dedicated polarity parser for negation-sensitive queries.
+P2-034,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The ecological term that denotes the maximum sustainable population size an environment can support indefinitely is call,The population dynamics parameter that represents the environmental upper limit for species abundance is the carrying ca,Dedicated polarity parser for negation-sensitive queries.
+P2-038,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"A: T3 and T4
+B: TSH and T4
+C: TSH and T3
+D: T3 and TSH The correct answer is A: T3 and T4.
+
+The thyroid gland secretes t",The endocrine hormones synthesized from tyrosine and iodine in the follicular cells of the thyroid gland are thyroxine (,Dedicated polarity parser for negation-sensitive queries.
+P2-042,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"A: Histamine B: Serotonin C: Dopamine D: Tyramine
+The biogenic amine released by degranulating mast cells and basophils ","A: Histamine B: Leukotrienes C: Prostaglandins D: Kinins
+The correct answer is A: Histamine.
+
+Histamine is a key vasoact",Dedicated polarity parser for negation-sensitive queries.
+P2-052,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The state of matter that has a definite volume but does not possess a fixed shape is a liquid. Here's the reasoning step,"The phase of physical matter that maintains a constant volume while lacking a definite rigid shape is a liquid. 
+
+Here's",Dedicated polarity parser for negation-sensitive queries.
+P2-055,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The only even prime number is 2. This is a fundamental concept in number theory.
+
+To understand why, let's first define ","To determine which integer is both prime and divisible by 2, we need to understand the definitions of prime numbers and ",Dedicated polarity parser for negation-sensitive queries.
+P2-056,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"When an ideal superconductor is cooled below its critical transition temperature, its resistance drops to zero. This mea","When the temperature of a superconductor drops below its critical temperature (Tc), the electrical resistance of the mat",Dedicated polarity parser for negation-sensitive queries.
+P2-057,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"According to Newton's first law of motion, also known as the law of inertia, an object moving at a constant velocity wil","According to Newton's first law of motion, also known as the law of inertia, a moving body will continue to move in a st",Dedicated polarity parser for negation-sensitive queries.
+P2-059,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"Explain your answer.
+The second law of thermodynamics states that the total entropy of an isolated system must always in","The second law of thermodynamics states that the total entropy of an isolated system can never decrease over time, and i",Dedicated polarity parser for negation-sensitive queries.
+P2-064,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The type of chemical bond that forms between two atoms when valence electrons are shared equally is called a covalent bo,The type of chemical bond that forms between two atoms when valence electrons are shared equally is a covalent bond. In ,Dedicated polarity parser for negation-sensitive queries.
+P2-072,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"A. Catalyst B. Reactant C. Product D. Inhibitor
+The term for a substance that speeds up a chemical reaction without bein","The term for a substance that speeds up a chemical reaction without being consumed is ""catalyst"". 
+
+Catalysts play a cru",Dedicated polarity parser for negation-sensitive queries.
+P2-073,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The algorithmic time complexity for accessing an array element by its index is O(1), which means it takes constant time ","In computer science, accessing an array element by its index is typically described as having a time complexity of \(O(1",Dedicated polarity parser for negation-sensitive queries.
+P2-081,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"A. Troposphere B. Stratosphere C. Mesosphere D. Thermosphere
+Answer:
+B
+
+The main function of the ozone layer in the stra","The layer of the Earth's atmosphere that contains the ozone layer, which absorbs solar ultraviolet (UV) radiation, is ca",Dedicated polarity parser for negation-sensitive queries.
+P2-083,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"In thermodynamics, the term that describes a process occurring at constant pressure is ""isobaric."" 
+
+An isobaric process","In thermodynamics, the term that describes a process occurring at constant pressure is ""isobaric."" An isobaric process i",Dedicated polarity parser for negation-sensitive queries.
+P2-085,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The blood vessels that carry oxygenated blood from the lungs back to the left atrium of the heart are the pulmonary vein,The blood vessels that carry oxygenated blood from the lungs back to the left atrium of the heart are the pulmonary vein,Dedicated polarity parser for negation-sensitive queries.
+P2-096,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,The type of chemical bond that holds the two complementary strands of a DNA double helix together is called a hydrogen b,The type of chemical bond that holds the two complementary strands of a DNA double helix together is called a hydrogen b,Dedicated polarity parser for negation-sensitive queries.
+P2-097,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The nearest star system to our Sun, at approximately 4.2 light-years distance, is called Alpha Centauri. It consists of ","The nearest star system to our Sun, at an approximate distance of 4.2 light-years, is called Alpha Centauri. This star s",Dedicated polarity parser for negation-sensitive queries.
+P2-098,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"In economics, the term that describes a market structure dominated by a single seller is ""monopoly."" A monopoly exists w","The term that describes a market structure dominated by a single seller in economics is ""monopoly."" A monopoly occurs wh",Dedicated polarity parser for negation-sensitive queries.
+P2-099,Negation Reversal,HIGH,Model flipped polarity between positive and negative phrasing of the question.,"The medical term for the voice box containing the vocal cords is the larynx. 
+
+The larynx is a crucial part of the respi","The medical term for the voice box containing the vocal cords is the larynx. 
+
+The larynx is a crucial part of the respi",Dedicated polarity parser for negation-sensitive queries.

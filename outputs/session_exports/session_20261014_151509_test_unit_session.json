@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "exported_at": "2026-10-14T15:15:09.566023",
+    "project": "Prompt Sensitivity Mitigation Research Demo",
+    "framework_version": "Phase 6 Hybrid Verification"
+  },
+  "session": {
+    "session_id": "test_unit_session",
+    "reference_answer": "42",
+    "baseline": {
+      "results": [
+        {
+          "prompt_text": "What is the answer?",
+          "answer": "42",
+          "latency_ms": 50.0,
+          "is_correct": true
+        }
+      ]
+    },
+    "mitigation": {
+      "results": [
+        {
+          "prompt_text": "What is the answer?",
+          "answer": "42",
+          "latency_ms": 52.0,
+          "verification_overhead_ms": 2.0,
+          "verification_route": "Path A: Deterministic AST Tooling",
+          "verification_state": "SUPPORTED",
+          "is_corrected": false,
+          "is_abstained": false,
+          "semantic_relation": "identical",
+          "is_correct": true
+        }
+      ]
+    },
+    "metrics": {
+      "consistency": {
+        "change_pp": 0.0
+      }
+    }
+  }
+}

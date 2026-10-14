@@ -1,0 +1,58 @@
+"""Script to generate complete scripts/phase5_specs_data.py containing 300 clusters."""
+
+import json
+from pathlib import Path
+
+# Load Science (40 clusters)
+from scripts.generate_all_specs import specs as sci_specs
+
+all_specs = list(sci_specs)
+
+# 2. Math (35 clusters: 8 val, 27 test)
+math_data = [
+    ("p5_math_001", "math", "What is the value of 3 factorial times 4 factorial (3! * 4!)?", "Calculate the product of 3! and 4!.", "What result is obtained by multiplying factorial 3 by factorial 4?", "Value of 3! * 4!?", "144", ["144", "one hundred forty-four"], "Combinatorics", "numerical_exact", "val"),
+    ("p5_math_002", "math", "What is the derivative of natural log of x (ln x) with respect to x for x > 0?", "For positive x, what is the derivative of ln(x)?", "With respect to x, what is d/dx of ln(x)?", "Derivative of ln(x)?", "1/x", ["1/x", "x^(-1)"], "Calculus", "entity_match", "val"),
+    ("p5_math_003", "math", "What is the sum of the first 10 positive integers (1 through 10)?", "Calculate the sum of all integers from 1 up to 10 inclusive.", "What is the arithmetic sum 1 + 2 + ... + 10?", "Sum of integers from 1 to 10?", "55", ["55", "fifty-five"], "Arithmetic", "numerical_exact", "val"),
+    ("p5_math_004", "math", "In Euclidean geometry, what is the area of a circle with radius 5 in terms of pi?", "What is the area of a circle having a radius of 5 units expressed in terms of pi?", "Express the area of a radius-5 circle using pi.", "Area of radius 5 circle in terms of pi?", "25 pi", ["25 pi", "25pi", "25*pi"], "Euclidean Geometry", "entity_match", "val"),
+    ("p5_math_005", "math", "What is the greatest common divisor of 36 and 54?", "Find the GCD of the numbers 36 and 54.", "What integer is the greatest common factor sharing divisors between 36 and 54?", "GCD of 36 and 54?", "18", ["18", "eighteen"], "Number Theory", "numerical_exact", "val"),
+    ("p5_math_006", "math", "What is the value of sin(pi / 6) in radians?", "In radian trigonometry, what is the sine of pi/6?", "Evaluate sin(pi/6).", "Value of sin(pi/6)?", "0.5", ["0.5", "1/2", "half"], "Trigonometry", "numerical_exact", "val"),
+    ("p5_math_007", "math", "What are the two real roots of the quadratic equation x^2 - 9 = 0?", "Solve for the real roots of x^2 - 9 = 0.", "Which two real values of x satisfy x^2 - 9 = 0?", "Roots of x^2 - 9 = 0?", "+3 and -3", ["3 and -3", "+3 and -3", "-3, 3", "3, -3"], "Algebra", "slot_match", "val"),
+    ("p5_math_008", "math", "What is the volume of a sphere with radius 3 in terms of pi?", "Calculate the volume of a sphere of radius 3 expressed using pi.", "In terms of pi, what is the volume of a radius-3 sphere?", "Volume of sphere radius 3 in terms of pi?", "36 pi", ["36 pi", "36pi"], "Solid Geometry", "entity_match", "val"),
+    ("p5_math_009", "math", "What is the limit of (sin x) / x as x approaches 0?", "As x approaches zero, what is the limit of sin(x)/x?", "Evaluate the limit as x -> 0 of sin(x)/x.", "Limit of sin(x)/x as x->0?", "1", ["1", "1.0", "one"], "Calculus", "numerical_exact", "test"),
+    ("p5_math_010", "math", "How many diagonals does a regular convex hexagon possess?", "In a standard convex hexagon, how many interior diagonals can be drawn?", "What is the total number of diagonals in a 6-sided convex polygon?", "Number of diagonals in hexagon?", "9", ["9", "nine"], "Discrete Mathematics", "numerical_exact", "test"),
+    ("p5_math_011", "math", "What is the determinant of a 2x2 matrix with rows [2, 3] and [1, 4]?", "Calculate the determinant of matrix [[2, 3], [1, 4]].", "For the 2x2 matrix with row 1 as (2, 3) and row 2 as (1, 4), what is its determinant?", "Determinant of [[2,3],[1,4]]?", "5", ["5", "five"], "Linear Algebra", "numerical_exact", "test"),
+    ("p5_math_012", "math", "What is the value of 5 to the power of 3 (5^3)?", "Calculate 5 cubed.", "What integer equals 5 raised to the third power?", "Value of 5^3?", "125", ["125", "one hundred twenty-five"], "Arithmetic", "numerical_exact", "test"),
+    ("p5_math_013", "math", "What is the derivative of e^(2x) with respect to x?", "Compute d/dx of the exponential function e^(2x).", "With respect to x, what is the derivative of e^(2x)?", "Derivative of e^(2x)?", "2 e^(2x)", ["2 e^(2x)", "2e^(2x)", "2*e^(2x)"], "Calculus", "entity_match", "test"),
+    ("p5_math_014", "math", "What is the sum of interior angles in a convex pentagon in degrees?", "How many degrees do the interior angles of a convex pentagon sum to?", "In a standard 5-sided polygon, what is the total interior angle sum in degrees?", "Interior angle sum of pentagon in degrees?", "540 degrees", ["540", "540 degrees", "540 deg"], "Geometry", "numerical_exact", "test"),
+    ("p5_math_015", "math", "What is the binary representation of the decimal integer 13?", "Convert the decimal number 13 into base-2 binary notation.", "In binary, what string of bits represents decimal 13?", "Binary of decimal 13?", "1101", ["1101", "1101_2", "0b1101"], "Computer Science Math", "entity_match", "test"),
+    ("p5_math_016", "math", "What is the variance of a fair six-sided die roll to two decimal places?", "To 2 decimal places, what is the variance of rolling a single fair six-sided die?", "Compute the population variance of the discrete uniform distribution on {1,2,3,4,5,6}.", "Variance of fair 6-sided die?", "2.92", ["2.92", "35/12"], "Probability and Statistics", "numerical_exact", "test"),
+    ("p5_math_017", "math", "What is the value of log base 2 of 64?", "Evaluate logarithm base 2 of 64.", "To what power must 2 be raised to produce 64?", "log2(64)?", "6", ["6", "six"], "Algebra", "numerical_exact", "test"),
+    ("p5_math_018", "math", "What is the slope of the line perpendicular to y = (1/3)x + 2?", "What is the gradient of any line perpendicular to y = 1/3 x + 2?", "Find the slope of a line orthogonal to y = (1/3)x + 2.", "Slope of line perpendicular to y = (1/3)x + 2?", "-3", ["-3", "negative 3"], "Coordinate Geometry", "numerical_exact", "test"),
+    ("p5_math_019", "math", "How many permutations are possible when arranging 4 distinct books on a shelf?", "In how many distinct orders can 4 unique books be arranged linearly on a shelf?", "What is 4! representing book arrangements on a shelf?", "Arrangements of 4 books?", "24", ["24", "twenty-four"], "Combinatorics", "numerical_exact", "test"),
+    ("p5_math_020", "math", "What is the length of the diagonal of a square with side length 5?", "For a square having sides of length 5, what is the diagonal length?", "Calculate the diagonal of a 5 by 5 square.", "Diagonal of square with side 5?", "5 sqrt(2)", ["5 sqrt(2)", "5*sqrt(2)", "7.07"], "Geometry", "entity_match", "test"),
+    ("p5_math_021", "math", "What is the 10th term in the arithmetic sequence 2, 5, 8, 11...?", "Find the 10th entry in the arithmetic progression starting at 2 with common difference 3.", "In the sequence 2, 5, 8, 11..., what is term number 10?", "10th term of sequence 2, 5, 8, 11...?", "29", ["29", "twenty-nine"], "Sequences and Series", "numerical_exact", "test"),
+    ("p5_math_022", "math", "What is the solution for x in the equation 2^(x+1) = 32?", "Solve 2^(x+1) = 32 for real x.", "What value of x satisfies the exponential equation 2^(x+1) = 32?", "Solve 2^(x+1) = 32?", "4", ["4", "four", "x = 4"], "Algebra", "numerical_exact", "test"),
+    ("p5_math_023", "math", "What is the dot product of vectors [1, 3] and [4, -2]?", "Compute the inner product between vector (1, 3) and vector (4, -2).", "What is [1, 3] dot [4, -2]?", "Dot product of [1, 3] and [4, -2]?", "-2", ["-2", "negative 2"], "Linear Algebra", "numerical_exact", "test"),
+    ("p5_math_024", "math", "What is the formula for the sum of interior angles of an n-sided polygon?", "Express the sum of interior angles for any n-gon formulaically in degrees.", "How is the total interior angle sum of an n-sided polygon calculated in degrees?", "Formula for interior angles of n-gon?", "(n - 2) * 180 degrees", ["(n-2)*180", "(n - 2) * 180", "180(n-2)"], "Polygon Geometry", "entity_match", "test"),
+    ("p5_math_025", "math", "What is the derivative of tan(x) with respect to x?", "Compute d/dx of tangent of x.", "With respect to x, what is the derivative of tan(x)?", "Derivative of tan(x)?", "sec^2(x)", ["sec^2(x)", "secant squared", "1/cos^2(x)"], "Calculus", "entity_match", "test"),
+    ("p5_math_026", "math", "What is the probability of rolling a sum of 7 with two standard six-sided dice?", "With a pair of fair six-sided dice, what is the probability of rolling a total of 7?", "What fraction represents the chance that two dice sum to 7?", "Probability of rolling 7 with two dice?", "1/6", ["1/6", "6/36", "0.167"], "Probability", "numerical_exact", "test"),
+    ("p5_math_027", "math", "What is the complex conjugate of 4 + 7i?", "For the complex number 4 + 7i, state its complex conjugate.", "What is the conjugate of 4 + 7i?", "Complex conjugate of 4 + 7i?", "4 - 7i", ["4 - 7i", "4-7i"], "Complex Analysis", "entity_match", "test"),
+    ("p5_math_028", "math", "What is the value of 7 choose 2 (combinations C(7,2))?", "Calculate the binomial coefficient 7 choose 2.", "How many ways can 2 items be chosen from 7?", "Value of 7 choose 2?", "21", ["21", "twenty-one"], "Combinatorics", "numerical_exact", "test"),
+    ("p5_math_029", "math", "What is the harmonic mean of 2 and 6?", "Calculate the harmonic mean of the numbers 2 and 6.", "For the pair {2, 6}, what is their harmonic mean?", "Harmonic mean of 2 and 6?", "3", ["3", "3.0", "three"], "Statistics", "numerical_exact", "test"),
+    ("p5_math_030", "math", "What is the second derivative of x^4 with respect to x?", "Compute the second derivative d^2/dx^2 of x^4.", "Differentiating x^4 twice yields what expression?", "Second derivative of x^4?", "12x^2", ["12x^2", "12 x^2", "12*x^2"], "Calculus", "entity_match", "test"),
+    ("p5_math_031", "math", "What is the surface area of a cube with edge length 4?", "Calculate the total surface area of a cube whose edge length is 4 units.", "A regular cube with edge 4 has what total surface area?", "Surface area of cube edge 4?", "96", ["96", "ninety-six"], "Geometry", "numerical_exact", "test"),
+    ("p5_math_032", "math", "What is the solution set for x in |x - 5| = 2?", "Find all real solutions for x satisfying |x - 5| = 2.", "Which two values of x satisfy the absolute value equation |x - 5| = 2?", "Solutions to |x - 5| = 2?", "3 and 7", ["3 and 7", "3, 7", "7 and 3"], "Algebra", "slot_match", "test"),
+    ("p5_math_033", "math", "What is the value of arcsin(1) in radians?", "In radian measure, what is the inverse sine of 1?", "Evaluate arcsin(1).", "arcsin(1) in radians?", "pi / 2", ["pi/2", "pi / 2", "π/2"], "Trigonometry", "entity_match", "test"),
+    ("p5_math_034", "math", "What is the remainder when 100 is divided by 7?", "Compute 100 modulo 7.", "When 100 is divided by 7, what integer remainder is obtained?", "100 mod 7?", "2", ["2", "two"], "Modular Arithmetic", "numerical_exact", "test"),
+    ("p5_math_035", "math", "What is the radius of the circle defined by x^2 + y^2 = 49?", "For the circle x^2 + y^2 = 49, what is its radius?", "What is the radius of circle x^2 + y^2 = 49?", "Radius of x^2 + y^2 = 49?", "7", ["7", "seven"], "Coordinate Geometry", "numerical_exact", "test"),
+]
+all_specs.extend(math_data)
+
+# 3. History (35 clusters: 8 val, 27 test)
+from scripts.build_phase5_benchmark import SPEC_DEFINITIONS
+# The SPEC_DEFINITIONS in build_phase5_benchmark had p5_hist_001 to p5_hist_035
+hist_data = [item for item in SPEC_DEFINITIONS if item[0].startswith("p5_hist_")]
+all_specs.extend(hist_data)
+
+print(f"Science: 40 | Math: {len(math_data)} | History: {len(hist_data)}")
+print(f"Total so far: {len(all_specs)}")

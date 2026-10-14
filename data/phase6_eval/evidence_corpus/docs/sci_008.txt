@@ -1,0 +1,4 @@
+Title: Muon Particle Mass
+Provenance: Particle Data Group Review of Particle Physics
+
+The muon (symbol: mu) is an elementary subatomic particle similar to the electron, with electric charge -1 e, but with a rest mass approximately 207 times greater.

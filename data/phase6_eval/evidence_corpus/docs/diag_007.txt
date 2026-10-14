@@ -1,0 +1,4 @@
+Title: Modular Diagnostic: 6^45 mod 7
+Provenance: Number Theory Deterministic Proof
+
+6 = -1 mod 7. Since 45 is odd, 6^45 = (-1)^45 = -1 = 6 mod 7.

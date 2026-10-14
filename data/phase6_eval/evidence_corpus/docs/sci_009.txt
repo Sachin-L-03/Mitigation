@@ -1,0 +1,4 @@
+Title: Boiling Point of Water
+Provenance: NIST Chemistry WebBook: Water Properties
+
+At standard atmospheric pressure (1 atm = 101.325 kPa), the boiling point of pure water is 100 degrees Celsius (373.15 K).

@@ -1,0 +1,4 @@
+Title: Diamond and Graphite Element
+Provenance: IUPAC Compendium of Chemical Terminology: Allotropes
+
+Diamond and graphite are allotropes of pure elemental carbon (C), with diamond exhibiting tetrahedral sp3 bonding and graphite planar sp2 hexagonal rings.

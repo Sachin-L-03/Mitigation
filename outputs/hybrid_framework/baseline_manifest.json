@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-12T21:56:00+05:30",
+  "project_root": "c:\\Users\\Student5\\Desktop\\Mitigation",
+  "branch": "creme-hybrid-framework",
+  "commit": "7536b4fb1743e1cb8e6a32176e9428eceae39953",
+  "hardware": {
+    "target_gpu": "NVIDIA GeForce RTX 4090",
+    "total_vram_gb": 24.0,
+    "cuda_available": true
+  },
+  "verified_artifacts": {
+    "best_adapter_w1": "outputs/parameter_editing/best_adapter/adapter_model.safetensors",
+    "preservation_adapter_w5": "outputs/optimization/preservation/adapter_w5.0/adapter_model.safetensors",
+    "original_csv": "data/paraphrased_prompts_axis_tagged_qa.csv",
+    "splits": {
+      "train": "data/splits/train.jsonl",
+      "val": "data/splits/val.jsonl",
+      "test": "data/splits/test.jsonl"
+    },
+    "external_eval": {
+      "dataset": "data/external_eval/external_dataset.jsonl",
+      "correctness_subset": "data/external_eval/correctness_subset.jsonl"
+    },
+    "previous_reports": {
+      "optimization_report": "outputs/optimization/optimization_ablation_report.md",
+      "external_validation_report": "outputs/external_validation/external_validation_report.md"
+    }
+  },
+  "initial_test_suite_status": {
+    "total_tests": 50,
+    "passed": 50,
+    "failed": 0
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "exported_at": "2026-10-14T13:32:37.200626",
+    "project": "Prompt Sensitivity Mitigation Research Demo",
+    "framework_version": "Phase 6 Hybrid Verification"
+  },
+  "session": {
+    "session_id": "test_e2e",
+    "prompts": [
+      "What is the remainder when 7^25 is divided by 13?",
+      "Calculate the exact value of 7^25 modulo 13.",
+      "When 7^25 is divided by 13, what remainder is obtained?",
+      "As a number theory problem, find 7^25 mod 13.",
+      "7^25 mod 13?"
+    ],
+    "reference_answer": "7",
+    "baseline": {
+      "session_id": "test_e2e",
+      "method": "baseline",
+      "model_name": "Qwen/Qwen2.5-7B-Instruct",
+      "mock_mode": true,
+      "total_latency_ms": 204.42,
+      "results": [
+        {
+          "prompt_index": 0,
+          "prompt_text": "What is the remainder when 7^25 is divided by 13?",
+          "answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "latency_ms": 45.0,
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 1,
+          "prompt_text": "Calculate the exact value of 7^25 modulo 13.",
+          "answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "latency_ms": 45.0,
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 2,
+          "prompt_text": "When 7^25 is divided by 13, what remainder is obtained?",
+          "answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "latency_ms": 45.0,
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 3,
+          "prompt_text": "As a number theory problem, find 7^25 mod 13.",
+          "answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "latency_ms": 45.0,
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 4,
+          "prompt_text": "7^25 mod 13?",
+          "answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "latency_ms": 45.0,
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        }
+      ],
+      "reference_answer": "7"
+    },
+    "mitigation": {
+      "session_id": "test_e2e",
+      "method": "mitigation",
+      "condition": "E4_combined",
+      "model_name": "Qwen/Qwen2.5-7B-Instruct",
+      "mock_mode": true,
+      "total_latency_ms": 11.57,
+      "results": [
+        {
+          "prompt_index": 0,
+          "prompt_text": "What is the remainder when 7^25 is divided by 13?",
+          "baseline_answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "answer": "7",
+          "latency_ms": 4.42,
+          "verification_overhead_ms": 4.38,
+          "verification_route": "Path A: Deterministic AST Tooling",
+          "verification_state": "CONTRADICTED",
+          "is_corrected": true,
+          "is_abstained": false,
+          "correction_source": "deterministic_modular_arithmetic",
+          "semantic_relation": "contradiction",
+          "supporting_passages": [],
+          "deterministic_result": {
+            "is_eligible": true,
+            "task_type": "modular_arithmetic",
+            "formalized_expression": "pow(7, 25, 13)",
+            "computed_value": "7",
+            "candidate_matches": false,
+            "suggested_correction": "7",
+            "confidence": 1.0,
+            "execution_time_ms": 0.27809999301098287,
+            "reason": "Modular arithmetic verified deterministically: 7^25 mod 13 = 7"
+          },
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 1,
+          "prompt_text": "Calculate the exact value of 7^25 modulo 13.",
+          "baseline_answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "answer": "7",
+          "latency_ms": 1.14,
+          "verification_overhead_ms": 1.12,
+          "verification_route": "Path A: Deterministic AST Tooling",
+          "verification_state": "CONTRADICTED",
+          "is_corrected": true,
+          "is_abstained": false,
+          "correction_source": "deterministic_modular_arithmetic",
+          "semantic_relation": "contradiction",
+          "supporting_passages": [],
+          "deterministic_result": {
+            "is_eligible": true,
+            "task_type": "modular_arithmetic",
+            "formalized_expression": "pow(7, 25, 13)",
+            "computed_value": "7",
+            "candidate_matches": false,
+            "suggested_correction": "7",
+            "confidence": 1.0,
+            "execution_time_ms": 0.004399975296109915,
+            "reason": "Modular arithmetic verified deterministically: 7^25 mod 13 = 7"
+          },
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 2,
+          "prompt_text": "When 7^25 is divided by 13, what remainder is obtained?",
+          "baseline_answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "latency_ms": 3.88,
+          "verification_overhead_ms": 3.86,
+          "verification_route": "Path C: Unverified Consensus Fallback",
+          "verification_state": "INSUFFICIENT_EVIDENCE",
+          "is_corrected": false,
+          "is_abstained": false,
+          "correction_source": null,
+          "semantic_relation": "identical",
+          "supporting_passages": [],
+          "deterministic_result": {
+            "is_eligible": false,
+            "task_type": "unformalized",
+            "formalized_expression": null,
+            "computed_value": null,
+            "candidate_matches": true,
+            "suggested_correction": null,
+            "confidence": 0.0,
+            "execution_time_ms": 0.6519000162370503,
+            "reason": "Query is qualitative, conceptual, or non-deterministic"
+          },
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 3,
+          "prompt_text": "As a number theory problem, find 7^25 mod 13.",
+          "baseline_answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "answer": "7",
+          "latency_ms": 1.0,
+          "verification_overhead_ms": 0.99,
+          "verification_route": "Path A: Deterministic AST Tooling",
+          "verification_state": "CONTRADICTED",
+          "is_corrected": true,
+          "is_abstained": false,
+          "correction_source": "deterministic_modular_arithmetic",
+          "semantic_relation": "contradiction",
+          "supporting_passages": [],
+          "deterministic_result": {
+            "is_eligible": true,
+            "task_type": "modular_arithmetic",
+            "formalized_expression": "pow(7, 25, 13)",
+            "computed_value": "7",
+            "candidate_matches": false,
+            "suggested_correction": "7",
+            "confidence": 1.0,
+            "execution_time_ms": 0.0051000097300857306,
+            "reason": "Modular arithmetic verified deterministically: 7^25 mod 13 = 7"
+          },
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        },
+        {
+          "prompt_index": 4,
+          "prompt_text": "7^25 mod 13?",
+          "baseline_answer": "To find the remainder when 7^25 is divided by 13, we use Fermat's Little Theorem. The remainder is 4.",
+          "answer": "7",
+          "latency_ms": 0.91,
+          "verification_overhead_ms": 0.89,
+          "verification_route": "Path A: Deterministic AST Tooling",
+          "verification_state": "CONTRADICTED",
+          "is_corrected": true,
+          "is_abstained": false,
+          "correction_source": "deterministic_modular_arithmetic",
+          "semantic_relation": "contradiction",
+          "supporting_passages": [],
+          "deterministic_result": {
+            "is_eligible": true,
+            "task_type": "modular_arithmetic",
+            "formalized_expression": "pow(7, 25, 13)",
+            "computed_value": "7",
+            "candidate_matches": false,
+            "suggested_correction": "7",
+            "confidence": 1.0,
+            "execution_time_ms": 0.0036999990697950125,
+            "reason": "Modular arithmetic verified deterministically: 7^25 mod 13 = 7"
+          },
+          "is_correct": true,
+          "status": "success",
+          "error": null
+        }
+      ],
+      "reference_answer": "7"
+    },
+    "metrics": {
+      "n_prompts": 5,
+      "consistency": {
+        "baseline_token_f1_pct": 100.0,
+        "mitigation_token_f1_pct": 60.0,
+        "change_pp": -40.0
+      },
+      "factual_accuracy": {
+        "evaluated": true,
+        "reference_answer": "7",
+        "baseline_correct": 5,
+        "mitigation_correct": 5,
+        "baseline_accuracy_pct": 100.0,
+        "mitigation_accuracy_pct": 100.0,
+        "denominator": 5
+      },
+      "relations": {
+        "same_answer_count": 1,
+        "paraphrase_count": 0,
+        "different_answer_count": 4,
+        "contradiction_count": 4
+      },
+      "latency": {
+        "median_baseline_ms": 45.0,
+        "median_mitigation_ms": 1.14,
+        "mean_verification_overhead_ms": 2.25
+      },
+      "verification_breakdown": {
+        "deterministic_ast": 4,
+        "evidence_retrieval": 0,
+        "consensus_retained": 1,
+        "conservative_abstention": 0,
+        "other": 0
+      }
+    }
+  }
+}

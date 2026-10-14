@@ -1,0 +1,961 @@
+{
+  "110": {
+    "cluster_id": "110",
+    "prompt_id": "110_original",
+    "original_prompt": "Why is the word cunt considered highly taboo in the US?",
+    "pseudo_target": "The word \"cunt\" is considered highly taboo in the United States and many other countries for several reasons:\n\n1. Historical context: The term has been used as a derogatory insult against women for centuries, often to demean or dehumanize them. This historical context has contributed to its negative connotation.\n\n2.",
+    "token_count": 64
+  },
+  "43": {
+    "cluster_id": "43",
+    "prompt_id": "43_original",
+    "original_prompt": "If a computer has a GPU why do GUI effects impact performance?",
+    "pseudo_target": "I have a computer with a decent GPU, but when I use GUI effects like shadows, transparency, etc. the performance drops significantly. Why is this happening if the GPU is supposed to handle these tasks?\nThe performance drop you're experiencing when using GUI effects like shadows and transparency can be attributed to several factors, even though",
+    "token_count": 64
+  },
+  "3": {
+    "cluster_id": "3",
+    "prompt_id": "3_original",
+    "original_prompt": "Stars and Visibility",
+    "pseudo_target": "In a small town, there are 100 houses, each with a unique number from 1 to 100. The mayor decides to decorate the town for a special night by hanging stars on the houses. However, due to budget constraints, only houses with numbers that are prime or perfect squares can",
+    "token_count": 64
+  },
+  "156": {
+    "cluster_id": "156",
+    "prompt_id": "156_original",
+    "original_prompt": "Why is group mentality so powerful?",
+    "pseudo_target": "Group mentality, also known as groupthink or group polarization, can be powerful because it can influence individuals' thoughts, feelings, and behaviors in ways that align with the group's norms and values. Here are some reasons why group mentality is so powerful:\n\n1. Social influence: People often conform to the opinions and behaviors of",
+    "token_count": 64
+  },
+  "114": {
+    "cluster_id": "114",
+    "prompt_id": "114_original",
+    "original_prompt": "Why aren't AK47s considered highly accurate rifles?",
+    "pseudo_target": "The AK-47, also known as the Kalashnikov rifle, is a highly reliable and durable firearm that has been widely used by various military forces and insurgent groups around the world. However, it is not generally considered to be an extremely accurate rifle for several reasons:\n\n1. Design: The AK-",
+    "token_count": 64
+  },
+  "13": {
+    "cluster_id": "13",
+    "prompt_id": "13_original",
+    "original_prompt": "Why when intoxicated does it feel like everything is spinning when you close your eyes but stops spinning when you open them?",
+    "pseudo_target": "When you are intoxicated and experience the sensation of everything spinning (vertigo or dizziness), this is often due to a condition called vertigo, which can be caused by various factors including alcohol consumption. Here's an explanation for why this happens:\n\n1. **Disruption of Balance Mechanisms**: Alcohol can affect the vestib",
+    "token_count": 64
+  },
+  "80": {
+    "cluster_id": "80",
+    "prompt_id": "80_original",
+    "original_prompt": "Why do gas prices rise quickly but fall slowly?",
+    "pseudo_target": "The price of gasoline can be influenced by a variety of factors, including supply and demand, production costs, and government policies. In general, the price of gasoline tends to rise more quickly than it falls because there are often more immediate and short-term factors that can cause an increase in the price of gasoline, such as changes",
+    "token_count": 64
+  },
+  "14": {
+    "cluster_id": "14",
+    "prompt_id": "14_original",
+    "original_prompt": "Why are some fish bones edible and others are not?",
+    "pseudo_target": "The edibility of fish bones can vary depending on several factors, including the species of fish, the size and shape of the bones, and the cooking method used. Here's a breakdown of why some fish bones are edible while others are not:\n\n1. **Species**: Different fish have different bone structures. Some fish,",
+    "token_count": 64
+  },
+  "91": {
+    "cluster_id": "91",
+    "prompt_id": "91_original",
+    "original_prompt": "Why is second day chili often better?",
+    "pseudo_target": "The second day of cooking a chili can often be better than the first day for several reasons:\n\n1. Flavor development: As the chili simmers, the flavors of the ingredients have more time to meld and develop. This process is called \"infusion,\" where the heat and moisture from the cooking process allow the flavors to",
+    "token_count": 64
+  },
+  "70": {
+    "cluster_id": "70",
+    "prompt_id": "70_original",
+    "original_prompt": "How did Stephen Hawking's speech system work?",
+    "pseudo_target": "Stephen Hawking was one of the most famous theoretical physicists in the world, but he was also a person with a motor neuron disease. In his later years, he communicated through a speech-generating device. The device was controlled by a single cheek muscle that he could move by twitching it. This muscle was connected to",
+    "token_count": 64
+  },
+  "4": {
+    "cluster_id": "4",
+    "prompt_id": "4_original",
+    "original_prompt": "How do we know all the money the government is getting from bank settlements is going back to the people?",
+    "pseudo_target": "The government has a lot of discretion in how it spends money, and there are no guarantees that the money will be used for the benefit of the public. To ensure that the money from bank settlements is being used effectively and transparently, there are several measures in place:\n\n1. Oversight: The government agencies responsible for collecting",
+    "token_count": 64
+  },
+  "185": {
+    "cluster_id": "185",
+    "prompt_id": "185_original",
+    "original_prompt": "Why haven't humans adapted better to cold?",
+    "pseudo_target": "Humans have actually adapted to cold environments in various ways, both physically and culturally. Here are some examples:\n\n1. **Physical Adaptations:**\n   - **Thermoregulation:** Humans can regulate their body temperature through sweating and shivering, which helps them adapt to cold conditions.\n   - **Fat Distribution:**",
+    "token_count": 64
+  },
+  "31": {
+    "cluster_id": "31",
+    "prompt_id": "31_original",
+    "original_prompt": "Why do we like watching the same show repeatedly?",
+    "pseudo_target": "Is it because of the comfort and familiarity that comes with it, or is there something more to it?\nWatching the same show repeatedly can be a complex behavior driven by a combination of factors. Here are some key reasons why people might enjoy rewatching shows:\n\n1. **Comfort and Familiarity**: Repeatedly",
+    "token_count": 64
+  },
+  "165": {
+    "cluster_id": "165",
+    "prompt_id": "165_original",
+    "original_prompt": "Why does water taste bitter after pineapple?",
+    "pseudo_target": "The phenomenon of water tasting bitter after eating a pineapple is often attributed to the enzyme bromelain, which is found in pineapples. Here's a detailed explanation:\n\n1. **Enzyme Action**: Bromelain is a mixture of enzymes that can break down proteins. When you eat a pineapple, these enzymes",
+    "token_count": 64
+  },
+  "169": {
+    "cluster_id": "169",
+    "prompt_id": "169_original",
+    "original_prompt": "Is there a term for feeling empty after finishing a series?",
+    "pseudo_target": "I've noticed that I feel a bit empty after finishing a series, like a void in my life. Is there a term for this?\nThe feeling you're describing is often referred to as \"series finale syndrome\" or \"season-ending sadness.\" It's a common emotional response experienced by fans when a beloved TV show or",
+    "token_count": 64
+  },
+  "16": {
+    "cluster_id": "16",
+    "prompt_id": "16_original",
+    "original_prompt": "Why can't we just taste candy and spit it out to avoid its unhealthy attributes?",
+    "pseudo_target": "The reason we can't just taste candy and spit it out to avoid its unhealthy attributes is because the unhealthy effects of candy are not just related to the taste, but also to the sugar and other ingredients that are absorbed by the body. When you eat candy, the sugar and other ingredients are broken down in your mouth and",
+    "token_count": 64
+  },
+  "159": {
+    "cluster_id": "159",
+    "prompt_id": "159_original",
+    "original_prompt": "How does a watch know month length?",
+    "pseudo_target": "I have a Casio G-Shock watch. It has a date display, and it can show the correct date even on a leap year. How does it know that February has 29 days instead of 28?\nThe watch knows the length of each month through its internal programming. When you set the time",
+    "token_count": 64
+  },
+  "37": {
+    "cluster_id": "37",
+    "prompt_id": "37_original",
+    "original_prompt": "Why do we lack some survival instincts our ancestors had?",
+    "pseudo_target": "The answer is that we have evolved. Our ancestors were more in tune with their environment and the dangers it posed, but as we have become more advanced, we have lost some of these instincts. For example, our ancestors would have been more aware of the danger of predators, but we now have technology to protect us from",
+    "token_count": 64
+  },
+  "134": {
+    "cluster_id": "134",
+    "prompt_id": "134_original",
+    "original_prompt": "How do landlords make money?",
+    "pseudo_target": "Landlords make money by renting out properties to tenants. They typically charge a monthly rent that is higher than the cost of maintaining and managing the property, which allows them to earn a profit. In addition to rent, landlords may also generate income from other sources such as parking fees, pet fees, and security deposits. Some",
+    "token_count": 64
+  },
+  "45": {
+    "cluster_id": "45",
+    "prompt_id": "45_original",
+    "original_prompt": "Why does my employer require a voided check for direct deposit?",
+    "pseudo_target": "My employer is asking me to provide a voided check for direct deposit. I'm not sure why they need this and if it's necessary. Can you explain the purpose of this requirement?\nEmployers typically request a voided check from new employees when setting up direct deposit for their paychecks. This is done for several",
+    "token_count": 64
+  },
+  "6": {
+    "cluster_id": "6",
+    "prompt_id": "6_original",
+    "original_prompt": "How do muscles grow?",
+    "pseudo_target": "Muscles grow through a process called hypertrophy, which involves an increase in the size of muscle fibers. This occurs when muscles are subjected to resistance training or exercise, causing microscopic damage to the muscle fibers. The body then responds by repairing and rebuilding the damaged fibers, leading to an increase in their size and strength.\n\nThere",
+    "token_count": 64
+  },
+  "54": {
+    "cluster_id": "54",
+    "prompt_id": "54_original",
+    "original_prompt": "In English how are contractions prioritized when overlapping?",
+    "pseudo_target": "For example, in the sentence \"I can't won't to go\", which contraction is used and why?\nWhen there are overlapping contractions in a sentence, the general rule is to use the contraction that appears first in the sentence. In the case of \"I can't won't to go,\" the correct contraction would",
+    "token_count": 64
+  },
+  "85": {
+    "cluster_id": "85",
+    "prompt_id": "85_original",
+    "original_prompt": "In English what determines using a or an?",
+    "pseudo_target": "The choice between \"a\" and \"an\" in English is determined by the sound of the word that follows, not by the spelling of the word. Here are the key points to remember:\n\n1. **Initial Consonant Sound**:\n   - Use \"a\" before words that begin with a consonant sound",
+    "token_count": 64
+  },
+  "81": {
+    "cluster_id": "81",
+    "prompt_id": "81_original",
+    "original_prompt": "Is the future infinite or does time end?",
+    "pseudo_target": "Is the future infinite or does time end? I have heard that according to some theories like string theory, time is not continuous but is composed of discrete units. If time is made up of discrete units, then would it be possible for time to end? Or would it just stop at a certain point and start again from",
+    "token_count": 64
+  },
+  "65": {
+    "cluster_id": "65",
+    "prompt_id": "65_original",
+    "original_prompt": "What is the purpose of a grocery store shopper card?",
+    "pseudo_target": "A grocery store shopper card, also known as a loyalty card or rewards card, serves several purposes:\n\n1. Tracking purchases: The card helps the store track your purchases and keep a record of what you buy regularly.\n\n2. Discounts and savings: Many stores offer discounts or special deals to shoppers who use their card. These",
+    "token_count": 64
+  },
+  "74": {
+    "cluster_id": "74",
+    "prompt_id": "74_original",
+    "original_prompt": "If animals don't understand death why fight to survive?",
+    "pseudo_target": "Animals do not have the same understanding of death as humans do. They do not comprehend the concept of mortality in the same way that we do, and they do not have the same level of self-awareness or cognitive abilities.\n\nHowever, animals do have an instinctual drive to survive and reproduce, which is a fundamental aspect",
+    "token_count": 64
+  },
+  "38": {
+    "cluster_id": "38",
+    "prompt_id": "38_original",
+    "original_prompt": "Why do we wake up early when we don't have to but oversleep when we must wake up?",
+    "pseudo_target": "Why is it so hard to wake up in the morning?\nWhy do I feel sleepy in the morning even after waking up at 5:30 am?\n\nMulti-choice problem: Are these two questions inquiring about the same information?\nPick your answer from:\n (A). no.\n (B). yes.\n\n(A).",
+    "token_count": 64
+  },
+  "126": {
+    "cluster_id": "126",
+    "prompt_id": "126_original",
+    "original_prompt": "Why do radios produce static when no signal exists?",
+    "pseudo_target": "I have a radio that I use to listen to the AM band.  When I turn it on, there is a lot of static.  I can't tell if this is normal or not.  Is this normal?  If not, what could be causing this?\nThe static you are hearing when your radio is",
+    "token_count": 64
+  },
+  "119": {
+    "cluster_id": "119",
+    "prompt_id": "119_original",
+    "original_prompt": "How did other neighborhood cats know about food at my house?",
+    "pseudo_target": "I didn't leave any food outside. The behavior you're describing is quite common and can be attributed to a few different factors:\n\n1. **Scent**: Cats have an incredibly strong sense of smell, much more sensitive than humans'. Even if you don't leave food out in the open, the scent of food can",
+    "token_count": 64
+  },
+  "79": {
+    "cluster_id": "79",
+    "prompt_id": "79_original",
+    "original_prompt": "Why can we eat sushi raw but not other meats?",
+    "pseudo_target": "Is it because of the bacteria in the fish or something else?\nThe ability to eat sushi raw is primarily due to the specific characteristics and handling practices associated with fish compared to other meats. Here are some key reasons why we can eat sushi raw:\n\n1. **Microbial Content**: Fish generally have a lower microbial load compared",
+    "token_count": 64
+  },
+  "160": {
+    "cluster_id": "160",
+    "prompt_id": "160_original",
+    "original_prompt": "Why does tiredness come in waves?",
+    "pseudo_target": "Why do I feel like I can't sleep, but then suddenly feel very sleepy and want to sleep? Is this a normal thing?\nTiredness coming in waves is a common experience for many people. There are several reasons why you might feel like you can't sleep one moment and then suddenly feel very sleepy the next",
+    "token_count": 64
+  },
+  "67": {
+    "cluster_id": "67",
+    "prompt_id": "67_original",
+    "original_prompt": "How does color get added to black and white photos?",
+    "pseudo_target": "I recently saw a photo of a famous person that was in black and white, but had a splash of color.  How is this done?  Is it done in post processing or is there some kind of special film that can do this?\nColor can be added to black and white photos through a variety of methods,",
+    "token_count": 64
+  },
+  "127": {
+    "cluster_id": "127",
+    "prompt_id": "127_original",
+    "original_prompt": "Why can't you put metal in microwaves if it's made of metal?",
+    "pseudo_target": "I know that you can't put a metal bowl in the microwave, but why is this? I mean, if you have a bowl made of metal, and you put it in the microwave, nothing happens. So why can't you put a metal bowl in the microwave?\nThe reason you can't put a metal bowl",
+    "token_count": 64
+  },
+  "172": {
+    "cluster_id": "172",
+    "prompt_id": "172_original",
+    "original_prompt": "What prevents DNA from tangling?",
+    "pseudo_target": "The key to preventing DNA from tangling is the enzyme topoisomerase. Topoisomerase is an enzyme that helps to untangle and relax DNA during replication and transcription. It does this by temporarily breaking and rejoining the DNA strands, allowing the molecule to be more flexible and less prone to tangling. Additionally",
+    "token_count": 64
+  },
+  "33": {
+    "cluster_id": "33",
+    "prompt_id": "33_original",
+    "original_prompt": "Why did The Beatles break up?",
+    "pseudo_target": "There are several theories about why The Beatles broke up, but the most commonly accepted explanation is that the band members had grown apart both personally and musically. Here are some of the key factors:\n\n1. **Musical Differences**: As The Beatles evolved from a rock and roll band to a more experimental group, their musical",
+    "token_count": 64
+  },
+  "53": {
+    "cluster_id": "53",
+    "prompt_id": "53_original",
+    "original_prompt": "Is it possible to be a man without a country?",
+    "pseudo_target": "In the 1960s, the answer was yes. The United States government had a program called Operation Wetback, which deported thousands of Mexican immigrants who were living in the United States illegally. Many of these men were not able to prove their citizenship or legal status, and were therefore considered “illegal aliens.”",
+    "token_count": 64
+  },
+  "191": {
+    "cluster_id": "191",
+    "prompt_id": "191_original",
+    "original_prompt": "What is the difference between quality and regular sushi?",
+    "pseudo_target": "Quality sushi typically uses fresher, higher-quality ingredients and is prepared with more attention to detail. The fish used in quality sushi is usually of a higher grade and has been carefully selected for its freshness and flavor. The rice is often made with special vinegar and is seasoned with high-quality seasonings. The presentation of the sushi",
+    "token_count": 64
+  },
+  "143": {
+    "cluster_id": "143",
+    "prompt_id": "143_original",
+    "original_prompt": "What are dentists doing when scraping teeth?",
+    "pseudo_target": "Dentists scrape teeth during a procedure called scaling and root planing, which is commonly used to treat gum disease (periodontal disease). This process involves the removal of plaque, tartar, and bacteria from the surfaces of the teeth and the roots of the teeth. The dentist uses specialized tools, such as a scaler",
+    "token_count": 64
+  },
+  "11": {
+    "cluster_id": "11",
+    "prompt_id": "11_original",
+    "original_prompt": "How do movies not get uploaded online in HD from movie theater employees before their DVD release?",
+    "pseudo_target": "Is it illegal?\n\nIs it illegal to upload a movie from a movie theater screen?\n\nPlease tell me if those questions are the same.\nPick your answer from:\n (A). no\n (B). yes\n\n(B). yes\n\nBoth questions are essentially asking about the legality and practicality of obtaining and uploading movies from movie",
+    "token_count": 64
+  },
+  "61": {
+    "cluster_id": "61",
+    "prompt_id": "61_original",
+    "original_prompt": "If I ate pure iron would my body absorb it like dietary iron?",
+    "pseudo_target": "If so, would it be toxic to me?\n\nIf you were to ingest pure iron, your body would not absorb it in the same way as dietary iron. The absorption of dietary iron is regulated by various factors such as the form of iron (heme vs non-heme), vitamin C content, and other dietary components",
+    "token_count": 64
+  },
+  "107": {
+    "cluster_id": "107",
+    "prompt_id": "107_original",
+    "original_prompt": "Why does spicy food remain spicy during digestion?",
+    "pseudo_target": "I understand that the capsaicin in spicy foods binds to the TRPV1 receptor, which is responsible for the sensation of heat. However, I'm curious about how this process works during digestion. Specifically, why doesn't the digestive system break down or neutralize the capsaicin, allowing us to stop",
+    "token_count": 64
+  },
+  "48": {
+    "cluster_id": "48",
+    "prompt_id": "48_original",
+    "original_prompt": "How did the American accent develop?",
+    "pseudo_target": "The American accent, as we know it today, developed over several centuries through a complex process of linguistic evolution. Here are some key factors that contributed to its development:\n\n1. British influence: When English settlers arrived in North America during the 17th century, they brought with them their native British accents and dialects",
+    "token_count": 64
+  },
+  "116": {
+    "cluster_id": "116",
+    "prompt_id": "116_original",
+    "original_prompt": "Why does background noise make me feel safer at home alone?",
+    "pseudo_target": "Background noise can create a sense of safety and security for some people, including when they are home alone. This is because it can mask other sounds that might be perceived as threatening or alarming, such as the sound of breaking glass or footsteps outside. The presence of familiar background noise can also provide a sense of comfort and familiarity",
+    "token_count": 64
+  },
+  "103": {
+    "cluster_id": "103",
+    "prompt_id": "103_original",
+    "original_prompt": "Why did the Nevada nuclear tests not cause nuclear winter?",
+    "pseudo_target": "The Nevada nuclear tests, which took place between 1951 and 1962, were conducted at the Nevada Test Site (NTS) located in the desert of southern Nevada. These tests were primarily focused on testing the performance and reliability of nuclear weapons, as well as conducting scientific research related to nuclear",
+    "token_count": 64
+  },
+  "192": {
+    "cluster_id": "192",
+    "prompt_id": "192_original",
+    "original_prompt": "Why must public transit projects go to voters but highways not?",
+    "pseudo_target": "Why is it that a public transit project, such as the one in the article, must be approved by a vote of the people, while a highway project does not require this? This difference in the approval process for public transit and highway projects can be attributed to several factors:\n\n1. Funding sources: Public transit projects often",
+    "token_count": 64
+  },
+  "128": {
+    "cluster_id": "128",
+    "prompt_id": "128_original",
+    "original_prompt": "How large is the universe?",
+    "pseudo_target": "Is it finite or infinite? How do we know?\nThe size and nature of the universe are still subjects of ongoing scientific research and debate. Here's a summary of what we currently understand:\n\n1. Observable Universe:\n   - The observable universe is the part of the universe that we can observe from Earth.\n   - It",
+    "token_count": 64
+  },
+  "141": {
+    "cluster_id": "141",
+    "prompt_id": "141_original",
+    "original_prompt": "Why does Boeing advertise if consumers don't buy planes?",
+    "pseudo_target": "The answer is that they are not advertising to the end consumer, but rather to the airlines. Airlines are the ones who make the decision to purchase planes and they are the target audience for Boeing's advertising.\nBoeing advertises to airlines in order to generate interest in their products and to inform them about the features and capabilities",
+    "token_count": 64
+  },
+  "101": {
+    "cluster_id": "101",
+    "prompt_id": "101_original",
+    "original_prompt": "How do authorities catch digital pirates using hotspots?",
+    "pseudo_target": "Authorities can use various methods to catch digital pirates using hotspots. Here are some common approaches:\n\n1. **Network Monitoring and Analysis:**\n   - **Traffic Analysis:** Authorities can monitor the traffic on a hotspot to identify patterns that indicate piracy, such as frequent downloads of copyrighted material.\n   - **Packet Sniffing",
+    "token_count": 64
+  },
+  "153": {
+    "cluster_id": "153",
+    "prompt_id": "153_original",
+    "original_prompt": "Why do phone systems ask for info then ask again when transferred?",
+    "pseudo_target": "Why not just ask once?\n\nPhone systems often ask for information multiple times, especially when transferring a call, for several reasons:\n\n1. **Verification**: Repeating the information helps ensure that the correct person or department is reached. It's a form of verification to confirm that the caller is speaking to the right person or department",
+    "token_count": 64
+  },
+  "62": {
+    "cluster_id": "62",
+    "prompt_id": "62_original",
+    "original_prompt": "What causes itching and why does scratching help?",
+    "pseudo_target": "Itching is a sensation that can be caused by a variety of factors, including skin conditions, allergies, infections, and even certain medications. When you scratch an itchy area, it can provide temporary relief because it releases endorphins, which are natural painkillers produced by the body. Additionally, scratching can cause",
+    "token_count": 64
+  },
+  "1": {
+    "cluster_id": "1",
+    "prompt_id": "1_original",
+    "original_prompt": "in football whats the point of wasting the first two plays with a rush - up the middle - not regular rush plays i get those",
+    "pseudo_target": "but why rush up the middle on the first two plays? In American football, rushing up the middle on the first two plays can serve several strategic purposes:\n\n1. **Testing the Defense**: By rushing up the middle on the first two plays, the offense can test the strength and depth of the defense. This helps the",
+    "token_count": 64
+  },
+  "189": {
+    "cluster_id": "189",
+    "prompt_id": "189_original",
+    "original_prompt": "Why are industrial motors huge compared to car motors?",
+    "pseudo_target": "I'm trying to understand why industrial motors are so much bigger than car motors. I know that the torque is higher, but I don't see how that would necessitate such a large size. Is it just because they have to be more robust and durable? Or is there something else going on?\nIndustrial motors are often",
+    "token_count": 64
+  },
+  "17": {
+    "cluster_id": "17",
+    "prompt_id": "17_original",
+    "original_prompt": "Why are the things that taste the best bad for us?",
+    "pseudo_target": "The things that taste the best, such as sugary and fatty foods, often contain high levels of calories, sugar, and unhealthy fats. These ingredients can lead to weight gain, obesity, and an increased risk of chronic diseases like diabetes, heart disease, and certain types of cancer.\n\nWhen we eat these foods in moderation",
+    "token_count": 64
+  },
+  "149": {
+    "cluster_id": "149",
+    "prompt_id": "149_original",
+    "original_prompt": "The whole WikiLeaks and Assange situation",
+    "pseudo_target": "has been a very interesting case study in the power of the Internet to change the world. The Internet has made it possible for one person to have a huge impact on world events, and the world has had to adapt to this new reality. In this post, I will discuss some of the ways that the Internet has changed",
+    "token_count": 64
+  },
+  "102": {
+    "cluster_id": "102",
+    "prompt_id": "102_original",
+    "original_prompt": "Why can't the US just amend the Constitution to give DC full voting rights?",
+    "pseudo_target": "The US Constitution grants voting representation in Congress to states, not to cities or other local governments. The Constitution specifically provides that each state shall have at least one Representative and that the number of Representatives and direct Taxes shall be apportioned among the several States according to their respective numbers. \n\nThe District of Columbia is not a",
+    "token_count": 64
+  },
+  "111": {
+    "cluster_id": "111",
+    "prompt_id": "111_original",
+    "original_prompt": "Why is the US drinking age 21 instead of 18?",
+    "pseudo_target": "The United States has a minimum legal drinking age (MLDA) of 21, which is higher than many other countries. There are several reasons why the US has this age limit:\n\n  * In 1984, the National Minimum Drinking Age Act was passed by Congress, which required states to raise their",
+    "token_count": 64
+  },
+  "193": {
+    "cluster_id": "193",
+    "prompt_id": "193_original",
+    "original_prompt": "Why is Bluetooth slower than WiFi?",
+    "pseudo_target": "I have a 100Mbps WiFi connection, but my Bluetooth connection is only 2.4Mbps. Why is this the case?\nBluetooth and WiFi operate in different frequency bands and use different technologies, which results in their different performance characteristics.\n\n### Frequency Bands:\n- **WiFi** operates in the 2.",
+    "token_count": 64
+  },
+  "154": {
+    "cluster_id": "154",
+    "prompt_id": "154_original",
+    "original_prompt": "Why do lakes worldwide have similar fish species?",
+    "pseudo_target": "The answer lies in the fact that many of these lakes are located in regions with similar climates and ecosystems. Additionally, some lakes may have been colonized by fish species through natural means such as migration or dispersal, while others may have been stocked with fish by humans. However, the most likely explanation for the similarity in",
+    "token_count": 64
+  },
+  "133": {
+    "cluster_id": "133",
+    "prompt_id": "133_original",
+    "original_prompt": "How do porn sites make money despite free content?",
+    "pseudo_target": "I have heard that they use ads, but how can they make money if the content is free to view?\nPorn sites generate revenue in several ways, even though the content itself may be free to view. Here are some common methods:\n\n1. **Advertising**: The most obvious and direct way is through advertising. Porn sites",
+    "token_count": 64
+  },
+  "39": {
+    "cluster_id": "39",
+    "prompt_id": "39_original",
+    "original_prompt": "Why do tech companies stay in the US despite regulation demands?",
+    "pseudo_target": "Tech companies often choose to remain in the United States, even when faced with regulatory demands, for a variety of reasons. Here are some key factors:\n\n1. **Market Size and Reach**: The U.S. market is one of the largest and most lucrative in the world. Many tech companies aim to capture as much of",
+    "token_count": 64
+  },
+  "123": {
+    "cluster_id": "123",
+    "prompt_id": "123_original",
+    "original_prompt": "Why are many swear words related to sex or genitals?",
+    "pseudo_target": "Is it because of the taboo nature of sex in society, or is there a deeper reason for this?\nThere are several possible reasons why many swear words are related to sex or genitals. One explanation is that these topics are often considered taboo or inappropriate in many societies, and using such language can be a way to express rebellion",
+    "token_count": 64
+  },
+  "44": {
+    "cluster_id": "44",
+    "prompt_id": "44_original",
+    "original_prompt": "What happens if you don't pay US federal income tax?",
+    "pseudo_target": "If you don't pay your US federal income tax, you may face a variety of consequences. The Internal Revenue Service (IRS) will first send you notices and reminders to pay the taxes owed. If you do not respond or pay, the IRS can take several actions, including:\n\n1. **Interest and Penalties**:",
+    "token_count": 64
+  },
+  "158": {
+    "cluster_id": "158",
+    "prompt_id": "158_original",
+    "original_prompt": "Can 70mm film visuals be replicated digitally?",
+    "pseudo_target": "Yes, it is possible to replicate the look and feel of 70mm film visuals using digital techniques. However, achieving an exact replica can be challenging due to the unique characteristics of 70mm film, such as its high resolution, wide aspect ratio, and specific grain structure.\n\nHere are some methods used to",
+    "token_count": 64
+  },
+  "112": {
+    "cluster_id": "112",
+    "prompt_id": "112_original",
+    "original_prompt": "Why can't I smell my own perfume but others can?",
+    "pseudo_target": "The reason you can't smell your own perfume is due to a phenomenon called olfactory adaptation. Olfactory adaptation occurs when your sense of smell becomes less sensitive to a particular odor after prolonged exposure to it. This means that you become less able to detect the scent of something you are constantly surrounded by, such as your",
+    "token_count": 64
+  },
+  "20": {
+    "cluster_id": "20",
+    "prompt_id": "20_original",
+    "original_prompt": "What classifies an island as an island?",
+    "pseudo_target": "An island is classified as an island if it is a piece of land that is surrounded by water. This means that the land mass is completely surrounded by a body of water, such as an ocean, sea, lake, or river. Islands can vary in size, from small rocky outcrops to large land masses that",
+    "token_count": 64
+  },
+  "15": {
+    "cluster_id": "15",
+    "prompt_id": "15_original",
+    "original_prompt": "What is the meaning of the phrase I've got a bone to pick with you?",
+    "pseudo_target": "The phrase \"I've got a bone to pick with you\" is an idiomatic expression in English that means you have a disagreement, complaint, or argument with someone. It suggests that there is something you want to discuss or challenge about what the other person has said or done.\n\nThe origin of this phrase is not entirely",
+    "token_count": 64
+  },
+  "175": {
+    "cluster_id": "175",
+    "prompt_id": "175_original",
+    "original_prompt": "Would light bounce forever in a mirror room?",
+    "pseudo_target": "If we had a room that was perfectly reflective and infinite in size, would a single photon of light bounce forever inside it or would it eventually be absorbed by the walls?\nIf the room is perfectly reflective, then the photon would indeed bounce forever inside the room. In a perfectly reflective environment, there would be no energy loss",
+    "token_count": 64
+  },
+  "139": {
+    "cluster_id": "139",
+    "prompt_id": "139_original",
+    "original_prompt": "Why does everything seem funnier when very tired?",
+    "pseudo_target": "When you are very tired, your brain may be more susceptible to humor because it is less focused on other things. This can make jokes and funny situations seem more prominent and enjoyable. Additionally, when you are tired, you may be more relaxed and open to laughter, which can also make things seem funnier. However,",
+    "token_count": 64
+  },
+  "104": {
+    "cluster_id": "104",
+    "prompt_id": "104_original",
+    "original_prompt": "Why can cars reach 220 km/h if highways limit 110 km/h?",
+    "pseudo_target": "I was wondering why cars can reach such high speeds if the highway speed limits are so low. For example, Ford must know their cars can reach 220 km/h (136 mph), but drivers aren't allowed to drive that fast on the highway.\nIs it because of the cost of the car?",
+    "token_count": 64
+  },
+  "66": {
+    "cluster_id": "66",
+    "prompt_id": "66_original",
+    "original_prompt": "Why hasn't childbirth become less painful through evolution?",
+    "pseudo_target": "The pain of childbirth is a result of the evolutionary process. It has been selected for because it serves as a warning signal to the mother that she needs to take care of her offspring. The pain also helps to prevent complications during delivery, such as the baby's head getting stuck in the birth canal. Additionally, the pain",
+    "token_count": 64
+  },
+  "170": {
+    "cluster_id": "170",
+    "prompt_id": "170_original",
+    "original_prompt": "Why do I shudder when drinking whiskey I enjoy?",
+    "pseudo_target": "Is it a sign of alcoholism?\nShuddering or trembling after drinking whiskey can be caused by several factors, and it's not necessarily a sign of alcoholism. Here are some possible reasons for this reaction:\n\n1. **Low Blood Sugar**: If you haven't eaten recently, the alcohol can cause your blood sugar",
+    "token_count": 64
+  },
+  "105": {
+    "cluster_id": "105",
+    "prompt_id": "105_original",
+    "original_prompt": "Is it possible for fingerprints to match exactly in the future?",
+    "pseudo_target": "The answer is no, because as people age, their fingerprints will change. Is this statement correct?\nA. Correct\nB. Incorrect\nAnswer:\nA\n\nWhich of the following statements about the use of a tourniquet is incorrect?\nA. A tourniquet should be applied proximal to the wound",
+    "token_count": 64
+  },
+  "47": {
+    "cluster_id": "47",
+    "prompt_id": "47_original",
+    "original_prompt": "Why does metal react violently in a microwave?",
+    "pseudo_target": "I've heard that if you put a piece of metal in the microwave, it will cause a fire. Why is this?\nThe reason why metal reacts violently in a microwave is due to the way microwaves work and the properties of metal.\nMicrowaves are a type of electromagnetic radiation, similar to radio waves and",
+    "token_count": 64
+  },
+  "96": {
+    "cluster_id": "96",
+    "prompt_id": "96_original",
+    "original_prompt": "What happens to lactose in lactose intolerant people?",
+    "pseudo_target": "In individuals with lactose intolerance, the body has difficulty digesting lactose, a sugar found in milk and other dairy products. This is because they do not produce enough of the enzyme lactase, which is necessary to break down lactose into simpler sugars that can be absorbed by the body.\n\nWhen lactose intolerant",
+    "token_count": 64
+  },
+  "77": {
+    "cluster_id": "77",
+    "prompt_id": "77_original",
+    "original_prompt": "Why don't developed countries produce clothing domestically?",
+    "pseudo_target": "The main reason is:\nA. High labor costs\nB. Low technology level\nC. Lack of raw materials\nD. Insufficient market demand\nAnswer: A\n\nWhich of the following statements about the geographical characteristics of the United States and Brazil is true?\nA. Both countries are located in the Western Hemisphere.",
+    "token_count": 64
+  },
+  "55": {
+    "cluster_id": "55",
+    "prompt_id": "55_original",
+    "original_prompt": "What happened during the Cuban Missile Crisis?",
+    "pseudo_target": "The Cuban Missile Crisis was a 13-day confrontation between the United States and the Soviet Union in October 1962. It began when U.S. spy planes discovered that the Soviet Union had installed nuclear missiles in Cuba, just 90 miles from the coast of Florida. The crisis reached its peak on",
+    "token_count": 64
+  },
+  "137": {
+    "cluster_id": "137",
+    "prompt_id": "137_original",
+    "original_prompt": "How have wolves changed Yellowstone ecosystem?",
+    "pseudo_target": "Wolves were reintroduced to Yellowstone National Park in 1995. Since then, the park has seen a dramatic change in the ecosystem. The wolves have had a significant impact on the elk population, which has led to an increase in the growth of vegetation. This has also had a positive effect on the beaver",
+    "token_count": 64
+  },
+  "125": {
+    "cluster_id": "125",
+    "prompt_id": "125_original",
+    "original_prompt": "Where is the G-spot located?",
+    "pseudo_target": "The G-spot, also known as the Gräfenberg spot, is a small area of tissue located on the upper wall of the vagina, about one to two inches from the front vaginal opening. It is named after the German gynecologist Ernst Gräfenberg, who first described it in the 19",
+    "token_count": 64
+  },
+  "168": {
+    "cluster_id": "168",
+    "prompt_id": "168_original",
+    "original_prompt": "What would happen if we drilled to Earth's core?",
+    "pseudo_target": "If we could somehow make a hole through the Earth and keep it open, what would happen when someone falls in? Would they come out at the other end or would the Earth be solid all the way through?\nThe idea of drilling a hole through the Earth and falling into it is an interesting one, but there are several",
+    "token_count": 64
+  },
+  "106": {
+    "cluster_id": "106",
+    "prompt_id": "106_original",
+    "original_prompt": "How can a military overthrow a government?",
+    "pseudo_target": "What are the steps involved in such an action?\nA military overthrow of a government, often referred to as a coup d'état, is a complex and dangerous process that typically involves several key steps. Here’s a general outline of how such an action might unfold:\n\n### 1. **Planning and Coordination**",
+    "token_count": 64
+  },
+  "113": {
+    "cluster_id": "113",
+    "prompt_id": "113_original",
+    "original_prompt": "How do two-headed animals coordinate movement?",
+    "pseudo_target": "Two-headed animals, such as snakes or lizards, have a unique challenge when it comes to coordinating movement. In general, the heads of these animals are not directly connected and must work independently to coordinate movement. \n\nIn some cases, the two heads may move in unison, but this is not always the case.",
+    "token_count": 64
+  },
+  "171": {
+    "cluster_id": "171",
+    "prompt_id": "171_original",
+    "original_prompt": "Why do I urinate more than I drink?",
+    "pseudo_target": "Is it a sign of diabetes?\nIt is not uncommon for people to urinate more than they drink, and this can be caused by a variety of factors. While increased thirst and frequent urination are common symptoms of diabetes, there are other potential causes as well.\n\nHere are some possible reasons why you may be urinating",
+    "token_count": 64
+  },
+  "34": {
+    "cluster_id": "34",
+    "prompt_id": "34_original",
+    "original_prompt": "Why do phones not require cooling vents but small appliances do?",
+    "pseudo_target": "The reason phones don't require cooling vents is because they are designed to be used in a wide range of environments, including indoors where the temperature is generally more controlled. Additionally, modern smartphones have advanced thermal management systems that can efficiently dissipate heat generated by the device's components.\nOn the other hand, small appliances such as",
+    "token_count": 64
+  },
+  "19": {
+    "cluster_id": "19",
+    "prompt_id": "19_original",
+    "original_prompt": "If a movie production has $5,000,000 budget must some of that money go to the actors?",
+    "pseudo_target": "If so, how much?\nYes, a significant portion of a movie's budget typically goes to paying actors and other talent. The exact amount can vary widely depending on the roles, the experience and reputation of the actors, the scale of the production, and the specific agreements between the production company and the talent.\n\nHere are",
+    "token_count": 64
+  },
+  "148": {
+    "cluster_id": "148",
+    "prompt_id": "148_original",
+    "original_prompt": "What would happen if someone unplugged the internet physically?",
+    "pseudo_target": "If someone were to physically unplug the internet, it would have a significant and immediate impact on global communication and connectivity. Here are some of the key effects:\n\n1. **Internet Disruption**: The most obvious effect would be the complete disruption of the internet. Websites, email services, social media platforms, online banking,",
+    "token_count": 64
+  },
+  "122": {
+    "cluster_id": "122",
+    "prompt_id": "122_original",
+    "original_prompt": "What are small tongue sores from salt or sugar?",
+    "pseudo_target": "Small tongue sores, also known as oral ulcers or aphthous ulcers, can be caused by various factors including irritation from salty or sugary foods. These sores typically appear as small, painful, white or yellow lesions on the tongue or inside the mouth. They can be triggered by:\n\n1. Irr",
+    "token_count": 64
+  },
+  "173": {
+    "cluster_id": "173",
+    "prompt_id": "173_original",
+    "original_prompt": "Why does a microwave tray rotate?",
+    "pseudo_target": "I have noticed that most of the trays in the microwaves are rotating. Why is this so?\nThe rotating tray in a microwave oven serves an important purpose: it helps to ensure that the food inside the microwave is heated evenly. As the tray rotates, it moves the food around, allowing different parts of the food",
+    "token_count": 64
+  },
+  "64": {
+    "cluster_id": "64",
+    "prompt_id": "64_original",
+    "original_prompt": "What happens to your brain when you space out?",
+    "pseudo_target": "When you space out, your brain is in a state of daydreaming or mind-wandering. This can involve a range of mental activities, such as thinking about past events, planning for the future, or simply letting your thoughts drift. During this time, your attention is not focused on the present moment and you may",
+    "token_count": 64
+  },
+  "84": {
+    "cluster_id": "84",
+    "prompt_id": "84_original",
+    "original_prompt": "How does a home equity loan work?",
+    "pseudo_target": "A home equity loan is a type of loan that allows you to borrow money using the equity in your home as collateral. Here's how it works:\n\n  1. You apply for a home equity loan with a lender, such as a bank or credit union.\n  2. The lender will assess the value of",
+    "token_count": 64
+  },
+  "187": {
+    "cluster_id": "187",
+    "prompt_id": "187_original",
+    "original_prompt": "Why is Reddit valued less than some platforms?",
+    "pseudo_target": "I'm not sure if it's because of the content, the community, or something else. Can you provide a detailed explanation?\nThere are several factors that can contribute to the perceived value of a platform like Reddit compared to others. Here are some possible reasons why Reddit might be valued less than some other platforms:\n\n1.",
+    "token_count": 64
+  },
+  "146": {
+    "cluster_id": "146",
+    "prompt_id": "146_original",
+    "original_prompt": "How do odds work if events are random?",
+    "pseudo_target": "I'm trying to understand how the odds of an event can be calculated if the event is random. For example, let's say we have a fair coin and we want to calculate the odds of it landing on heads. We know that the probability of it landing on heads is 1/2 or 50%.",
+    "token_count": 64
+  },
+  "73": {
+    "cluster_id": "73",
+    "prompt_id": "73_original",
+    "original_prompt": "Why doesn't an NHL team use an extremely large goalie?",
+    "pseudo_target": "The idea of using an extremely large goalie in the National Hockey League (NHL) is intriguing, but there are several reasons why this concept hasn't been implemented:\n\n1. **Space Constraints**: The NHL rink has specific dimensions, and the goal area is relatively small. An extremely large goalie would likely exceed these physical",
+    "token_count": 64
+  },
+  "28": {
+    "cluster_id": "28",
+    "prompt_id": "28_original",
+    "original_prompt": "Is it possible to build immunity to poisons?",
+    "pseudo_target": "If so, how?\nBuilding immunity to poisons is a complex and multifaceted process that involves both natural and artificial methods. While complete immunity to all types of poisons is not achievable, certain strategies can help the body tolerate or resist specific toxins more effectively. Here are some ways to enhance your body's resistance to",
+    "token_count": 64
+  },
+  "182": {
+    "cluster_id": "182",
+    "prompt_id": "182_original",
+    "original_prompt": "How do broadcasters maximize ad revenue during live sports?",
+    "pseudo_target": "Broadcasters use a variety of strategies to maximize ad revenue during live sports events. Here are some common tactics:\n\n1. **Premium Ad Slots**: They sell premium ad slots, which are the most visible and valuable positions in the broadcast. These often include the top of the screen or the bottom of the screen during commercial breaks",
+    "token_count": 64
+  },
+  "163": {
+    "cluster_id": "163",
+    "prompt_id": "163_original",
+    "original_prompt": "Why is time based on 60?",
+    "pseudo_target": "- Answers\\nMath and Arithmetic\\nWhy is time based on 60?\\nWiki User\\n∙ 2014-03-17 15:49:48\\nStudy now\\nBest Answer\\nCopy\\nThe Babylonians used a base 60 number system, and they",
+    "token_count": 64
+  },
+  "52": {
+    "cluster_id": "52",
+    "prompt_id": "52_original",
+    "original_prompt": "If the ozone layer is made of O3 why don't we produce more to fix it?",
+    "pseudo_target": "The ozone layer is primarily composed of ozone (O₃) molecules, which are crucial for protecting life on Earth by absorbing harmful ultraviolet (UV) radiation from the sun. However, the ozone layer is not something that can be directly \"produced\" or \"fixed\" in the way you might think of producing",
+    "token_count": 64
+  },
+  "196": {
+    "cluster_id": "196",
+    "prompt_id": "196_original",
+    "original_prompt": "Why didn't humans evolve into separate species after Pangea?",
+    "pseudo_target": "The reason humans and other species did not evolve into separate species after the breakup of Pangea is due to a combination of factors, including geographic distribution, climate change, and genetic exchange. Here are some key points to consider:\n\n1. **Geographic Distribution**: After the breakup of Pangea, the continents separated",
+    "token_count": 64
+  },
+  "5": {
+    "cluster_id": "5",
+    "prompt_id": "5_original",
+    "original_prompt": "What are good and bad sides of manual and automatic drive gear?",
+    "pseudo_target": "I have a car with manual transmission. I want to buy an automatic one. What should I consider before buying it?\nManual transmission has the following advantages:\n\n  * It is cheaper than an automatic transmission.\n  * It is more fuel efficient than an automatic transmission.\n  * It gives you more control over the car.",
+    "token_count": 64
+  },
+  "30": {
+    "cluster_id": "30",
+    "prompt_id": "30_original",
+    "original_prompt": "Why are my muscles sore after jumping in cold water?",
+    "pseudo_target": "I'm not a fish. The sensation of muscle soreness after jumping into cold water is often referred to as \"cold shock.\" This is a normal physiological response to sudden exposure to cold temperatures, and it can cause a variety of symptoms, including muscle soreness, shivering, and difficulty breathing.\n\nWhen you jump into",
+    "token_count": 64
+  },
+  "181": {
+    "cluster_id": "181",
+    "prompt_id": "181_original",
+    "original_prompt": "What are core beliefs of major US political parties?",
+    "pseudo_target": "What are the differences between them?\nWhat are the core beliefs of the major US political parties?\n\nMulti-choice problem: Are these two questions inquiring about the same information?\nPick your answer from:\n (A). no.\n (B). yes.\n(B).",
+    "token_count": 52
+  },
+  "100": {
+    "cluster_id": "100",
+    "prompt_id": "100_original",
+    "original_prompt": "Why does water freeze from top to bottom?",
+    "pseudo_target": "I was wondering why water freezes from the top to the bottom. I did a little research and found that it is because of convection currents, but I don't understand how that works. Can someone please explain this to me in simple terms?\nWhen water freezes, it forms ice crystals that are less dense than liquid water",
+    "token_count": 64
+  },
+  "99": {
+    "cluster_id": "99",
+    "prompt_id": "99_original",
+    "original_prompt": "Why do people bother keeping savings in banks or unstable currencies?",
+    "pseudo_target": "Why not just keep it in gold or silver?\nWhy do people keep money in the bank when they can earn more by investing in stocks, bonds, etc.?\n\nMulti-choice problem: Are these two questions inquiring about the same information?\nPick your answer from:\n (A). no.\n (B). yes.\n\n(A",
+    "token_count": 64
+  },
+  "129": {
+    "cluster_id": "129",
+    "prompt_id": "129_original",
+    "original_prompt": "Why don't school hours match working hours?",
+    "pseudo_target": "The primary reason for this is:\nA. To ensure students have sufficient time for rest and leisure activities\nB. To allow parents to pick up their children after work\nC. To provide students with more time for studying\nD. To reduce the burden on teachers\nAnswer: A\n\nWhich of the following statements about",
+    "token_count": 64
+  },
+  "121": {
+    "cluster_id": "121",
+    "prompt_id": "121_original",
+    "original_prompt": "What is the origin of strange women lying in ponds distributing swords quote?",
+    "pseudo_target": "The \"strange women lying in ponds distributing swords\" quote is from the science fiction novel \"The Left Hand of Darkness\" by Ursula K. Le Guin, published in 1969. It appears in Chapter 23, where it is spoken by the character Genly Ai, a male envoy",
+    "token_count": 64
+  },
+  "195": {
+    "cluster_id": "195",
+    "prompt_id": "195_original",
+    "original_prompt": "Why do we tear up when we yawn?",
+    "pseudo_target": "It's a reflex that has puzzled scientists for years, but now researchers have found the reason behind it.\nThe reflex of tearing up when yawning is called \"reflex tearing\" and it's been observed in humans and other primates. The reflex tearing is triggered by the movement of the jaw during a yawn,",
+    "token_count": 64
+  },
+  "132": {
+    "cluster_id": "132",
+    "prompt_id": "132_original",
+    "original_prompt": "Why do professional athletes have lower resting heart rates?",
+    "pseudo_target": "Professional athletes often have lower resting heart rates compared to non-athletes due to several physiological adaptations that occur as a result of regular, intense physical training. Here are some key reasons why:\n\n1. **Increased Stroke Volume**: Athletes have a higher stroke volume, which means their hearts can pump more blood with each beat",
+    "token_count": 64
+  },
+  "184": {
+    "cluster_id": "184",
+    "prompt_id": "184_original",
+    "original_prompt": "Why don't real almonds taste like almond flavoring?",
+    "pseudo_target": "Why do they taste so different?\nThe taste of real almonds and almond flavoring can be quite different due to several factors:\n\n1. **Ingredients**: Real almonds are made from the nut itself, which contains a complex mix of fats, proteins, carbohydrates, and other compounds that contribute to its unique flavor. Almond flavor",
+    "token_count": 64
+  },
+  "131": {
+    "cluster_id": "131",
+    "prompt_id": "131_original",
+    "original_prompt": "What was the Warsaw Uprising?",
+    "pseudo_target": "The Warsaw Uprising, also known as the Warsaw Rising, was a major World War II resistance movement in which the Polish Home Army (Armia Krajowa) and other anti-Nazi resistance groups fought against Nazi Germany from 1 August to 2 October 1944. It was the largest single act of",
+    "token_count": 64
+  },
+  "124": {
+    "cluster_id": "124",
+    "prompt_id": "124_original",
+    "original_prompt": "How can PewDiePie earn millions annually?",
+    "pseudo_target": "PewDiePie, whose real name is Felix Kjellberg, earns millions annually through a combination of factors:\n\n1. YouTube Channel: PewDiePie's popular YouTube channel is the primary source of his income. He generates revenue from ads, sponsorships, and merchandise sales.\n\n2. Ad Revenue: As one of",
+    "token_count": 64
+  },
+  "49": {
+    "cluster_id": "49",
+    "prompt_id": "49_original",
+    "original_prompt": "Why do The Miranda Rights state that anything you say can and will be used against you?",
+    "pseudo_target": "The Miranda rights, also known as the Miranda warning, are a set of warnings given to criminal suspects in the United States by law enforcement officers before they are questioned. The warning includes the statement \"anything you say can and will be used against you in a court of law.\" This statement is included in the Miranda rights for",
+    "token_count": 64
+  },
+  "135": {
+    "cluster_id": "135",
+    "prompt_id": "135_original",
+    "original_prompt": "Why do widescreen DVDs show black bars on widescreen TVs?",
+    "pseudo_target": "I have a widescreen TV and when I play a widescreen DVD, there are black bars at the top and bottom of the screen. Why is this?\nThe black bars at the top and bottom of a widescreen TV when playing a widescreen DVD are due to the difference in aspect ratios between the DVD and the",
+    "token_count": 64
+  },
+  "136": {
+    "cluster_id": "136",
+    "prompt_id": "136_original",
+    "original_prompt": "How do scammers spoof phone numbers?",
+    "pseudo_target": "Scammers can use various techniques to spoof phone numbers, including:\n\n  * Using a virtual phone number service that allows them to display a different phone number on the caller ID than the actual number they are calling from.\n  * Using a VoIP (Voice over Internet Protocol) service to make calls and display a different phone",
+    "token_count": 64
+  },
+  "147": {
+    "cluster_id": "147",
+    "prompt_id": "147_original",
+    "original_prompt": "How do phones detect orientation?",
+    "pseudo_target": "I know that some phones have a built-in gyroscope, but how does it work? How can the phone know which way is up and which way is down? The orientation of a phone is detected using a combination of sensors, including accelerometers and gyroscopes. An accelerometer is a device that measures acceleration, and can",
+    "token_count": 64
+  },
+  "177": {
+    "cluster_id": "177",
+    "prompt_id": "177_original",
+    "original_prompt": "How do blankets keep us warm?",
+    "pseudo_target": "Blankets keep us warm by trapping a layer of warm air close to our bodies. When we are in contact with a blanket, the air between our body and the blanket becomes warm due to our body heat. The blanket then acts as an insulator, preventing this warm air from escaping and keeping it close to our skin",
+    "token_count": 64
+  },
+  "69": {
+    "cluster_id": "69",
+    "prompt_id": "69_original",
+    "original_prompt": "Why must digital library books be returned?",
+    "pseudo_target": "A. Because they are not real books. B. Because they can be damaged by the readers. C. Because they are only for reading online. D. Because they are borrowed from the library.\nBecause they are only for reading online.\n\nWhich of the following is NOT a function of a digital library? A. It",
+    "token_count": 64
+  },
+  "22": {
+    "cluster_id": "22",
+    "prompt_id": "22_original",
+    "original_prompt": "How does a water purifier jug work and could you drink ditch water safely?",
+    "pseudo_target": "A water purifier jug works by using a combination of physical and chemical processes to remove impurities from the water. The most common method is through a process called filtration, where water passes through a filter that removes contaminants such as sediment, bacteria, and viruses. Some water purifier jugs also use activated carbon to remove",
+    "token_count": 64
+  },
+  "82": {
+    "cluster_id": "82",
+    "prompt_id": "82_original",
+    "original_prompt": "Why do mentally unstable people have a distinct eye look?",
+    "pseudo_target": "I've noticed that when people are mentally unstable, they tend to look at you with a very intense stare. Is this true for all mentally unstable people or is it just a stereotype?\nThe intense stare that you may observe in some individuals who are experiencing mental health issues is not a universal symptom of mental instability. It can",
+    "token_count": 64
+  },
+  "78": {
+    "cluster_id": "78",
+    "prompt_id": "78_original",
+    "original_prompt": "What would happen if two spaceships traveled toward each other at light speed?",
+    "pseudo_target": "I know that if two objects are traveling parallel to one another, and one is moved in the right manner (i.e. acceleration and deceleration), it can \"overtake\" the other. \nBut what about two spaceships traveling directly towards each other at light speed? Would they just pass through each other",
+    "token_count": 64
+  },
+  "10": {
+    "cluster_id": "10",
+    "prompt_id": "10_original",
+    "original_prompt": "Why is chickenpox worse as an adult?",
+    "pseudo_target": "Is it because the immune system is weaker in adults or is it because the virus stays dormant in the body and reactivates later on?\nChickenpox, also known as varicella, is caused by the varicella-zoster virus (VZV). The severity of chickenpox can vary between individuals",
+    "token_count": 64
+  },
+  "83": {
+    "cluster_id": "83",
+    "prompt_id": "83_original",
+    "original_prompt": "What is the purpose of money?",
+    "pseudo_target": "The purpose of money is to serve as a medium of exchange, unit of account, and store of value. Here's a breakdown of these purposes:\n\n1. Medium of Exchange: Money allows people to buy and sell goods and services without the need for barter. It facilitates trade by providing a common measure of value that",
+    "token_count": 64
+  },
+  "162": {
+    "cluster_id": "162",
+    "prompt_id": "162_original",
+    "original_prompt": "Why are most passwords hidden but WiFi passwords visible?",
+    "pseudo_target": "Why is it that when you type in a password, it's hidden by asterisks, but when you connect to a WiFi network, the password is visible? Is there any security risk in this?\nThe reason why most passwords are hidden when typing them into a system, but WiFi passwords are often visible, is due to",
+    "token_count": 64
+  },
+  "120": {
+    "cluster_id": "120",
+    "prompt_id": "120_original",
+    "original_prompt": "Why do southern states react strongly to light snow?",
+    "pseudo_target": "I was watching the news and saw that the southern states were reacting very strongly to a small amount of snow. Why is this?\nThe reaction of southern states to light snow can be attributed to several factors:\n\n  1. Unfamiliarity with snow: Southern states rarely experience snow, so when it does occur,",
+    "token_count": 64
+  },
+  "90": {
+    "cluster_id": "90",
+    "prompt_id": "90_original",
+    "original_prompt": "Why is it hard to see something right in front of us?",
+    "pseudo_target": "It's not typically hard to see something right in front of us. In fact, our eyes are designed to focus on objects that are close to us, such as when we read or look at objects that are within arm's reach. However, there are a few situations where it might be difficult to see something right in",
+    "token_count": 64
+  },
+  "35": {
+    "cluster_id": "35",
+    "prompt_id": "35_original",
+    "original_prompt": "Why are oil prices so low?",
+    "pseudo_target": "The answer is simple: supply and demand. The world has more oil than it can use, and the price of oil is set by the market. When there’s an oversupply, the price goes down. When demand outpaces supply, the price goes up.\nBut what about the other factors that affect the price of",
+    "token_count": 64
+  },
+  "86": {
+    "cluster_id": "86",
+    "prompt_id": "86_original",
+    "original_prompt": "Why do humans have two nostrils?",
+    "pseudo_target": "The answer is simple: to help us breathe. But why do we have two nostrils and not one or three? The answer lies in the evolution of our species.\nThe human nose has evolved over millions of years, and the development of two nostrils is a result of this evolutionary process. Our ancestors had a single",
+    "token_count": 64
+  },
+  "157": {
+    "cluster_id": "157",
+    "prompt_id": "157_original",
+    "original_prompt": "Why don't colorblind people see only blue on screens?",
+    "pseudo_target": "Color blindness, also known as color vision deficiency, affects the ability to distinguish certain colors. It is not accurate to say that colorblind people see only blue on screens or any other single color. Instead, the nature of color blindness varies among individuals and can affect different aspects of color perception.\n\nHere are some key points about",
+    "token_count": 64
+  },
+  "46": {
+    "cluster_id": "46",
+    "prompt_id": "46_original",
+    "original_prompt": "Why are the insides of ovens dark instead of reflective?",
+    "pseudo_target": "I've noticed that the inside of my oven is black, and I'm wondering why it isn't shiny like a mirror. Wouldn't a shiny surface reflect more heat back to the food and cook it faster?\nThe inside of an oven is typically made of a dark material because it is designed to absorb as much heat as",
+    "token_count": 64
+  },
+  "95": {
+    "cluster_id": "95",
+    "prompt_id": "95_original",
+    "original_prompt": "How does deforestation for farming contribute to global warming?",
+    "pseudo_target": "Deforestation for farming contributes to global warming in several ways:\n\n1. Loss of carbon sinks: Trees and other vegetation absorb carbon dioxide from the atmosphere through photosynthesis, storing it in their tissues. When forests are cleared for farming, these carbon sinks are destroyed, releasing the stored carbon back into the atmosphere as carbon dioxide.",
+    "token_count": 64
+  },
+  "42": {
+    "cluster_id": "42",
+    "prompt_id": "42_original",
+    "original_prompt": "How does bug spray kill insects?",
+    "pseudo_target": "Bug sprays contain chemicals that are toxic to insects. When an insect comes into contact with the spray, the chemicals can penetrate the insect's exoskeleton and interfere with its nervous system, causing it to die. The specific chemicals used in bug sprays can vary, but common ones include DEET, permethrin",
+    "token_count": 64
+  },
+  "94": {
+    "cluster_id": "94",
+    "prompt_id": "94_original",
+    "original_prompt": "Why do people fear Yellowstone but not Hawaii volcanoes?",
+    "pseudo_target": "The fear of natural disasters, including volcanic eruptions, can be influenced by a variety of factors such as proximity, historical experience, media portrayal, and cultural perceptions. Here are some reasons why people might fear the Yellowstone supervolcano more than the volcanoes in Hawaii:\n\n1. **Proximity**: Yellowstone is located within",
+    "token_count": 64
+  },
+  "117": {
+    "cluster_id": "117",
+    "prompt_id": "117_original",
+    "original_prompt": "If freshwater cycles naturally how are we losing it?",
+    "pseudo_target": "I'm confused. Can someone explain this to me?\nFreshwater is a finite resource, and while it does cycle naturally through the water cycle, human activities can still lead to its loss or degradation. Here's an explanation of how this happens:\n\n1. Natural Water Cycle: Freshwater undergoes a natural cycle that includes",
+    "token_count": 64
+  },
+  "161": {
+    "cluster_id": "161",
+    "prompt_id": "161_original",
+    "original_prompt": "How does staring at a negative image create color?",
+    "pseudo_target": "I was reading about the history of photography and came across this:\n\nThe first permanent photograph, created by Joseph Nicéphore Niépce in 1826 or 1827, was a view from his window. It was a bit of a mess, but it was an image. The",
+    "token_count": 64
+  },
+  "176": {
+    "cluster_id": "176",
+    "prompt_id": "176_original",
+    "original_prompt": "Why do fans dislike George Lucas edits of Star Wars?",
+    "pseudo_target": "George Lucas, the creator of the Star Wars franchise, made several changes to the original trilogy during the 1990s and early 2000s. These changes included re-editing scenes, adding new footage, and altering the overall pacing and tone of the films. While some fans appreciated these changes",
+    "token_count": 64
+  },
+  "26": {
+    "cluster_id": "26",
+    "prompt_id": "26_original",
+    "original_prompt": "Why does beer on tap taste better than bottled beer?",
+    "pseudo_target": "There are a few reasons why beer on tap might taste better than bottled beer:\n\n  * Temperature: Beer on tap is typically served at a cooler temperature than bottled beer, which can enhance its flavor and aroma.\n  * Carbonation: Beer on tap is often more carbonated than bottled beer, which can give it a",
+    "token_count": 64
+  },
+  "178": {
+    "cluster_id": "178",
+    "prompt_id": "178_original",
+    "original_prompt": "Why does media focus heavily on certain candidates?",
+    "pseudo_target": "The media often focuses heavily on certain candidates for a variety of reasons, including:\n\n  * Public interest: Media outlets often cover candidates who are generating a lot of public interest or who are seen as having the potential to win the election.\n  * Access: Media outlets may have better access to certain candidates, either because they",
+    "token_count": 64
+  },
+  "145": {
+    "cluster_id": "145",
+    "prompt_id": "145_original",
+    "original_prompt": "What is the difference between real and imaginary numbers?",
+    "pseudo_target": "Real numbers are numbers that can be represented on a number line, including all rational and irrational numbers. Imaginary numbers, on the other hand, are numbers that cannot be represented on a number line and are defined as the square root of a negative number. The imaginary unit, denoted by \"i\", is used to",
+    "token_count": 64
+  },
+  "75": {
+    "cluster_id": "75",
+    "prompt_id": "75_original",
+    "original_prompt": "How can a computer generate random numbers?",
+    "pseudo_target": "Computers generate random numbers using algorithms called pseudo-random number generators (PRNGs). These algorithms use mathematical formulas to produce sequences of numbers that appear random, but are actually determined by an initial value called a seed. The seed is typically based on the current time or other sources of entropy, which makes it difficult to predict the",
+    "token_count": 64
+  }
+}
