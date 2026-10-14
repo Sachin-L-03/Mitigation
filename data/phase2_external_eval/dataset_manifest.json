@@ -1,0 +1,35 @@
+{
+  "benchmark": "Phase 2 Untouched External Generalization Test",
+  "created_at": "2026-10-12T22:25:00Z",
+  "total_clusters": 100,
+  "total_prompt_records": 600,
+  "factual_clusters_count": 50,
+  "axes": [
+    "original",
+    "lexical",
+    "syntactic",
+    "pragmatic",
+    "length",
+    "format"
+  ],
+  "files": {
+    "external_dataset_jsonl": {
+      "filename": "external_dataset.jsonl",
+      "sha256": "50418ed32a0ceb3c306f72b85bb583dfd7f6f3d8d887b0c7a7119b80b5fa252a",
+      "records": 600
+    },
+    "correctness_subset_jsonl": {
+      "filename": "correctness_subset.jsonl",
+      "sha256": "a668aa61f64fcec15f5f8fc02f8e1a56c3b425babd5ee577a50ad88ffb585284",
+      "clusters": 50
+    }
+  },
+  "overlap_audit": {
+    "total_new_records": 600,
+    "total_existing_records_audited": 1776,
+    "exact_matches": 0,
+    "near_matches": 0,
+    "zero_overlap_verified": true
+  },
+  "frozen": true
+}

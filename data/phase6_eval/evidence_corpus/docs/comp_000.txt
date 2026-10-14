@@ -1,0 +1,4 @@
+Title: Hottest Planet in Solar System
+Provenance: NASA Planetary Science Fact Sheet
+
+Although Mercury is the closest planet to the Sun, Venus is the hottest planet in our Solar System, with an average surface temperature of 464 °C (737 K) due to a runaway greenhouse effect.

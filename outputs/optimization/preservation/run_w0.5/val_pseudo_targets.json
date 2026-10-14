@@ -1,0 +1,205 @@
+{
+  "59": {
+    "cluster_id": "59",
+    "prompt_id": "59_original",
+    "original_prompt": "How can musicians instantly play along with others?",
+    "pseudo_target": "The answer is to learn how to play by ear. Playing by ear means that you can listen to a song and then play it on your instrument. This skill is essential for musicians who want to play in a band or jam with other musicians.\nIn this article, we will discuss the benefits of learning to play by ear",
+    "token_count": 64
+  },
+  "150": {
+    "cluster_id": "150",
+    "prompt_id": "150_original",
+    "original_prompt": "How would my wife and kids inherit assets only in my name?",
+    "pseudo_target": "I have a will, but it's not clear if it covers everything. What should I do?\n\nIf you have a will, it is important to ensure that it is properly executed and that it covers all of your assets. If you are concerned that your will may not cover everything, you should consider consulting with an attorney",
+    "token_count": 64
+  },
+  "18": {
+    "cluster_id": "18",
+    "prompt_id": "18_original",
+    "original_prompt": "Why do you see weird colors when you press your eyes?",
+    "pseudo_target": "When you press your eyes, you will see some weird colors. Why does this happen?\nWhen you press your eyes, you may see some weird colors due to a phenomenon called \"retinal afterimage.\" This occurs because the pressure on your eye causes changes in the blood flow and oxygenation of the retinal cells,",
+    "token_count": 64
+  },
+  "50": {
+    "cluster_id": "50",
+    "prompt_id": "50_original",
+    "original_prompt": "Why is it when you rewind VHS tapes they lose quality over time?",
+    "pseudo_target": "Rewinding VHS tapes can cause them to lose quality over time due to a combination of factors, including mechanical stress and the nature of the tape itself. Here are some key reasons why this happens:\n\n1. **Mechanical Stress**: When you rewind a VHS tape, the tape is pulled through the mechanism, which",
+    "token_count": 64
+  },
+  "93": {
+    "cluster_id": "93",
+    "prompt_id": "93_original",
+    "original_prompt": "Why are larger TVs priced disproportionately higher?",
+    "pseudo_target": "The price of a TV is determined by a variety of factors, including the cost of materials, manufacturing processes, and marketing expenses. However, there are several reasons why larger TVs tend to be more expensive than smaller ones:\n\n  1. Cost of materials: Larger TVs require more materials to produce, such as glass,",
+    "token_count": 64
+  },
+  "76": {
+    "cluster_id": "76",
+    "prompt_id": "76_original",
+    "original_prompt": "Why are scars difficult to remove?",
+    "pseudo_target": "The reason is that the skin's regeneration process forms a new type of tissue, which is:\nA. Epidermis\nB. Dermis\nC. Fibrous tissue\nD. Collagen fibers\nAnswer: C\n\nWhich of the following statements about the characteristics of the Internet of Things (IoT) is",
+    "token_count": 64
+  },
+  "142": {
+    "cluster_id": "142",
+    "prompt_id": "142_original",
+    "original_prompt": "How can football players bruise lungs without breaking ribs?",
+    "pseudo_target": "I heard that a player's lung was bruised in the Super Bowl. Is this possible?\nYes, it is possible for a football player to bruise their lungs without breaking their ribs. This can occur due to the forceful impact of collisions on the field, which can cause the lungs to be compressed and bruised",
+    "token_count": 64
+  },
+  "21": {
+    "cluster_id": "21",
+    "prompt_id": "21_original",
+    "original_prompt": "Why does wikipedia ask for donations almost every month?",
+    "pseudo_target": "Is it a scam?\n\nWikipedia is not a scam. It is a non-profit organization that relies on donations to fund its operations and maintain the free flow of information. Wikipedia has a large number of volunteers who contribute to the site, but they need additional funding to cover the costs of maintaining the servers, software development,",
+    "token_count": 64
+  },
+  "97": {
+    "cluster_id": "97",
+    "prompt_id": "97_original",
+    "original_prompt": "If helicopters need tail rotors why don't turboprops spin?",
+    "pseudo_target": "I understand that turboprops are more efficient than helicopters for certain applications, but I'm curious as to why they don't have a spinning tail rotor. Is it just a matter of design or is there something fundamental about the way they work that makes this impossible?\n\nHelicopters and turboprops are two different types",
+    "token_count": 64
+  },
+  "32": {
+    "cluster_id": "32",
+    "prompt_id": "32_original",
+    "original_prompt": "Why do the French have an abstain vote?",
+    "pseudo_target": "In the 2017 French presidential election, there were 4 candidates. The first round of voting was won by Marine Le Pen with 21.3% of the vote, and Emmanuel Macron with 23.7%. The second round of voting was between these two, with Macron winning with",
+    "token_count": 64
+  },
+  "138": {
+    "cluster_id": "138",
+    "prompt_id": "138_original",
+    "original_prompt": "What is the difference between a CEO and a company president?",
+    "pseudo_target": "In many companies, the roles of CEO (Chief Executive Officer) and President are often used interchangeably. However, there can be some differences in the responsibilities and functions of these positions.\nIn general, the CEO is responsible for setting the overall strategy and direction of the company, making major decisions, and overseeing the management team",
+    "token_count": 64
+  },
+  "118": {
+    "cluster_id": "118",
+    "prompt_id": "118_original",
+    "original_prompt": "Why does metal feel colder than fabric at room temperature?",
+    "pseudo_target": "I have noticed that when I wear a metal object, such as a watch or a ring, it feels much colder than a fabric object, even though they are both at room temperature. Why is this the case?\nThe sensation of coldness that you experience when touching a metal object at room temperature is not due to the",
+    "token_count": 64
+  },
+  "12": {
+    "cluster_id": "12",
+    "prompt_id": "12_original",
+    "original_prompt": "Can defense attorneys throw a case if they know their clients are guilty?",
+    "pseudo_target": "In the United States, the ethical obligations of defense attorneys are governed by the American Bar Association's Model Rules of Professional Conduct and state-specific rules. Generally, defense attorneys have an ethical duty to provide competent representation and to zealously advocate for their clients within the bounds of the law.\n\n### Key Points:\n\n1. **Compet",
+    "token_count": 64
+  },
+  "68": {
+    "cluster_id": "68",
+    "prompt_id": "68_original",
+    "original_prompt": "How do service animals assist autistic children?",
+    "pseudo_target": "Service animals, such as dogs, can provide a range of benefits to autistic children. Here are some ways they can assist:\n\n1. Sensory regulation: Autistic children often have sensory sensitivities that can be overwhelming. Service animals can help regulate these sensations by providing physical comfort and reducing anxiety.\n\n2. Social skills:",
+    "token_count": 64
+  },
+  "89": {
+    "cluster_id": "89",
+    "prompt_id": "89_original",
+    "original_prompt": "What would happen if all countries erased mutual debt?",
+    "pseudo_target": "If all countries were to erase mutual debts, it would have significant and far-reaching effects on the global economy. Here are some potential outcomes:\n\n1. **Economic Relief for Debtor Countries**: Countries that are heavily indebted would experience immediate relief from their debt burdens. This could lead to increased government spending, lower interest payments",
+    "token_count": 64
+  },
+  "92": {
+    "cluster_id": "92",
+    "prompt_id": "92_original",
+    "original_prompt": "How does 3D audio make knocking sound outside headphones?",
+    "pseudo_target": "I'm trying to understand how 3D audio works. I've read about binaural and ambisonic techniques, but I can't seem to find a good explanation of how they work for something like knocking on a door.\nI would expect that the knocking sound would be very similar to a normal sound, but",
+    "token_count": 64
+  },
+  "25": {
+    "cluster_id": "25",
+    "prompt_id": "25_original",
+    "original_prompt": "Why is sales tax excluded from US list prices?",
+    "pseudo_target": "Is it because the tax is not a part of the product cost, or is there another reason?\nThe exclusion of sales tax from US list prices is primarily due to the fact that sales tax is a tax on the sale of goods and services, rather than a cost associated with the production or acquisition of those goods and services",
+    "token_count": 64
+  },
+  "98": {
+    "cluster_id": "98",
+    "prompt_id": "98_original",
+    "original_prompt": "What is the difference between a standard and marine air conditioner?",
+    "pseudo_target": "A standard air conditioner (AC) and a marine air conditioner are designed for different environments and purposes, which results in some key differences:\n\n1. **Cooling Capacity**: Marine ACs are typically more powerful than standard ACs because they need to cool larger spaces and maintain a consistent temperature despite varying environmental conditions.\n\n2.",
+    "token_count": 64
+  },
+  "180": {
+    "cluster_id": "180",
+    "prompt_id": "180_original",
+    "original_prompt": "Why did film become synonymous with movies?",
+    "pseudo_target": "The term \"movie\" is derived from the word \"moving picture,\" which refers to a series of images that are projected onto a screen in rapid succession, creating the illusion of movement. The term \"film\" refers to the medium on which these images are recorded and projected.\nThe use of the term \"movie\" to",
+    "token_count": 64
+  },
+  "188": {
+    "cluster_id": "188",
+    "prompt_id": "188_original",
+    "original_prompt": "How can wage gaps exist despite equal pay laws?",
+    "pseudo_target": "Wage gaps can exist despite equal pay laws for a variety of reasons, including:\n\n  1. Occupational segregation: Women are more likely to work in lower-paying occupations than men, and men are more likely to work in higher-paying occupations.\n  2. Industry differences: Certain industries tend to pay more than others,",
+    "token_count": 64
+  },
+  "87": {
+    "cluster_id": "87",
+    "prompt_id": "87_original",
+    "original_prompt": "How do authorities determine who started a forest fire?",
+    "pseudo_target": "Authorities use various methods to determine the cause of a forest fire, including:\n\n1. Investigating the scene: Investigators will examine the area where the fire started and look for clues such as burn patterns, debris, and other evidence that may indicate how the fire started.\n\n2. Collecting evidence: Investigators may collect samples of",
+    "token_count": 64
+  },
+  "179": {
+    "cluster_id": "179",
+    "prompt_id": "179_original",
+    "original_prompt": "What is the difference between Sunni and Shia?",
+    "pseudo_target": "The main difference between Sunni and Shia Islam lies in their beliefs about the leadership of the Muslim community after the death of Prophet Muhammad. Here are some key points to understand the differences:\n\n1. Leadership: Sunnis believe that the caliphs (leaders) should be elected by the community, while Shias believe that the",
+    "token_count": 64
+  },
+  "40": {
+    "cluster_id": "40",
+    "prompt_id": "40_original",
+    "original_prompt": "Why is the senate floor often empty during important votes?",
+    "pseudo_target": "The Senate floor can appear to be empty during important votes for a few reasons:\n\n  * Many Senators may be in committee meetings or other sessions, such as hearings or briefings.\n  * Some Senators may be traveling to or from Washington D.C. for votes or other events.\n  * Senators may be participating in votes",
+    "token_count": 64
+  },
+  "166": {
+    "cluster_id": "166",
+    "prompt_id": "166_original",
+    "original_prompt": "How does a drug move from prescription to over-the-counter?",
+    "pseudo_target": "What are the steps involved in this process?\nThe process of moving a drug from prescription to over-the-counter (OTC) involves several steps and regulatory approvals. Here's an overview of the key steps involved:\n\n1. **Clinical Development**: The drug must first undergo extensive clinical trials to demonstrate its safety and efficacy. These",
+    "token_count": 64
+  },
+  "88": {
+    "cluster_id": "88",
+    "prompt_id": "88_original",
+    "original_prompt": "How do productions handle actor deaths?",
+    "pseudo_target": "I'm curious about the process and how they continue with the show.\nWhen an actor dies during a production, it can be a very difficult and challenging situation for everyone involved. The handling of such an event varies depending on the circumstances and the nature of the production. Here are some common steps that productions might take:\n\n1",
+    "token_count": 64
+  },
+  "183": {
+    "cluster_id": "183",
+    "prompt_id": "183_original",
+    "original_prompt": "Why does body temperature rise during fever?",
+    "pseudo_target": "The reason is:\nA. The set point of the body's temperature regulation center abnormally increases\nB. The body's temperature regulation center is damaged\nC. The body's temperature regulation function fails\nD. The body's temperature regulation center abnormally decreases its set point\nE. The body's temperature regulation mechanism",
+    "token_count": 64
+  },
+  "41": {
+    "cluster_id": "41",
+    "prompt_id": "41_original",
+    "original_prompt": "If you install larger tires will your speedometer be inaccurate?",
+    "pseudo_target": "If so, how can you correct for it?\nYes, if you install larger tires on a vehicle, the speedometer may become inaccurate. This is because the speedometer is calibrated based on the circumference of the original tires. When you replace them with larger tires, the distance traveled per revolution of the tire increases, but",
+    "token_count": 64
+  },
+  "2": {
+    "cluster_id": "2",
+    "prompt_id": "2_original",
+    "original_prompt": "Why are different tiers (regular < mid < premium) of gas' prices almost always 10 cents different?",
+    "pseudo_target": "Is there a reason for this, or is it just a standard that everyone follows?\nThe pricing difference between different tiers of gasoline (regular, mid-grade, and premium) being approximately 10 cents per gallon is not a strict standard but rather a common practice in the industry. There are several reasons why this pattern emerges",
+    "token_count": 64
+  },
+  "72": {
+    "cluster_id": "72",
+    "prompt_id": "72_original",
+    "original_prompt": "Why does spicy food cause sweating?",
+    "pseudo_target": "The answer lies in the way our body responds to the active component of chili peppers, capsaicin. When we eat spicy food, capsaicin binds to pain receptors (TRPV1) on the surface of nerve endings in the mouth and throat. This triggers a sensation of heat and pain, which is",
+    "token_count": 64
+  }
+}

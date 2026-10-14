@@ -1,0 +1,4 @@
+Title: Resting Organ Energy Consumption
+Provenance: Guyton and Hall Textbook of Medical Physiology
+
+At rest, the human liver consumes the largest share of metabolic energy (approx. 27% of basal metabolic rate), closely followed by the brain (19%) and skeletal muscle (18%).

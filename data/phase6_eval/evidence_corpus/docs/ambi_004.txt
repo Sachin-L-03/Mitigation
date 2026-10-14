@@ -1,0 +1,4 @@
+Title: Ambiguous: Alcohol Boiling Point
+Provenance: IUPAC Organic Chemistry Reference
+
+Alcohol is a class of organic compounds; boiling point varies widely (methanol: 64.7 °C, ethanol: 78.4 °C, isopropanol: 82.6 °C).

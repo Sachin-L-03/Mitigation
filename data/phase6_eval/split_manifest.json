@@ -1,0 +1,36 @@
+{
+  "dataset_name": "Phase 6 Multi-Stratum Verification Benchmark",
+  "total_clusters": 600,
+  "total_prompts": 2400,
+  "prompts_per_cluster": 4,
+  "variant_types": [
+    "original",
+    "lexical",
+    "syntactic",
+    "concise"
+  ],
+  "num_strata": 12,
+  "strata_distribution": {
+    "deterministic_arithmetic": 50,
+    "numerical_reasoning": 50,
+    "date_time_math": 50,
+    "general_knowledge_history": 50,
+    "natural_sciences": 50,
+    "entity_relations": 50,
+    "everyday_practical_facts": 50,
+    "multi_constraint": 50,
+    "structured_output": 50,
+    "ambiguous_non_equivalent": 50,
+    "competing_hypotheses": 50,
+    "unanimous_hallucination_diagnostic": 50
+  },
+  "validation_clusters": 150,
+  "validation_prompts": 600,
+  "test_clusters": 450,
+  "test_prompts": 1800,
+  "gold_reference_isolated": true,
+  "domain_dataset_sha256": "87e9f40e48b1613e7eabe60c1e284ce761ec23c976ce3db362409146ec9cd922",
+  "correctness_subset_sha256": "0aaf0eb8dc80ae0605f3e9a32eb6230af0e014157c3ece2ae97c1867a8011f09",
+  "evidence_index_db_sha256": "a93bac6f4f96f71f79a6d549a7f542a797f88d54bf5b346bf095e4764bc40016",
+  "evidence_docs_count": 75
+}

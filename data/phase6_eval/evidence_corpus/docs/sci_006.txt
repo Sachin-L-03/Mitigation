@@ -1,0 +1,4 @@
+Title: Insulin Secretion Organ
+Provenance: Guyton and Hall Textbook of Medical Physiology
+
+Insulin is a peptide hormone produced and secreted by the beta cells of the pancreatic islets (islets of Langerhans) in the pancreas.

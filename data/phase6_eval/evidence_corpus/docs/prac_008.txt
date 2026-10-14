@@ -1,0 +1,4 @@
+Title: Boiling Point of Ethanol
+Provenance: CRC Handbook of Chemistry and Physics
+
+Pure ethanol (ethyl alcohol) has a boiling point of 78.37 degrees Celsius (351.52 K) at standard atmospheric pressure of 1 atm.

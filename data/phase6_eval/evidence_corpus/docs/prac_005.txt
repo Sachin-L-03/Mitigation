@@ -1,0 +1,4 @@
+Title: Legal BAC Limit US
+Provenance: National Highway Traffic Safety Administration (NHTSA)
+
+In all 50 US states (except Utah which is 0.05%), the per se legal Blood Alcohol Concentration (BAC) limit for operating a motor vehicle is 0.08 percent.

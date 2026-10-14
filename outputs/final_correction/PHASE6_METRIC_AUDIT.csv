@@ -1,0 +1,43 @@
+Condition,Metric,Numerator,Denominator,Computed_Value,Reported_Value,Discrepancy,Status,Notes
+E0_base,Factual_Accuracy_Pct,268,450,59.56,59.56,-0.0044,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E0_base,Coverage_Pct,450,450,100.0,100.0,0.0,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E0_base,Selective_Accuracy_Pct,268,450,59.56,59.56,-0.0044,CONFIRMED,Accuracy on answered subset (correct/answered)
+E0_base,Abstention_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of clusters where model abstained
+E0_base,Correction_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of candidate answers altered by verification layer
+E0_base,Verification_Overhead_Latency_ms,0.0,450,0.0,0.0,0.0,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)
+E1_e3_router,Factual_Accuracy_Pct,265,450,58.89,58.89,-0.0011,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E1_e3_router,Coverage_Pct,450,450,100.0,100.0,0.0,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E1_e3_router,Selective_Accuracy_Pct,265,450,58.89,58.89,-0.0011,CONFIRMED,Accuracy on answered subset (correct/answered)
+E1_e3_router,Abstention_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of clusters where model abstained
+E1_e3_router,Correction_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of candidate answers altered by verification layer
+E1_e3_router,Verification_Overhead_Latency_ms,732.43,450,1.63,1.63,-0.0024,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)
+E2_deterministic,Factual_Accuracy_Pct,367,450,81.56,81.56,-0.0044,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E2_deterministic,Coverage_Pct,450,450,100.0,100.0,0.0,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E2_deterministic,Selective_Accuracy_Pct,367,450,81.56,81.56,-0.0044,CONFIRMED,Accuracy on answered subset (correct/answered)
+E2_deterministic,Abstention_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of clusters where model abstained
+E2_deterministic,Correction_Rate_Pct,121,450,26.89,26.89,-0.0011,CONFIRMED,Proportion of candidate answers altered by verification layer
+E2_deterministic,Verification_Overhead_Latency_ms,743.42,450,1.65,1.65,0.002,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)
+E3_retrieval,Factual_Accuracy_Pct,271,450,60.22,60.22,0.0022,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E3_retrieval,Coverage_Pct,450,450,100.0,100.0,0.0,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E3_retrieval,Selective_Accuracy_Pct,271,450,60.22,60.22,0.0022,CONFIRMED,Accuracy on answered subset (correct/answered)
+E3_retrieval,Abstention_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of clusters where model abstained
+E3_retrieval,Correction_Rate_Pct,59,450,13.11,13.11,0.0011,CONFIRMED,Proportion of candidate answers altered by verification layer
+E3_retrieval,Verification_Overhead_Latency_ms,837.55,450,1.86,1.86,0.0012,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)
+E4_combined,Factual_Accuracy_Pct,367,450,81.56,81.56,-0.0044,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E4_combined,Coverage_Pct,450,450,100.0,100.0,0.0,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E4_combined,Selective_Accuracy_Pct,367,450,81.56,81.56,-0.0044,CONFIRMED,Accuracy on answered subset (correct/answered)
+E4_combined,Abstention_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of clusters where model abstained
+E4_combined,Correction_Rate_Pct,143,450,31.78,31.78,-0.0022,CONFIRMED,Proportion of candidate answers altered by verification layer
+E4_combined,Verification_Overhead_Latency_ms,832.58,450,1.85,1.85,0.0002,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)
+E5_conservative,Factual_Accuracy_Pct,225,450,50.0,50.0,0.0,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E5_conservative,Coverage_Pct,262,450,58.22,58.22,0.0022,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E5_conservative,Selective_Accuracy_Pct,225,262,85.88,85.88,-0.0021,CONFIRMED,Accuracy on answered subset (correct/answered)
+E5_conservative,Abstention_Rate_Pct,188,450,41.78,41.78,-0.0022,CONFIRMED,Proportion of clusters where model abstained
+E5_conservative,Correction_Rate_Pct,143,450,31.78,31.78,-0.0022,CONFIRMED,Proportion of candidate answers altered by verification layer
+E5_conservative,Verification_Overhead_Latency_ms,819.88,450,1.82,1.82,0.002,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)
+E6_oracle,Factual_Accuracy_Pct,419,450,93.11,93.11,0.0011,CONFIRMED,Full-sample cluster accuracy (correct/total)
+E6_oracle,Coverage_Pct,450,450,100.0,100.0,0.0,CONFIRMED,Proportion of clusters answered without abstention (answered/total)
+E6_oracle,Selective_Accuracy_Pct,419,450,93.11,93.11,0.0011,CONFIRMED,Accuracy on answered subset (correct/answered)
+E6_oracle,Abstention_Rate_Pct,0,450,0.0,0.0,0.0,CONFIRMED,Proportion of clusters where model abstained
+E6_oracle,Correction_Rate_Pct,435,450,96.67,96.67,-0.0033,CONFIRMED,Proportion of candidate answers altered by verification layer
+E6_oracle,Verification_Overhead_Latency_ms,744.44,450,1.65,1.65,0.0043,CONFIRMED,Algorithmic routing overhead only (excludes neural generation latency ~3148 ms)

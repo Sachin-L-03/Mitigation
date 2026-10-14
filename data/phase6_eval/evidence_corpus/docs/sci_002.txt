@@ -1,0 +1,4 @@
+Title: Hottest Planet in Solar System
+Provenance: NASA Planetary Fact Sheet
+
+Venus has the highest mean surface temperature of any planet in the Solar System at approximately 464 °C (737 K), caused by an extreme runaway carbon dioxide greenhouse effect.

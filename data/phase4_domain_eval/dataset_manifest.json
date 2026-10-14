@@ -1,0 +1,38 @@
+{
+  "dataset_name": "Phase 4 Domain-Shift Benchmark",
+  "total_clusters": 200,
+  "total_prompts": 1200,
+  "domains": {
+    "science": 40,
+    "math": 30,
+    "general": 40,
+    "everyday": 30,
+    "constraints": 30,
+    "structured": 30
+  },
+  "transformation_axes": [
+    "original",
+    "lexical",
+    "syntactic",
+    "pragmatic",
+    "length",
+    "format"
+  ],
+  "files": {
+    "domain_dataset.jsonl": {
+      "path": "data/phase4_domain_eval/domain_dataset.jsonl",
+      "sha256": "6c9ef28e614dd122a4faaf4a6f3d1e0a2b52749717aa4d541c9c0e5e212c1f2c",
+      "bytes": 442566
+    },
+    "correctness_subset.jsonl": {
+      "path": "data/phase4_domain_eval/correctness_subset.jsonl",
+      "sha256": "27e84b559c18fd6c702a4df85f02ce3f1a1e40686979f5d3e63dccea6d56a042",
+      "bytes": 43046
+    },
+    "hard_negatives.jsonl": {
+      "path": "data/phase4_domain_eval/hard_negatives.jsonl",
+      "sha256": "cb2bd8de770147871d5f4c4d347d68b543645bba422572c23cea3e784cb6215d",
+      "bytes": 1651
+    }
+  }
+}

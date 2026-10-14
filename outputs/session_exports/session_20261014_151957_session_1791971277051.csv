@@ -1,0 +1,37 @@
+session_id,prompt_index,prompt_text,reference_answer,baseline_answer,mitigated_answer,baseline_latency_ms,mitigation_latency_ms,verification_overhead_ms,verification_route,verification_state,semantic_relation,baseline_correct,mitigated_correct,is_corrected,is_abstained,correction_source
+session_1791971277051,0,what is the reason youtube became so popular ?,,"There are several reasons why YouTube became so popular:
+
+1. User-generated content: YouTube allows anyone to create and share videos, which led to a vast variety of content that appealed to a wide range of audiences.
+
+2. Easy access: The platform is accessible on multiple devices, including smartphones, tablets, and computers, making","There are several reasons why YouTube became so popular:
+
+1. User-generated content: YouTube allows anyone to create and share videos, which led to a vast variety of content that appealed to a wide range of audiences.
+
+2. Easy access: The platform is accessible on multiple devices, including smartphones, tablets, and computers, making",5403.87,8.89,8.84,Path C: Unverified Consensus Fallback,INSUFFICIENT_EVIDENCE,identical,,,False,False,
+session_1791971277051,1,Identify the reason youtube became so popular.,,"There are several reasons why YouTube became so popular:
+
+1. User-generated content: YouTube allows anyone to create and share videos, which has led to a vast and diverse range of content that caters to a wide variety of interests.
+
+2. Easy access: The platform is accessible on a wide range of devices, including smartphones","There are several reasons why YouTube became so popular:
+
+1. User-generated content: YouTube allows anyone to create and share videos, which led to a vast variety of content that appealed to a wide range of audiences.
+
+2. Easy access: The platform is accessible on multiple devices, including smartphones, tablets, and computers, making",4689.66,3.89,3.87,Path C: Unverified Consensus Fallback,INSUFFICIENT_EVIDENCE,paraphrase,,,False,False,
+session_1791971277051,2,Which entity serves as the reason youtube became so popular?,,"Options: - google - video sharing - advertising revenue - computers - television
+Answer:
+Google
+
+YouTube became so popular largely due to its association with Google. Google, as a search engine and internet giant, provided the platform for YouTube to gain massive exposure and user traffic. When users searched for videos or content on Google,","There are several reasons why YouTube became so popular:
+
+1. User-generated content: YouTube allows anyone to create and share videos, which led to a vast variety of content that appealed to a wide range of audiences.
+
+2. Easy access: The platform is accessible on multiple devices, including smartphones, tablets, and computers, making",4747.32,4.21,4.18,Path C: Unverified Consensus Fallback,INSUFFICIENT_EVIDENCE,different,,,False,False,
+session_1791971277051,3,Please state the exact reason youtube became so popular.,,"There were several factors that contributed to YouTube's popularity, including:
+
+1. User-generated content: YouTube allowed users to upload and share videos, which created a vast library of content that catered to a wide range of interests.
+
+2. Easy access: The platform was easy to use and accessible on various devices, including computers","There are several reasons why YouTube became so popular:
+
+1. User-generated content: YouTube allows anyone to create and share videos, which has led to a vast and diverse range of content that caters to a wide variety of interests.
+
+2. Easy access: The platform is accessible on a wide range of devices, including smartphones",4462.38,3.12,3.08,Path C: Unverified Consensus Fallback,INSUFFICIENT_EVIDENCE,paraphrase,,,False,False,

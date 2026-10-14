@@ -1,0 +1,4 @@
+Title: Speed of Light in Vacuum
+Provenance: NIST SP 330: Fundamental Physical Constants
+
+The speed of light in vacuum, denoted c, is a universal physical constant exactly equal to 299,792,458 meters per second.

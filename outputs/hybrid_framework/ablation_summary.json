@@ -1,0 +1,542 @@
+{
+  "benchmark": "CREME-Hybrid Full Ablation Study",
+  "timestamp": "2026-10-12T16:36:02Z",
+  "total_clusters": 100,
+  "factual_clusters": 40,
+  "conditions": {
+    "E0": {
+      "label": "Original Base Model",
+      "token_f1": {
+        "mean": 37.23,
+        "ci_95": [
+          35.36,
+          39.15
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 34.73,
+        "ci_95": [
+          33.15,
+          36.41
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 54.82,
+        "ci_95": [
+          52.68,
+          56.72
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 100.0,
+        "ci_95": [
+          100.0,
+          100.0
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 89.58,
+        "ci_95": [
+          82.5,
+          95.42
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.02,
+        "ci_95": [
+          7.34,
+          11.04
+        ]
+      },
+      "average_length": 48.76,
+      "diversity_ratio": 0.8017,
+      "latency_sec_per_prompt": 0.2597,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": 0.0,
+        "rel_change_pct": 0.0,
+        "p_value": 1.0,
+        "significant": false
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.0,
+        "rel_change_pct": 0.0,
+        "p_value": 1.0,
+        "significant": false
+      }
+    },
+    "E1": {
+      "label": "Inference Semantic Verification",
+      "token_f1": {
+        "mean": 78.76,
+        "ci_95": [
+          76.26,
+          81.42
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 70.67,
+        "ci_95": [
+          67.6,
+          74.01
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 58.0,
+        "ci_95": [
+          53.0,
+          63.2
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 13.0,
+        "ci_95": [
+          6.98,
+          20.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 86.11,
+        "ci_95": [
+          84.47,
+          87.82
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 100.0,
+        "ci_95": [
+          100.0,
+          100.0
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 90.42,
+        "ci_95": [
+          81.25,
+          97.5
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 8.86,
+        "ci_95": [
+          7.08,
+          10.81
+        ]
+      },
+      "average_length": 49.9,
+      "diversity_ratio": 0.3883,
+      "latency_sec_per_prompt": 0.2642,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": 0.4153,
+        "rel_change_pct": 111.57,
+        "p_value": 0.0,
+        "significant": true,
+        "adj_p_value": 0.0
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.0083,
+        "rel_change_pct": 0.93,
+        "p_value": 0.60887,
+        "significant": false
+      }
+    },
+    "E2": {
+      "label": "Standard LoRA Adaptation",
+      "token_f1": {
+        "mean": 37.44,
+        "ci_95": [
+          35.43,
+          39.47
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 35.11,
+        "ci_95": [
+          33.42,
+          36.8
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 55.55,
+        "ci_95": [
+          53.44,
+          57.44
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 91.97,
+        "ci_95": [
+          89.19,
+          94.59
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 90.0,
+        "ci_95": [
+          83.33,
+          95.83
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.01,
+        "ci_95": [
+          7.37,
+          10.99
+        ]
+      },
+      "average_length": 48.91,
+      "diversity_ratio": 0.7917,
+      "latency_sec_per_prompt": 0.2782,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": 0.0022,
+        "rel_change_pct": 0.59,
+        "p_value": 0.4445,
+        "significant": false,
+        "adj_p_value": 0.889
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.0042,
+        "rel_change_pct": 0.47,
+        "p_value": 0.31731,
+        "significant": false
+      }
+    },
+    "E3": {
+      "label": "Contrastive LoRA Adaptation",
+      "token_f1": {
+        "mean": 77.82,
+        "ci_95": [
+          73.95,
+          81.5
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 68.98,
+        "ci_95": [
+          65.06,
+          73.23
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 71.8,
+        "ci_95": [
+          66.99,
+          76.2
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 19.0,
+        "ci_95": [
+          12.0,
+          27.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 82.15,
+        "ci_95": [
+          78.72,
+          85.22
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 100.0,
+        "ci_95": [
+          100.0,
+          100.0
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 92.08,
+        "ci_95": [
+          84.17,
+          97.92
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.1,
+        "ci_95": [
+          7.38,
+          11.2
+        ]
+      },
+      "average_length": 49.34,
+      "diversity_ratio": 0.3383,
+      "latency_sec_per_prompt": 0.2815,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": 0.406,
+        "rel_change_pct": 109.06,
+        "p_value": 0.0,
+        "significant": true,
+        "adj_p_value": 0.0
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.025,
+        "rel_change_pct": 2.79,
+        "p_value": 0.11385,
+        "significant": false
+      }
+    },
+    "E4": {
+      "label": "CREME-Style Targeted Editing",
+      "token_f1": {
+        "mean": 37.2,
+        "ci_95": [
+          35.2,
+          39.22
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 35.12,
+        "ci_95": [
+          33.47,
+          36.83
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 55.11,
+        "ci_95": [
+          52.9,
+          57.19
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 92.24,
+        "ci_95": [
+          88.94,
+          95.05
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 90.0,
+        "ci_95": [
+          83.33,
+          95.83
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.02,
+        "ci_95": [
+          7.37,
+          11.03
+        ]
+      },
+      "average_length": 48.88,
+      "diversity_ratio": 0.8067,
+      "latency_sec_per_prompt": 0.2898,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": -0.0002,
+        "rel_change_pct": -0.06,
+        "p_value": 0.60998,
+        "significant": false,
+        "adj_p_value": 0.889
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.0042,
+        "rel_change_pct": 0.47,
+        "p_value": 0.31731,
+        "significant": false
+      }
+    },
+    "E5": {
+      "label": "Contrastive + Targeted Editing",
+      "token_f1": {
+        "mean": 69.99,
+        "ci_95": [
+          65.68,
+          74.16
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 60.3,
+        "ci_95": [
+          56.17,
+          64.58
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 60.6,
+        "ci_95": [
+          55.6,
+          66.0
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 14.0,
+        "ci_95": [
+          8.0,
+          21.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 76.68,
+        "ci_95": [
+          73.1,
+          80.14
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 92.24,
+        "ci_95": [
+          88.94,
+          95.05
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 92.5,
+        "ci_95": [
+          85.0,
+          97.92
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.09,
+        "ci_95": [
+          7.28,
+          11.28
+        ]
+      },
+      "average_length": 49.06,
+      "diversity_ratio": 0.425,
+      "latency_sec_per_prompt": 0.292,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": 0.3276,
+        "rel_change_pct": 88.01,
+        "p_value": 0.0,
+        "significant": true,
+        "adj_p_value": 0.0
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.0292,
+        "rel_change_pct": 3.26,
+        "p_value": 0.04123,
+        "significant": true
+      }
+    },
+    "E6": {
+      "label": "Full Hybrid Framework",
+      "token_f1": {
+        "mean": 78.98,
+        "ci_95": [
+          76.35,
+          81.53
+        ]
+      },
+      "pairwise_token_f1": {
+        "mean": 71.11,
+        "ci_95": [
+          67.85,
+          74.17
+        ]
+      },
+      "canonical_exact_match": {
+        "mean": 58.2,
+        "ci_95": [
+          53.0,
+          63.6
+        ]
+      },
+      "all_identical_exact_match": {
+        "mean": 14.0,
+        "ci_95": [
+          7.0,
+          21.0
+        ]
+      },
+      "semantic_similarity": {
+        "mean": 86.36,
+        "ci_95": [
+          84.69,
+          88.01
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 92.24,
+        "ci_95": [
+          88.94,
+          95.05
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 90.42,
+        "ci_95": [
+          81.25,
+          97.5
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 8.84,
+        "ci_95": [
+          7.16,
+          10.69
+        ]
+      },
+      "average_length": 49.77,
+      "diversity_ratio": 0.3967,
+      "latency_sec_per_prompt": 0.2954,
+      "peak_vram_gb": 8.224,
+      "paired_vs_e0_f1": {
+        "abs_change": 0.4176,
+        "rel_change_pct": 112.17,
+        "p_value": 0.0,
+        "significant": true,
+        "adj_p_value": 0.0
+      },
+      "paired_vs_e0_facc": {
+        "abs_change": 0.0083,
+        "rel_change_pct": 0.93,
+        "p_value": 0.60887,
+        "significant": false
+      }
+    }
+  },
+  "router_statistics": {
+    "BASELINE": 100
+  }
+}

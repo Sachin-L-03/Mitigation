@@ -1,0 +1,211 @@
+{
+  "E0": {
+    "name": "Base Model",
+    "token_f1": {
+      "mean": 52.78,
+      "ci": [
+        50.14,
+        55.45
+      ]
+    },
+    "semantic_sim": {
+      "mean": 66.62,
+      "ci": [
+        64.17,
+        69.09
+      ]
+    },
+    "anchor_pres": {
+      "mean": 100.0,
+      "ci": [
+        100.0,
+        100.0
+      ]
+    },
+    "factual_acc": {
+      "mean": 91.67,
+      "ci": [
+        84.33,
+        97.33
+      ]
+    },
+    "latency_ms": 269.11,
+    "paired_vs_e0": {
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_p": 1.0
+    }
+  },
+  "E1_medoid": {
+    "name": "Inference Verification (Medoid)",
+    "token_f1": {
+      "mean": 100.0,
+      "ci": [
+        100.0,
+        100.0
+      ]
+    },
+    "semantic_sim": {
+      "mean": 100.0,
+      "ci": [
+        100.0,
+        100.0
+      ]
+    },
+    "anchor_pres": {
+      "mean": 74.79,
+      "ci": [
+        70.03,
+        79.44
+      ]
+    },
+    "factual_acc": {
+      "mean": 94.0,
+      "ci": [
+        86.0,
+        100.0
+      ]
+    },
+    "latency_ms": 1617.64,
+    "paired_vs_e0": {
+      "mean_diff": 47.22,
+      "median_diff": 45.76,
+      "ci_95": [
+        44.55,
+        49.86
+      ],
+      "wilcoxon_p": 0.0,
+      "holm_adj_p": 0.0
+    }
+  },
+  "E1_sim": {
+    "name": "Inference Verification (Simulated)",
+    "token_f1": {
+      "mean": 76.34,
+      "ci": [
+        73.7,
+        79.11
+      ]
+    },
+    "semantic_sim": {
+      "mean": 84.94,
+      "ci": [
+        83.29,
+        86.75
+      ]
+    },
+    "anchor_pres": {
+      "mean": 100.0,
+      "ci": [
+        100.0,
+        100.0
+      ]
+    },
+    "factual_acc": {
+      "mean": 93.67,
+      "ci": [
+        85.67,
+        99.67
+      ]
+    },
+    "latency_ms": 273.61,
+    "paired_vs_e0": {
+      "mean_diff": 23.56,
+      "median_diff": 16.51,
+      "ci_95": [
+        19.16,
+        27.87
+      ],
+      "wilcoxon_p": 0.0,
+      "holm_adj_p": 0.0
+    }
+  },
+  "E3_adapter": {
+    "name": "Preservation Adapter (w=5.0)",
+    "token_f1": {
+      "mean": 53.26,
+      "ci": [
+        50.72,
+        55.88
+      ]
+    },
+    "semantic_sim": {
+      "mean": 67.07,
+      "ci": [
+        64.79,
+        69.49
+      ]
+    },
+    "anchor_pres": {
+      "mean": 96.93,
+      "ci": [
+        95.06,
+        98.48
+      ]
+    },
+    "factual_acc": {
+      "mean": 91.67,
+      "ci": [
+        84.33,
+        97.01
+      ]
+    },
+    "latency_ms": 287.59,
+    "paired_vs_e0": {
+      "mean_diff": 0.48,
+      "median_diff": 0.15,
+      "ci_95": [
+        -0.23,
+        1.1
+      ],
+      "wilcoxon_p": 0.056728,
+      "holm_adj_p": 0.05673
+    }
+  },
+  "E6_hybrid": {
+    "name": "Full Adaptive Hybrid",
+    "token_f1": {
+      "mean": 71.3,
+      "ci": [
+        67.47,
+        75.06
+      ]
+    },
+    "semantic_sim": {
+      "mean": 80.96,
+      "ci": [
+        78.41,
+        83.5
+      ]
+    },
+    "anchor_pres": {
+      "mean": 86.92,
+      "ci": [
+        81.94,
+        91.49
+      ]
+    },
+    "factual_acc": {
+      "mean": 93.0,
+      "ci": [
+        85.67,
+        98.0
+      ]
+    },
+    "latency_ms": 297.59,
+    "paired_vs_e0": {
+      "mean_diff": 18.51,
+      "median_diff": 0.53,
+      "ci_95": [
+        13.36,
+        24.3
+      ],
+      "wilcoxon_p": 0.0,
+      "holm_adj_p": 0.0
+    }
+  }
+}

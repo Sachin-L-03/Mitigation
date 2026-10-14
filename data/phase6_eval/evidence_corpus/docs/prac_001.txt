@@ -1,0 +1,4 @@
+Title: Water Freezing Point Fahrenheit
+Provenance: NIST Standard Reference Materials
+
+At standard atmospheric pressure, pure water freezes at 32 degrees Fahrenheit (0 degrees Celsius).

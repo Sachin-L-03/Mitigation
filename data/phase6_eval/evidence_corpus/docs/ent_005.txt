@@ -1,0 +1,4 @@
+Title: Inventor World Wide Web
+Provenance: CERN Archives: The Birth of the Web
+
+Sir Tim Berners-Lee, an English computer scientist, invented the World Wide Web in 1989 while working at CERN.

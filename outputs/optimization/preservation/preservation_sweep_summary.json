@@ -1,0 +1,62 @@
+{
+  "split": "val",
+  "weights_tested": [
+    0.5,
+    1.0,
+    2.0,
+    5.0
+  ],
+  "results": {
+    "0.5": {
+      "w_pres": 0.5,
+      "adapter_dir": "outputs\\optimization\\preservation\\adapter_w0.5",
+      "token_f1": 42.56,
+      "semantic_sim": 56.56,
+      "exact_match": 0.69,
+      "anchor_preservation": 44.1,
+      "diversity_ratio": 99.43,
+      "validation_score": 53.58
+    },
+    "1.0": {
+      "w_pres": 1.0,
+      "adapter_dir": "outputs\\optimization\\preservation\\adapter_w1.0",
+      "token_f1": 43.81,
+      "semantic_sim": 57.71,
+      "exact_match": 2.07,
+      "anchor_preservation": 100.0,
+      "diversity_ratio": 97.7,
+      "validation_score": 68.81
+    },
+    "2.0": {
+      "w_pres": 2.0,
+      "adapter_dir": "outputs\\optimization\\preservation\\adapter_w2.0",
+      "token_f1": 41.46,
+      "semantic_sim": 56.49,
+      "exact_match": 0.0,
+      "anchor_preservation": 41.6,
+      "diversity_ratio": 98.85,
+      "validation_score": 51.86
+    },
+    "5.0": {
+      "w_pres": 5.0,
+      "adapter_dir": "outputs\\optimization\\preservation\\adapter_w5.0",
+      "token_f1": 45.04,
+      "semantic_sim": 60.36,
+      "exact_match": 0.0,
+      "anchor_preservation": 42.52,
+      "diversity_ratio": 100.0,
+      "validation_score": 55.67
+    }
+  },
+  "best_w_pres": 1.0,
+  "best_candidate": {
+    "w_pres": 1.0,
+    "adapter_dir": "outputs\\optimization\\preservation\\adapter_w1.0",
+    "token_f1": 43.81,
+    "semantic_sim": 57.71,
+    "exact_match": 2.07,
+    "anchor_preservation": 100.0,
+    "diversity_ratio": 97.7,
+    "validation_score": 68.81
+  }
+}

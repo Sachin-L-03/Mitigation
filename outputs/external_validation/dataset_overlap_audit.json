@@ -1,0 +1,11 @@
+{
+  "existing_prompt_count": 1176,
+  "external_prompt_count": 600,
+  "total_comparisons_checked": 117600,
+  "exact_matches_count": 0,
+  "near_matches_count": 0,
+  "exact_overlap_zero": true,
+  "near_overlap_zero": true,
+  "exact_matches": [],
+  "near_matches": []
+}

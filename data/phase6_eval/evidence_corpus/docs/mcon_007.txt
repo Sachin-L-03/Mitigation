@@ -1,0 +1,4 @@
+Title: US State with Single Border
+Provenance: US Census Bureau Geography
+
+Maine is the only state in the United States that borders exactly one other state: New Hampshire to the west.

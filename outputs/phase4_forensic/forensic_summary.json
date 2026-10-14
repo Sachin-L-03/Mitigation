@@ -1,0 +1,198 @@
+{
+  "audit_metadata": {
+    "repository": "prompt-sensitivity-hybrid",
+    "branch": "creme-hybrid-framework",
+    "commit_hash": "7536b4f",
+    "date": "2026-10-13",
+    "auditor_role": "Skeptical ML Research Auditor, Experimental Statistician & Systems Engineer",
+    "hardware": "NVIDIA GeForce RTX 4090 (24 GB VRAM), Windows 11",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct (4-bit NF4)",
+    "primary_method": "E6_bounded",
+    "test_suite_status": {
+      "baseline_passed": 79,
+      "forensic_added": 8,
+      "total_passed": 87,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "record_reconciliation": {
+    "total_raw_rows": 6000,
+    "conditions_evaluated": 5,
+    "displayed_conditions": 4,
+    "prompts_per_condition": 1200,
+    "semantic_clusters": 200,
+    "paraphrases_per_cluster": 6,
+    "missing_or_failed_records": 0,
+    "csv_jsonl_mismatches": 0,
+    "status": "VERIFIED"
+  },
+  "recomputed_headline_metrics": {
+    "E0": {
+      "token_f1_canonical": 57.43,
+      "token_f1_pairwise": 50.13,
+      "exact_match_canonical": 11.10,
+      "exact_match_pairwise": 5.37,
+      "all_identical_cluster_rate": 0.50,
+      "semantic_similarity": 70.67,
+      "anchor_preservation": 100.00,
+      "concept_retrieval_rate": 81.60,
+      "contextual_factual_accuracy": 77.20,
+      "hard_contradictions": 340,
+      "hard_contradiction_rate": 34.00,
+      "latency_ms": 266.3,
+      "generations_per_query": 1.00
+    },
+    "E3": {
+      "token_f1_canonical": 57.37,
+      "token_f1_pairwise": 50.08,
+      "exact_match_canonical": 10.80,
+      "exact_match_pairwise": 5.23,
+      "all_identical_cluster_rate": 0.50,
+      "semantic_similarity": 70.52,
+      "anchor_preservation": 95.19,
+      "concept_retrieval_rate": 81.40,
+      "contextual_factual_accuracy": 76.80,
+      "hard_contradictions": 338,
+      "hard_contradiction_rate": 33.80,
+      "latency_ms": 281.1,
+      "generations_per_query": 1.00
+    },
+    "E1": {
+      "token_f1_canonical": 100.00,
+      "token_f1_pairwise": 100.00,
+      "exact_match_canonical": 100.00,
+      "exact_match_pairwise": 100.00,
+      "all_identical_cluster_rate": 100.00,
+      "semantic_similarity": 100.00,
+      "anchor_preservation": 81.44,
+      "concept_retrieval_rate": 80.00,
+      "contextual_factual_accuracy": 75.50,
+      "hard_contradictions": 0,
+      "hard_contradiction_rate": 0.00,
+      "latency_ms": 1603.1,
+      "generations_per_query": 6.00
+    },
+    "E6_bounded": {
+      "token_f1_canonical": 90.64,
+      "token_f1_pairwise": 88.56,
+      "exact_match_canonical": 77.30,
+      "exact_match_pairwise": 75.63,
+      "all_identical_cluster_rate": 74.00,
+      "semantic_similarity": 93.81,
+      "anchor_preservation": 83.47,
+      "concept_retrieval_rate": 80.70,
+      "contextual_factual_accuracy": 76.40,
+      "hard_contradictions": 0,
+      "hard_contradiction_rate": 0.00,
+      "latency_ms": 660.1,
+      "generations_per_query": 2.47
+    }
+  },
+  "statistical_evaluation": {
+    "token_f1_e6_vs_e0": {
+      "paired_mean_diff_pp": 33.21,
+      "paired_median_diff_pp": 39.17,
+      "ci_95_bootstrap": [30.09, 36.43],
+      "wilcoxon_w": 0.0,
+      "wilcoxon_p_value": 7.1538e-26,
+      "holm_adjusted_p_value": 2.1461e-25,
+      "cohens_d": 1.4558,
+      "decision": "REJECT_NULL_MASSIVE_IMPROVEMENT"
+    },
+    "token_f1_e3_vs_e0": {
+      "paired_mean_diff_pp": -0.06,
+      "ci_95_bootstrap": [-0.49, 0.36],
+      "wilcoxon_w": 8122.5,
+      "wilcoxon_p_value": 0.5232,
+      "holm_adjusted_p_value": 0.5232,
+      "cohens_d": -0.019,
+      "decision": "FAIL_TO_REJECT_NO_GENERALIZATION"
+    },
+    "factual_non_inferiority": {
+      "endpoint": "Contextual Factual Accuracy",
+      "paired_mean_diff_pp": -0.80,
+      "standard_error_pp": 1.409,
+      "two_sided_95_ci_pp": [-3.58, 1.98],
+      "one_sided_97_5_lower_bound_pp": -3.58,
+      "non_inferiority_margin_pp": -2.00,
+      "test_statistic_t": 0.8514,
+      "one_sided_p_value": 0.1978,
+      "alpha_threshold": 0.025,
+      "decision": "NON_INFERIORITY_NOT_ESTABLISHED",
+      "methodological_defect": "Original report committed two-sided difference test fallacy (p=0.442) to infer non-inferiority"
+    }
+  },
+  "consensus_and_contradiction_audit": {
+    "reported_contradictions": "0/1000",
+    "recomputed_contradictions": "0/1000",
+    "mechanism": "Identical shared string assignment on 147 verified clusters (73.5%) + pre-screened fast path on 53 clusters (26.5%)",
+    "structural_agreement_vs_truth": {
+      "unanimous_hallucinations_clusters": 35,
+      "unanimous_hallucinations_pct": 17.50,
+      "router_overrode_correct_clusters": 2,
+      "router_overrode_correct_pct": 1.00,
+      "router_fixed_incorrect_clusters": 5,
+      "router_fixed_incorrect_pct": 2.50,
+      "net_correct_cluster_shift": 3,
+      "net_correct_shift_pct": 1.50
+    }
+  },
+  "disagreement_detector_validation": {
+    "test_set_size": 25,
+    "true_positives": 7,
+    "true_negatives": 13,
+    "false_positives": 2,
+    "false_negatives": 3,
+    "accuracy_pct": 80.00,
+    "precision_pct": 77.78,
+    "recall_pct": 70.00,
+    "f1_score": 0.7368,
+    "narrative_discrepancy": "Report claimed STRESS_04/19 alias queries remained on fast path; raw CSV recorded them as false positives routed to verification"
+  },
+  "deployment_and_latency_audit": {
+    "e0_batched_ms": 266.3,
+    "e6_bounded_analytical_ms": 660.1,
+    "e1_exhaustive_ms": 1603.1,
+    "latency_savings_pct": 58.82,
+    "generations_per_query": 2.47,
+    "measurement_boundary": "Offline batched forward passes with analytical multiplier; excludes live interactive network and serving queue",
+    "peak_vram_gb": 12.63,
+    "cold_start_sec": 7.82,
+    "interactive_throughput_tok_s": 172.6,
+    "batched_throughput_tok_s": 477.8
+  },
+  "dataset_integrity": {
+    "clusters": 200,
+    "prompts": 1200,
+    "domains": 6,
+    "verified_gold_references": 200,
+    "historical_prompt_leakage_pct": 0.00,
+    "cross_cluster_duplicates": 0,
+    "within_cluster_prompt_collapses": 78,
+    "manifest_hashes_verified": true
+  },
+  "deliverables": {
+    "artifact_inventory": "outputs/phase4_forensic/artifact_inventory.md",
+    "prediction_record_audit": "outputs/phase4_forensic/prediction_record_audit.csv",
+    "recomputed_metrics": "outputs/phase4_forensic/recomputed_metrics.json",
+    "metric_reconciliation": "outputs/phase4_forensic/metric_reconciliation.md",
+    "contradiction_audit": "outputs/phase4_forensic/contradiction_audit.csv",
+    "statistical_reanalysis": "outputs/phase4_forensic/statistical_reanalysis.md",
+    "consensus_and_correctness_audit": "outputs/phase4_forensic/consensus_and_correctness_audit.md",
+    "router_implementation_audit": "outputs/phase4_forensic/router_implementation_audit.md",
+    "detector_validation": "outputs/phase4_forensic/detector_validation.md",
+    "deployment_reanalysis": "outputs/phase4_forensic/deployment_reanalysis.md",
+    "dataset_leakage_audit": "outputs/phase4_forensic/dataset_leakage_audit.md",
+    "test_results": "outputs/phase4_forensic/test_results.md",
+    "final_forensic_report": "outputs/phase4_forensic/final_forensic_report.md",
+    "forensic_summary": "outputs/phase4_forensic/forensic_summary.json",
+    "independent_eval_script": "scripts/audit_phase4_metrics.py",
+    "forensic_test_suite": "tests/test_phase4_forensic.py",
+    "diagnostic_challenge_dataset": "data/phase4_forensic_challenge/diagnostic_cases.jsonl"
+  },
+  "final_verdict": {
+    "classification": "RESEARCH_CANDIDATE",
+    "summary": "E6_bounded successfully mitigates prompt sensitivity and suppresses slot contradictions via bounded medoid routing. However, factual non-inferiority is not statistically established, unanimous hallucinations persist in 17.5% of cases, and latency figures represent analytical batched estimates rather than end-to-end interactive serving."
+  }
+}

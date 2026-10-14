@@ -1,0 +1,8 @@
+Condition,Codename,Factual_Accuracy_Pct,CI95_Lower_Pct,CI95_Upper_Pct,Mean_Token_F1,Coverage_Pct,Selective_Accuracy_Pct,Abstention_Rate_Pct,Correction_Rate_Pct,Mean_Latency_ms,P95_Latency_ms
+E0_BASE,E0_base,59.56,55.11,64.0,0.5666,100.0,59.56,0.0,0.0,0.0,0.0
+E1_E3_ROUTER,E1_e3_router,58.89,54.22,63.33,0.8754,100.0,58.89,0.0,0.0,1.63,2.2
+E2_DETERMINISTIC,E2_deterministic,81.56,77.78,85.11,0.772,100.0,81.56,0.0,26.89,1.65,2.21
+E3_RETRIEVAL,E3_retrieval,60.22,55.56,64.67,0.8733,100.0,60.22,0.0,13.11,1.86,2.5
+E4_COMBINED,E4_combined,81.56,77.78,85.11,0.7697,100.0,81.56,0.0,31.78,1.85,2.54
+E5_CONSERVATIVE,E5_conservative,50.0,45.33,54.67,0.7866,58.22,85.88,41.78,31.78,1.82,2.42
+E6_ORACLE,E6_oracle,93.11,90.67,95.33,1.0,100.0,93.11,0.0,96.67,1.65,2.24

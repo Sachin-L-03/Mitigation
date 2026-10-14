@@ -1,0 +1,4 @@
+Title: Modular Diagnostic: 4^25 mod 7
+Provenance: Number Theory Deterministic Proof
+
+4^3 = 64 = 1 mod 7. 25 = 3*8 + 1, so 4^25 = 4^1 = 4 mod 7? Wait: 4^1=4, 4^2=16=2, 4^3=8=1. 25 = 3*8 + 1, so 4^25 = 4 mod 7! pow(4, 25, 7) = 4.

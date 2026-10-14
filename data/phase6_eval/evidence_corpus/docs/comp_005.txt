@@ -1,0 +1,4 @@
+Title: Most Abundant Element Earth Crust
+Provenance: USGS Mineral Resources Program
+
+Oxygen is the most abundant element in the Earth's crust by mass, accounting for approximately 46.1%, followed by silicon at 28.2%.

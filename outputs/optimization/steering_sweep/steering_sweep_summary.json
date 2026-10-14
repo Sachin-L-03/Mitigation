@@ -1,0 +1,106 @@
+{
+  "split": "val",
+  "layer": 16,
+  "strengths_tested": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "results": {
+    "0.0": {
+      "alpha": 0.0,
+      "token_f1": 43.81,
+      "f1_ci95": [
+        38.9,
+        48.29
+      ],
+      "semantic_sim": 57.71,
+      "exact_match": 2.07,
+      "anchor_preservation": 100.0,
+      "diversity_ratio": 97.7,
+      "validation_score": 68.81
+    },
+    "0.05": {
+      "alpha": 0.05,
+      "token_f1": 42.87,
+      "f1_ci95": [
+        38.46,
+        47.05
+      ],
+      "semantic_sim": 56.52,
+      "exact_match": 2.07,
+      "anchor_preservation": 87.26,
+      "diversity_ratio": 97.7,
+      "validation_score": 64.68
+    },
+    "0.1": {
+      "alpha": 0.1,
+      "token_f1": 41.26,
+      "f1_ci95": [
+        37.02,
+        45.41
+      ],
+      "semantic_sim": 55.26,
+      "exact_match": 0.0,
+      "anchor_preservation": 81.19,
+      "diversity_ratio": 99.43,
+      "validation_score": 61.56
+    },
+    "0.2": {
+      "alpha": 0.2,
+      "token_f1": 40.99,
+      "f1_ci95": [
+        36.97,
+        45.03
+      ],
+      "semantic_sim": 55.3,
+      "exact_match": 0.69,
+      "anchor_preservation": 74.79,
+      "diversity_ratio": 99.43,
+      "validation_score": 59.69
+    },
+    "0.3": {
+      "alpha": 0.3,
+      "token_f1": 40.79,
+      "f1_ci95": [
+        36.3,
+        45.23
+      ],
+      "semantic_sim": 54.72,
+      "exact_match": 0.69,
+      "anchor_preservation": 68.96,
+      "diversity_ratio": 98.85,
+      "validation_score": 58.03
+    },
+    "0.5": {
+      "alpha": 0.5,
+      "token_f1": 41.01,
+      "f1_ci95": [
+        36.36,
+        45.24
+      ],
+      "semantic_sim": 54.9,
+      "exact_match": 0.69,
+      "anchor_preservation": 61.43,
+      "diversity_ratio": 98.85,
+      "validation_score": 56.36
+    }
+  },
+  "best_alpha": 0.0,
+  "best_candidate": {
+    "alpha": 0.0,
+    "token_f1": 43.81,
+    "f1_ci95": [
+      38.9,
+      48.29
+    ],
+    "semantic_sim": 57.71,
+    "exact_match": 2.07,
+    "anchor_preservation": 100.0,
+    "diversity_ratio": 97.7,
+    "validation_score": 68.81
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "target_layers": [
+    12,
+    16,
+    20
+  ],
+  "epochs": 3,
+  "best_val_loss": 1.1974,
+  "total_training_seconds": 716.62,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9094,
+      "train_consistency": 0.2712,
+      "train_preservation": 0.0374,
+      "val_loss": 1.2081,
+      "val_consistency": 0.6734,
+      "val_preservation": 0.1074
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2387,
+      "train_consistency": 0.0293,
+      "train_preservation": 0.0027,
+      "val_loss": 1.2545,
+      "val_consistency": 0.8368,
+      "val_preservation": 0.1455
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1072,
+      "train_consistency": 0.0117,
+      "train_preservation": 0.0009,
+      "val_loss": 1.1974,
+      "val_consistency": 0.8437,
+      "val_preservation": 0.1405
+    }
+  ],
+  "loss_weights": {
+    "consistency": 1.0,
+    "preservation": 2.0,
+    "l2_reg": 0.001,
+    "semantic_contrast": 0.1
+  }
+}

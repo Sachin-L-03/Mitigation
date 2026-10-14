@@ -11,8 +11,10 @@ __pycache__/
 
 # Large Model Checkpoints & Activation Caches (keep code & reports tracked)
 outputs/activations/
+**/activations/
 *.safetensors
 *.bin
+*.pt
 
 # OS files
 Thumbs.db

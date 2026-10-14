@@ -1,0 +1,26 @@
+case_id,category,expected_conflict,detected_conflict,route_assigned,expected_route,verdict,semantic_similarity,token_f1,numerical_contradiction,negation_contradiction,entity_mismatch,notes
+STRESS_01,harmless_lexical,False,False,FAST_BASELINE,FAST_BASELINE,CORRECT_FAST_PATH,0.9044,1.0,False,False,False,Direct synonym/word order variation; should not trigger extra generation.
+STRESS_02,harmless_pragmatic,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.3874,0.1667,False,False,False,Polite framing should not trigger verification.
+STRESS_03,harmless_length_compression,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.2574,0.0,False,False,False,Telegraphic compression should be accepted on fast path.
+STRESS_04,entity_alias_equivalence,False,True,VERIFICATION_K3,FAST_BASELINE,FALSE_POSITIVE,0.1438,0.1667,False,False,True,Entity alias resolution must prevent false-positive mismatch.
+STRESS_05,numerical_contradiction,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.6917,0.6667,True,False,False,Distinct numeric tokens (4 vs 2) must trigger verification.
+STRESS_06,percentage_contradiction,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.4448,0.4286,True,False,False,Percentage conflict (78% vs 21%) must trigger verification.
+STRESS_07,negation_polar_reversal,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.6521,0.5263,False,True,False,Direct negation reversal on predicate must be detected.
+STRESS_08,date_contradiction,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.4207,0.4,True,False,True,Date mismatch (1969 vs 1972) must trigger verification.
+STRESS_09,predicate_entity_substitution,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.6528,0.6667,False,False,True,Non-overlapping predicate entities (Fleming vs Pasteur) must trigger verification.
+STRESS_10,compatible_extra_facts,False,False,FAST_BASELINE,FAST_BASELINE,CORRECT_FAST_PATH,0.8029,0.6667,False,False,False,Additional compatible fact should not be flagged as a conflict.
+STRESS_11,hard_negative_constraint_count,True,False,REJECT_IDENTICAL,REJECT_IDENTICAL,FALSE_NEGATIVE,0.7099,0.7368,False,False,False,Different constraint counts should not be forced identical.
+STRESS_12,format_variation,False,False,FAST_BASELINE,FAST_BASELINE,CORRECT_FAST_PATH,0.7,0.25,False,False,False,Full sentence vs formula-only token match.
+STRESS_13,unanimous_hallucination,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.4321,0.5,False,False,False,Both answers consistently agree on wrong emperor (Titus is correct); audits consensus blindspot.
+STRESS_14,unit_equivalence,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.3956,0.3077,False,False,False,200 cm vs 200 centimeters should agree.
+STRESS_15,sensitivity_recovery,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.3906,0.4444,True,False,False,Base model sensitive on wording; verification should select accurate candidate.
+STRESS_16,multi_part_question,False,False,FAST_BASELINE,FAST_BASELINE,CORRECT_FAST_PATH,0.6585,0.7368,False,False,False,Multi-slot answers with matching slots should agree.
+STRESS_17,multi_part_disagreement,True,False,FAST_BASELINE,VERIFICATION_K3,FALSE_NEGATIVE,0.895,0.9,False,False,False,"One slot matches (dollar), but another disagrees (Canberra vs Sydney). Must trigger verification."
+STRESS_18,numerical_range_overlap,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.2708,0.2857,False,False,False,Overlapping compatible ranges should not be flagged as a hard contradiction.
+STRESS_19,entity_abbreviation,False,True,VERIFICATION_K3,FAST_BASELINE,FALSE_POSITIVE,0.0523,0.0,False,False,True,BGP vs Border Gateway Protocol alias handling.
+STRESS_20,negation_subtle_distinction,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.2432,0.16,False,False,False,Both contain negation with identical factual intent; must NOT be flagged as contradiction.
+STRESS_21,ambiguous_input,False,False,CLARIFICATION,CLARIFICATION,CORRECT_FAST_PATH,0.2935,0.3448,False,False,False,Both recognize underspecified query and request clarification.
+STRESS_22,approximate_quantity,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.4616,0.4706,False,False,False,"Exact (186,282) vs rounded (186,000) with approximate qualifiers."
+STRESS_23,currency_symbol_difference,False,False,VERIFICATION_K3,FAST_BASELINE,CORRECT_FAST_PATH,0.4799,0.5,False,False,False,$25 vs 25 USD numeric match.
+STRESS_24,different_chemical_element,True,True,VERIFICATION_K3,VERIFICATION_K3,CORRECT_TRIGGER,0.8295,0.8571,False,False,True,Entity substitution (Hydrogen vs Helium) must trigger verification.
+STRESS_25,mathematical_equation_solution,True,False,VERIFICATION_K3,VERIFICATION_K3,FALSE_NEGATIVE,0.2286,0.5714,False,False,False,Sign error (+4 vs -4) must trigger verification.

@@ -1,0 +1,248 @@
+{
+  "evaluation_name": "PromptSensitivity_External_Generalization_Validation",
+  "timestamp": "2026-10-12T15:12:54Z",
+  "total_clusters": 100,
+  "total_prompts": 600,
+  "factual_clusters": 40,
+  "factual_prompts": 240,
+  "conditions": {
+    "baseline": {
+      "label": "Condition A: Original Baseline",
+      "within_cluster_token_f1": {
+        "mean": 37.23,
+        "ci_95": [
+          35.36,
+          39.15
+        ]
+      },
+      "within_cluster_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "within_cluster_semantic_sim": {
+        "mean": 54.82,
+        "ci_95": [
+          52.68,
+          56.72
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 100.0,
+        "ci_95": [
+          100.0,
+          100.0
+        ]
+      },
+      "average_answer_length": {
+        "mean": 48.76,
+        "ci_95": [
+          47.78,
+          49.63
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 89.58,
+        "ci_95": [
+          82.5,
+          95.42
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.02,
+        "ci_95": [
+          7.34,
+          11.04
+        ]
+      },
+      "diversity_ratio": 0.8017,
+      "non_empty_rate": 100.0,
+      "latency_sec_per_prompt": 0.2597
+    },
+    "editing_w1": {
+      "label": "Condition B: Editing Only (w_pres=1.0)",
+      "within_cluster_token_f1": {
+        "mean": 37.44,
+        "ci_95": [
+          35.43,
+          39.47
+        ]
+      },
+      "within_cluster_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "within_cluster_semantic_sim": {
+        "mean": 55.55,
+        "ci_95": [
+          53.44,
+          57.44
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 91.97,
+        "ci_95": [
+          89.19,
+          94.59
+        ]
+      },
+      "average_answer_length": {
+        "mean": 48.91,
+        "ci_95": [
+          48.0,
+          49.77
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 90.0,
+        "ci_95": [
+          83.33,
+          95.83
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.01,
+        "ci_95": [
+          7.37,
+          10.99
+        ]
+      },
+      "diversity_ratio": 0.7917,
+      "non_empty_rate": 100.0,
+      "latency_sec_per_prompt": 0.2782
+    },
+    "preservation_w5": {
+      "label": "Condition C: Preservation-Tuned (w_pres=5.0)",
+      "within_cluster_token_f1": {
+        "mean": 37.2,
+        "ci_95": [
+          35.2,
+          39.22
+        ]
+      },
+      "within_cluster_exact_match": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "within_cluster_semantic_sim": {
+        "mean": 55.11,
+        "ci_95": [
+          52.9,
+          57.19
+        ]
+      },
+      "anchor_preservation": {
+        "mean": 92.24,
+        "ci_95": [
+          88.94,
+          95.05
+        ]
+      },
+      "average_answer_length": {
+        "mean": 48.88,
+        "ci_95": [
+          47.96,
+          49.75
+        ]
+      },
+      "factual_accuracy": {
+        "mean": 90.0,
+        "ci_95": [
+          83.33,
+          95.83
+        ]
+      },
+      "factual_token_f1": {
+        "mean": 9.02,
+        "ci_95": [
+          7.37,
+          11.03
+        ]
+      },
+      "diversity_ratio": 0.8067,
+      "non_empty_rate": 100.0,
+      "latency_sec_per_prompt": 0.2898
+    }
+  },
+  "statistical_tests": {
+    "w1_vs_baseline": {
+      "token_f1": {
+        "abs_change": 0.0022,
+        "rel_change_pct": 0.59,
+        "p_value": 0.4445,
+        "significant": false,
+        "adj_p_value": 1.0
+      },
+      "semantic_sim": {
+        "abs_change": 0.0073,
+        "rel_change_pct": 1.33,
+        "p_value": 0.00633,
+        "significant": true
+      },
+      "factual_accuracy": {
+        "abs_change": 0.0042,
+        "rel_change_pct": 0.47,
+        "p_value": 0.31731,
+        "significant": false,
+        "adj_p_value": 1.0
+      }
+    },
+    "w5_vs_baseline": {
+      "token_f1": {
+        "abs_change": -0.0002,
+        "rel_change_pct": -0.06,
+        "p_value": 0.60998,
+        "significant": false,
+        "adj_p_value": 1.0
+      },
+      "semantic_sim": {
+        "abs_change": 0.0029,
+        "rel_change_pct": 0.52,
+        "p_value": 0.13761,
+        "significant": false
+      },
+      "factual_accuracy": {
+        "abs_change": 0.0042,
+        "rel_change_pct": 0.47,
+        "p_value": 0.31731,
+        "significant": false,
+        "adj_p_value": 1.0
+      }
+    },
+    "w5_vs_w1": {
+      "token_f1": {
+        "abs_change": -0.0024,
+        "rel_change_pct": -0.65,
+        "p_value": 0.78433,
+        "significant": false,
+        "adj_p_value": 1.0
+      },
+      "anchor_preservation": {
+        "abs_change": 0.0027,
+        "rel_change_pct": 0.29,
+        "p_value": 0.7731,
+        "significant": false,
+        "adj_p_value": 1.0
+      },
+      "factual_accuracy": {
+        "abs_change": 0.0,
+        "rel_change_pct": 0.0,
+        "p_value": 1.0,
+        "significant": false
+      }
+    }
+  },
+  "cross_model_status": {
+    "target_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "access_status": "BLOCKED",
+    "blocker_reason": "401 Client Error: Gated repository requires Hugging Face authentication token. No token found in environment."
+  }
+}

@@ -1,0 +1,4 @@
+Condition,Token F1 (%),Token F1 95% CI,Exact Match (%),Semantic Sim (%),Anchor Pres (%),Anchor Pres 95% CI,Factual Acc (%),Factual Acc 95% CI,Factual F1 (%),Avg Length (words),Diversity Ratio,Latency (s/prompt)
+Condition A: Original Baseline,37.23,"[35.36, 39.15]",0.0,54.82,100.0,"[100.0, 100.0]",89.58,"[82.5, 95.42]",9.02,48.76,0.8017,0.2597
+Condition B: Editing Only (w_pres=1.0),37.44,"[35.43, 39.47]",0.0,55.55,91.97,"[89.19, 94.59]",90.0,"[83.33, 95.83]",9.01,48.91,0.7917,0.2782
+Condition C: Preservation-Tuned (w_pres=5.0),37.2,"[35.2, 39.22]",0.0,55.11,92.24,"[88.94, 95.05]",90.0,"[83.33, 95.83]",9.02,48.88,0.8067,0.2898

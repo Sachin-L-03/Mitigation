@@ -1,0 +1,4 @@
+Title: North American Outlet Voltage
+Provenance: National Electrical Code (NEC) / ANSI C84.1
+
+In North America (USA and Canada), the standard residential electric power supply nominal voltage is 120 volts at 60 Hz.

@@ -1,0 +1,4 @@
+Title: Modular Diagnostic: 5^50 mod 13
+Provenance: Number Theory Deterministic Proof
+
+By Fermat's Little Theorem, 5^12 = 1 mod 13. Since 50 = 4*12 + 2, 5^50 = 5^2 = 25 = 12 mod 13.

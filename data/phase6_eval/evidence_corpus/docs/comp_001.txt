@@ -1,0 +1,4 @@
+Title: Atmospheric Composition
+Provenance: NOAA Earth System Research Laboratories
+
+Dry atmospheric air at sea level consists of 78.084% nitrogen (N2), 20.946% oxygen (O2), 0.934% argon, and 0.042% carbon dioxide by volume.

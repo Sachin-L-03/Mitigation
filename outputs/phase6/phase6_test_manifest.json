@@ -1,0 +1,82 @@
+{
+  "protocol": "Phase 6 Evidence-Grounded Factual Verification and False-Consensus Mitigation",
+  "version": "1.0.0",
+  "date_frozen": "2026-10-14T12:00:00Z",
+  "repository": {
+    "name": "prompt-sensitivity-hybrid",
+    "branch": "creme-hybrid-framework",
+    "git_commit_sha": "d027bc89d28e7eef26fbeadcd2e32a265691ee92"
+  },
+  "environment": {
+    "python_version": "3.11.9",
+    "torch_version": "2.5.1+cu121",
+    "transformers_version": "4.57.6",
+    "bitsandbytes_version": "0.44.1",
+    "peft_version": "0.14.0",
+    "sympy_version": "1.13.3",
+    "sqlite3_version": "3.45.1",
+    "device": "NVIDIA GeForce RTX 4090",
+    "vram_gb": 24.0,
+    "cuda_version": "12.1"
+  },
+  "model_configuration": {
+    "base_model": "Qwen/Qwen2.5-7B-Instruct",
+    "quantization": "4-bit NF4 with double quantization",
+    "compute_dtype": "bfloat16",
+    "random_seed": 42,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_new_tokens": 64,
+    "do_sample": false
+  },
+  "dataset_manifest": {
+    "benchmark_directory": "data/phase6_eval/",
+    "domain_dataset_path": "data/phase6_eval/domain_dataset.jsonl",
+    "domain_dataset_sha256": "1ae7f4bc7b99c0ec90e44ebae3d8205f2c4ee973bb2b45070ce5f36e2f1db1bb",
+    "correctness_subset_path": "data/phase6_eval/correctness_subset.jsonl",
+    "correctness_subset_sha256": "3c81e3a47318ec7e05e55cb63dbde9bb84c173c38fa8001be33ae9279a32cbe3",
+    "evidence_index_db_path": "data/phase6_eval/evidence_corpus/evidence_index.db",
+    "evidence_index_db_sha256": "79c6bb198305f21226c117d69d4d293297a7e3cefa15cf1714bc122557ec41e2",
+    "total_clusters": 600,
+    "total_prompts": 2400,
+    "prompts_per_cluster": 4,
+    "variant_types": ["original", "lexical", "syntactic", "concise"],
+    "num_strata": 12,
+    "strata": [
+      "deterministic_arithmetic",
+      "numerical_reasoning",
+      "date_time_math",
+      "general_knowledge_history",
+      "natural_sciences",
+      "entity_relations",
+      "everyday_practical_facts",
+      "multi_constraint",
+      "structured_output",
+      "ambiguous_non_equivalent",
+      "competing_hypotheses",
+      "unanimous_hallucination_diagnostic"
+    ],
+    "validation_split_clusters": 150,
+    "test_split_clusters": 450,
+    "gold_reference_isolation_verified": true
+  },
+  "experimental_conditions": {
+    "E0": "Base Qwen2.5-7B-Instruct (single generation per prompt)",
+    "E1": "E3 factual-risk-aware bounded router baseline (K=3, medoid selection)",
+    "E2": "E3 + Path A Deterministic Verification (modular math, AST arithmetic, unit conversion, date math)",
+    "E3": "E3 + Path B Independent Evidence Retrieval (SQLite FTS5 BM25 retrieval)",
+    "E4": "Combined Evidence-Grounded Router (Path A + Path B + Path C)",
+    "E5": "Conservative Evidence-Aware Fallback (abstention on unresolved high-risk claims)",
+    "E6": "Offline Oracle Diagnostic Upper Bound (evaluation only)"
+  },
+  "statistical_parameters": {
+    "independent_unit": "semantic_question_cluster (N=450)",
+    "primary_endpoint": "factual_accuracy(E4) vs factual_accuracy(E1)",
+    "primary_test": "paired McNemar exact test (alpha=0.05, two-sided)",
+    "non_inferiority_baseline": "E0_base",
+    "non_inferiority_margin": -0.02,
+    "non_inferiority_alpha": 0.025,
+    "confidence_interval_method": "paired cluster bootstrap (10,000 resamples)",
+    "multiplicity_control": "Holm-Bonferroni step-down across secondary comparisons"
+  }
+}

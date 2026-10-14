@@ -1,0 +1,4 @@
+Title: Normal Blood pH Range
+Provenance: Guyton and Hall Textbook of Medical Physiology
+
+The normal physiological pH range of arterial blood in a healthy adult human is tightly regulated between 7.35 and 7.45.

@@ -1,0 +1,4 @@
+Title: Oxygen Oxidation State in Water
+Provenance: IUPAC Gold Book: Oxidation State
+
+In water (H2O), each hydrogen atom has an oxidation state of +1, while the oxygen atom has an oxidation state of -2.

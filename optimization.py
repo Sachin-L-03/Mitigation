@@ -211,6 +211,12 @@ def run_experiment_b_steering_sweep(
 
     # Load baseline validation predictions if they exist, or generate them for anchor comparison
     val_base_file = out_dir / f"baseline_{split}_predictions.jsonl"
+    existing_base = Path("outputs/optimization/steering_sweep") / f"baseline_{split}_predictions.jsonl"
+    if not val_base_file.is_file() and existing_base.is_file():
+        import shutil
+        shutil.copy(existing_base, val_base_file)
+        logger.info(f"Reused existing baseline reference predictions from {existing_base}")
+
     if not val_base_file.is_file():
         # Evaluate base model on validation split for anchor comparison
         logger.info(f"Generating baseline reference predictions on {split} split...")
@@ -223,6 +229,14 @@ def run_experiment_b_steering_sweep(
             model_name=model_name,
             max_new_tokens=config.get("generation", {}).get("max_new_tokens", 64),
         )
+
+    # Also reuse alpha 0.00 if already computed (since alpha=0 is identical for any subspace)
+    alpha0_file = out_dir / f"val_hybrid_alpha_0.00.jsonl"
+    existing_alpha0 = Path("outputs/optimization/steering_sweep/val_hybrid_alpha_0.00.jsonl")
+    if not alpha0_file.is_file() and existing_alpha0.is_file():
+        import shutil
+        shutil.copy(existing_alpha0, alpha0_file)
+        logger.info(f"Reused existing alpha=0.00 predictions from {existing_alpha0}")
 
     base_preds = []
     with open(val_base_file, "r", encoding="utf-8") as f:
@@ -500,6 +514,12 @@ def run_experiment_d_layer_rank_search(
             )
 
             pred_file = out_dir / f"val_layer_{lyr}_r2.jsonl"
+            existing_sweep_file = Path("outputs/optimization/steering_sweep") / f"val_hybrid_alpha_{test_alpha:.2f}.jsonl"
+            if lyr == 16 and not pred_file.is_file() and existing_sweep_file.is_file():
+                import shutil
+                shutil.copy(existing_sweep_file, pred_file)
+                logger.info(f"Reused layer 16 rank 2 predictions from {existing_sweep_file}")
+
             with hook:
                 run_condition_inference(
                     condition_name=f"layer_{lyr}_r2",
@@ -648,6 +668,22 @@ def run_experiment_e_preservation_sweep(
         adapter_dest = out_dir / f"adapter_w{w_pres:.1f}"
         adapter_model_file = adapter_dest / "adapter_model.safetensors"
 
+        if w_pres == 1.0 and not adapter_model_file.is_file():
+            orig_adapter = Path("outputs/parameter_editing/best_adapter")
+            if (orig_adapter / "adapter_model.safetensors").is_file():
+                import shutil
+                if adapter_dest.exists():
+                    shutil.rmtree(adapter_dest)
+                shutil.copytree(orig_adapter, adapter_dest)
+                logger.info(f"Reused baseline adapter for w_pres=1.0 from {orig_adapter}")
+
+        pred_file = out_dir / f"val_predictions_w{w_pres:.1f}.jsonl"
+        existing_alpha0 = Path("outputs/optimization/steering_sweep/val_hybrid_alpha_0.00.jsonl")
+        if w_pres == 1.0 and not pred_file.is_file() and existing_alpha0.is_file():
+            import shutil
+            shutil.copy(existing_alpha0, pred_file)
+            logger.info(f"Reused w_pres=1.0 val predictions from {existing_alpha0}")
+
         if not adapter_model_file.is_file():
             logger.info(f"Training adapter with preservation weight w_pres={w_pres}...")
             sweep_config = json.loads(json.dumps(config))
@@ -669,30 +705,40 @@ def run_experiment_e_preservation_sweep(
                     shutil.rmtree(adapter_dest)
                 shutil.copytree(src_ckpt, adapter_dest)
 
-        # Evaluate adapter on validation split
-        logger.info(f"Evaluating preservation adapter w={w_pres} on {split} split...")
-        bundle = load_model_and_tokenizer(model_name=model_name, config=config)
-        base_model = bundle["model"]
-        tokenizer = bundle["tokenizer"]
-        peft_model = PeftModel.from_pretrained(base_model, str(adapter_dest))
-        peft_model.eval()
+        # Check if already completed
+        already_completed = False
+        if pred_file.is_file():
+            try:
+                with open(pred_file, "r", encoding="utf-8") as f_chk:
+                    cnt = sum(1 for line in f_chk if line.strip())
+                    if cnt == len(val_dataset.records):
+                        already_completed = True
+            except Exception:
+                pass
 
-        pred_file = out_dir / f"val_predictions_w{w_pres:.1f}.jsonl"
-        run_condition_inference(
-            condition_name=f"preservation_w{w_pres:.1f}",
-            model=peft_model,
-            tokenizer=tokenizer,
-            records=val_dataset.records,
-            output_file=pred_file,
-            model_name=model_name,
-            max_new_tokens=64,
-            resume=True,
-        )
+        if not already_completed:
+            logger.info(f"Evaluating preservation adapter w={w_pres} on {split} split...")
+            bundle = load_model_and_tokenizer(model_name=model_name, config=config)
+            base_model = bundle["model"]
+            tokenizer = bundle["tokenizer"]
+            peft_model = PeftModel.from_pretrained(base_model, str(adapter_dest))
+            peft_model.eval()
 
-        del peft_model
-        del base_model
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
+            run_condition_inference(
+                condition_name=f"preservation_w{w_pres:.1f}",
+                model=peft_model,
+                tokenizer=tokenizer,
+                records=val_dataset.records,
+                output_file=pred_file,
+                model_name=model_name,
+                max_new_tokens=64,
+                resume=True,
+            )
+
+            del peft_model
+            del base_model
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
 
         preds = []
         with open(pred_file, "r", encoding="utf-8") as f:
@@ -762,6 +808,13 @@ def run_experiment_f_final_comparison(
     for method_key, m_spec in candidate_methods.items():
         out_pred = out_dir / f"{method_key}_{split}_predictions.jsonl"
         pred_files[method_key] = out_pred
+
+        if not out_pred.is_file():
+            candidate_existing = Path("outputs") / f"{method_key}_{split}_predictions.jsonl"
+            if candidate_existing.is_file():
+                import shutil
+                shutil.copy(candidate_existing, out_pred)
+                logger.info(f"Reused existing predictions for {method_key} from {candidate_existing}")
 
         if out_pred.is_file():
             logger.info(f"Predictions already exist for method '{method_key}', skipping generation.")
@@ -947,6 +1000,61 @@ def main() -> None:
         print("\n>>> Stage E: Preservation Regularization Sweep...")
         res_e = run_experiment_e_preservation_sweep(config)
         print(f"  Best Preservation Weight: {res_e['best_w_pres']} (Score: {res_e['best_candidate']['validation_score']})")
+
+    if args.stage in ["exp_f", "all"]:
+        print("\n>>> Stage F: Multi-Condition Evaluation on Held-Out Test Split...")
+        candidate_methods = {
+            "baseline": {
+                "label": "1. Original Baseline",
+            },
+            "steering_only": {
+                "label": "2. Existing Steering Only (L16, a=0.5)",
+                "steering": {
+                    "layer": 16,
+                    "strength": 0.5,
+                    "subspace_path": "outputs/steering/subspace_layer_16.pt",
+                },
+            },
+            "editing_only": {
+                "label": "3. Existing Editing Only (Best Adapter)",
+                "adapter_dir": "outputs/parameter_editing/best_adapter",
+            },
+            "hybrid_val_orig_subspace": {
+                "label": "4. Best Hybrid (Original Subspace, a=0.05)",
+                "adapter_dir": "outputs/parameter_editing/best_adapter",
+                "steering": {
+                    "layer": 16,
+                    "strength": 0.05,
+                    "subspace_path": "outputs/steering/subspace_layer_16.pt",
+                },
+            },
+            "hybrid_val_edited_subspace": {
+                "label": "5. Best Hybrid (Edited Subspace, a=0.10)",
+                "adapter_dir": "outputs/parameter_editing/best_adapter",
+                "steering": {
+                    "layer": 16,
+                    "strength": 0.10,
+                    "subspace_path": "outputs/optimization/edited_subspace/subspace_edited_layer_16.pt",
+                },
+            },
+            "hybrid_alt_layer": {
+                "label": "6. Best Alternative-Layer Hybrid (L24, r2, a=0.10)",
+                "adapter_dir": "outputs/parameter_editing/best_adapter",
+                "steering": {
+                    "layer": 24,
+                    "strength": 0.10,
+                    "subspace_path": "outputs/optimization/layer_rank_search/subspace_l24_r2.pt",
+                },
+            },
+            "editing_preservation_tuned": {
+                "label": "7. Best Preservation-Tuned Editing (w_pres=5.0)",
+                "adapter_dir": "outputs/optimization/preservation/adapter_w5.0",
+            },
+        }
+        res_f = run_experiment_f_final_comparison(config, candidate_methods, split="test")
+        print("\nFinal Comparison Completed:")
+        for k, v in res_f.items():
+            print(f"  {v['label']:<48} | F1: {v['token_f1']['mean']:.2f}% | Pres: {v['anchor_preservation']['mean']:.2f}%")
 
     print("=" * 75 + "\n")
 

@@ -1,0 +1,2 @@
+session_id,prompt_index,prompt_text,reference_answer,baseline_answer,mitigated_answer,baseline_latency_ms,mitigation_latency_ms,verification_overhead_ms,verification_route,verification_state,semantic_relation,baseline_correct,mitigated_correct,is_corrected,is_abstained,correction_source
+test_unit_session,0,What is the answer?,42,42,42,50.0,52.0,2.0,Path A: Deterministic AST Tooling,SUPPORTED,identical,True,True,False,False,
